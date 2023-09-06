@@ -1,0 +1,57 @@
+<nav id="sidebar">
+  <ul>
+    <li class="heading">Getting Started</li>
+    <li><a href="/">About</a></li>
+    <li><a href="/resources">Resources</a></li>
+    <!-- <li><a href="/auth">Authentication</a></li> -->
+    <li class="heading">Player</li>
+    <li><a href="/get/player/smashId">GetPlayer</a></li>
+    <li><a href="/get/player/bhId/brawlhallaId">GetPlayerByBhId</a></li>
+    <li><a href="/post/player/teammate">DescribePlayerTeammates</a></li>
+    <li><a href="/post/player/pr">DescribePlayerPr</a></li>
+    <!-- <li><a href="/post/player">ListPlayers</a></li> -->
+    <li><a href="/post/player/placement">DescribePlayerPlacements</a></li>
+    <li><a href="/post/player/match">DescribePlayerMatches</a></li>
+    <li><a href="/post/player/legend">DescribePlayerLegends</a></li>
+    <li><a href="/get/player/smashId/legend">GetPlayerRecentLegend</a></li>
+    <li><a href="/post/player/search">SearchPlayers</a></li>
+    <li class="heading">Matchup</li>
+    <li><a href="/post/matchup">DescribeMatchup</a></li>
+    <li><a href="/post/matchup/placement">DescribeMatchupPlacements</a></li>
+    <li><a href="/post/matchup/match">DescribeMatchupMatches</a></li>
+    <li class="heading">Event</li>
+    <li><a href="/post/event">ListEvents</a></li>
+    <li class="heading">Power Rankings</li>
+    <li><a href="/post/pr">ListPr</a></li>
+  </ul>
+</nav>
+
+<style lang="scss">
+  #sidebar {
+    width: 20%;
+    min-width: 16rem;
+    padding-top: 3rem;
+
+    @media (min-width: 1024px) {
+      display: block;
+    }
+
+    ul {
+      list-style: none;
+      margin-bottom: 5rem;
+      padding-left: 2rem;
+      
+      li {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .heading {
+        font-weight: bold;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+  
+</style>
