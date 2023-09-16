@@ -55,20 +55,158 @@ import Footer from "../components/Footer.astro";
 <style lang="scss">
 
 	body {
+    margin: 0;
+    background-color: var(--background);
+    color: var(--text-color);
+    font-family: 'BespokeSansVariable', sans-serif;
+
 		div {
 			display: flex;
 			align-items: stretch;
 			overflow-x: hidden;
 
 			main {
+        background-color: var(--page-background);
+        padding: 1.5rem;
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
 				min-height: 100vh;
 				width: 100%;
 				max-width: 1500px;
+
+        article {
+          font-family: 'AuthorVariable', sans-serif;
+
+          :global(pre) {
+            padding: 1rem;
+          }
+        }
 			}
 		}
 	}
+
+  :root {
+    --sun-color: hsl(0, 0%, 50%);
+    --moon-color: hsl(240, 75%, 32%);
+    --background: hsl(230, 16%, 20%);
+    --page-background: hsl(220, 30%, 25%);
+    --text-color: hsl(0, 0%, 100%);
+    --text-color-link: hsl(45, 97%, 52%);
+    --text-color-link-hover: hsl(55, 100%, 59%);
+    --text-color-subtitle: hsl(0, 0%, 80%);
+  }
+
+  .dark {
+    --sun-color: hsl(0, 0%, 50%);
+    --moon-color: hsl(240, 75%, 32%);
+    --background: hsl(230, 16%, 20%);
+    --page-background: hsl(220, 30%, 25%);
+    --text-color: hsl(0, 0%, 100%);
+    --text-color-link: hsl(45, 97%, 52%);
+    --text-color-link-hover: hsl(55, 100%, 59%);
+    --text-color-subtitle: hsl(0, 0%, 80%);
+  }
+
+  .light {
+    --sun-color: hsl(34, 84%, 50%);
+    --moon-color: hsl(0, 0%, 50%);
+    --background: hsl(230, 16%, 80%);
+    --page-background: hsl(220, 30%, 75%);
+    --text-color: hsl(0, 0%, 0%);
+    --text-color-link: hsl(197, 78%, 16%);
+    --text-color-link-hover: hsl(174, 87%, 56%);
+    --text-color-subtitle: hsl(0, 0%, 20%);
+  }
+
+
+  /**
+ * @license
+ *
+ * Font Family: Bespoke Sans
+ * Designed by: Jérémie Hornus, Théo Guillard, Morgane Pambrun, Alisa Nowak, Joachim Vu
+ * URL: https://www.fontshare.com/fonts/bespoke-sans
+ * © 2023 Indian Type Foundry
+ *
+ * Font Styles:
+ * Bespoke Sans Variable(Variable font)
+ * Bespoke Sans Variable Italic(Variable font)
+ * Bespoke Sans Light
+ * Bespoke Sans Light Italic
+ * Bespoke Sans Regular
+ * Bespoke Sans Italic
+ * Bespoke Sans Medium
+ * Bespoke Sans Medium Italic
+ * Bespoke Sans Bold
+ * Bespoke Sans Bold Italic
+ * Bespoke Sans Extrabold         
+ * Bespoke Sans Extrabold Italic
+ *
+*/
+@font-face {
+	font-family: 'BespokeSansVariable';
+	src: url('/fonts/BespokeSans-Variable.woff2') format('woff2'),
+		url('/fonts/BespokeSans-Variable.woff') format('woff'),
+		url('/fonts/BespokeSans-Variable.ttf') format('truetype');
+	font-weight: 300 800;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'BespokeSansVariable';
+	src: url('/fonts/BespokeSans-VariableItalic.woff2') format('woff2'),
+		url('/fonts/BespokeSans-VariableItalic.woff') format('woff'),
+		url('/fonts/BespokeSans-VariableItalic.ttf') format('truetype');
+	font-weight: 300 800;
+	font-display: swap;
+	font-style: italic;
+}
+
+/**
+ * @license
+ *
+ * Font Family: Author
+ * Designed by: Satya Rajpurohit
+ * URL: https://www.fontshare.com/fonts/author
+ * © 2023 Indian Type Foundry
+ *
+ * Font Styles:
+ * Author Variable(Variable font)
+ * Author Variable Italic(Variable font)
+ * Author Extralight
+ * Author Extralight Italic
+ * Author Light
+ * Author Light Italic
+ * Author Regular
+ * Author Italic
+ * Author Medium
+ * Author Medium Italic
+ * Author Semibold
+ * Author Semibold Italic
+ * Author Bold
+ * Author Bold Italic
+ *
+*/
+@font-face {
+	font-family: 'AuthorVariable';
+	src: url('./fonts/Author-Variable.woff2') format('woff2'),
+		url('./fonts/Author-Variable.woff') format('woff'),
+		url('./fonts/Author-Variable.ttf') format('truetype');
+	font-weight: 200 700;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'AuthorVariable';
+	src: url('./fonts/Author-VariableItalic.woff2') format('woff2'),
+		url('./fonts/Author-VariableItalic.woff') format('woff'),
+		url('./fonts/Author-VariableItalic.ttf') format('truetype');
+	font-weight: 200 700;
+	font-display: swap;
+	font-style: italic;
+}
+
 
 </style>

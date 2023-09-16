@@ -32,8 +32,12 @@
     min-width: 16rem;
     padding-top: 3rem;
 
+
+    &.hidden {
+      display: none;
+    }
     @media (min-width: 1024px) {
-      display: block;
+      display: block !important;
     }
 
     ul {
@@ -44,6 +48,15 @@
       li {
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
+
+        a {
+          color: var(--text-color-link);
+          text-decoration: inherit;
+
+          &:hover {
+            color: var(--text-color-link-hover);
+          }
+        }
       }
 
       .heading {
