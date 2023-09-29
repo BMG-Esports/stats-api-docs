@@ -7,3 +7,29 @@ layout: ../../../layouts/Layout.astro
 # ListPr
 
 Placeholder
+
+## Request
+
+### Syntax
+
+```Placeholder```
+
+### Path Parameters
+
+Placeholder
+
+### Request Body
+
+Placeholder
+
+## Response
+
+### Sample Response
+
+```json
+Placeholder
+```
+
+### Response Elements
+
+Placeholder

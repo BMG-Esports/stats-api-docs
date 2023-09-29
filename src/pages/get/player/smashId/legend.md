@@ -7,3 +7,29 @@ layout: ../../../../layouts/Layout.astro
 # GetPlayerRecentLegend
 
 Fetches a player's recently played legends from Start.gg.
+
+## Request
+
+### Syntax
+
+```Placeholder```
+
+### Path Parameters
+
+Placeholder
+
+### Request Body
+
+Placeholder
+
+## Response
+
+### Sample Response
+
+```json
+Placeholder
+```
+
+### Response Elements
+
+Placeholder

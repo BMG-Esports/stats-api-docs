@@ -42,25 +42,8 @@ This method does not have a body.
 
 ### Response Elements
 
-This response body can contain the following fields in JSON.	
+The following data is returned in JSON.	
 
-- **smashId** - *number*
-	- The Start.gg ID of the player.
-
-- **brawlhallaId** - *number*
-	- The Brawlhalla ID of the player.
-
-- **name** - *string*
-	- The name of the player as listed on Start.gg.
-
-- **twitter** - *string*
-	- The username of the player's X account as listed on Start.gg.
-
-- **twitch** - *string*
-	- The username of the player's Twitch account as listed on Start.gg.
-
-- **pronoun** - *string*
-	- The player's pronouns as listed on Start.gg.
-
-- **country** - *string*
-	- The player's country as listed on Start.gg.
+- **Player** - *Object*
+	- The basic info recorded about a player.
+	- <a href="../../datatypes/player">Player Object</a>
