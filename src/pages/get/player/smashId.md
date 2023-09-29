@@ -42,7 +42,7 @@ This method does not have a body.
 
 ### Response Elements
 
-This response body can contain the following fields in JSON.
+This response body can contain the following fields in JSON.	
 
 - **smashId** - *number*
 	- The Start.gg ID of the player.
@@ -64,4 +64,3 @@ This response body can contain the following fields in JSON.
 
 - **country** - *string*
 	- The player's country as listed on Start.gg.
-
