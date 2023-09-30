@@ -12,24 +12,32 @@ Fetches a player's recently played legends from Start.gg.
 
 ### Syntax
 
-```Placeholder```
+```https://api.brawltools.com/player/:PlayerID/legend```
 
 ### Path Parameters
 
-Placeholder
+- **PlayerID** - *number*
+	- The Start.gg ID of the player.
 
 ### Request Body
 
-Placeholder
+This method does not have a body.
 
 ## Response
 
 ### Sample Response
 
 ```json
-Placeholder
+{
+    "legend": {
+        "name": "MIRAGE",
+        "count": 12
+    }
+}
 ```
 
 ### Response Elements
 
-Placeholder
+- **Legend** - *Object*
+    - Placeholder
+    - <a href="../../../datatypes/legend">Legend Object</a>

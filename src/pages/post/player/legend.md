@@ -12,7 +12,7 @@ Placeholder
 
 ### Syntax
 
-```Placeholder```
+```https://api.brawltools.com/player/legend```
 
 ### Path Parameters
 
@@ -20,16 +20,51 @@ Placeholder
 
 ### Request Body
 
-Placeholder
+```json
+{
+    "entrantSmashIds":[153043],
+    "isOfficial": true,
+    "year": 2022
+
+}
+```
 
 ## Response
 
 ### Sample Response
 
 ```json
-Placeholder
+{
+    "legends": [
+        {
+            "name": "RENO",
+            "count": 57
+        },
+        {
+            "name": "JHALA",
+            "count": 15
+        },
+        {
+            "name": "CROSS",
+            "count": 10
+        },
+        {
+            "name": "DIANA",
+            "count": 9
+        },
+        {
+            "name": "MUNIN",
+            "count": 6
+        }
+    ],
+    "nextToken": "6-TVVOSU4="
+}
 ```
 
 ### Response Elements
 
-Placeholder
+ - Legend - array
+    - 
+
+- nextToken - string
+    - 
