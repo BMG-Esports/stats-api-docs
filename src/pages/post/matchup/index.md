@@ -6,30 +6,62 @@ layout: ../../../layouts/Layout.astro
 
 # DescribeMatchup
 
-Placeholder
+Returns the head to head stats of specified players.
 
 ## Request
 
 ### Syntax
 
-```Placeholder```
+```https://api.brawltools.com/matchup```
 
 ### Path Parameters
 
-Placeholder
+This method does not have path parameters.
 
 ### Request Body
 
-Placeholder
+```json
+{
+    "isOfficial": boolean,
+    "entrant1SmashIds": [number],
+    "entrant2SmashIds": [number],
+    "gameMode": 1 or 2
+}
+```
 
 ## Response
 
 ### Sample Response
 
 ```json
-Placeholder
+{
+    "matchups": [
+        {
+            "matches": [
+                17,
+                9
+            ],
+            "games": [
+                60,
+                48
+            ],
+            "opponent": null
+        }
+    ],
+    "nextToken": null
+}
 ```
 
 ### Response Elements
 
-Placeholder
+The following data is returned in JSON.
+
+- Matchups
+
+- Matches
+
+- Games
+
+- Opponent
+
+- NextToken

@@ -6,30 +6,97 @@ layout: ../../../layouts/Layout.astro
 
 # DescribeMatchupMatches
 
-Placeholder
+Returns any matches specified players played in a specific tournament.
 
 ## Request
 
 ### Syntax
 
-```Placeholder```
+```https://api.brawltools.com/matchup/match```
 
 ### Path Parameters
 
-Placeholder
+This method does not have path parameters.
 
 ### Request Body
 
-Placeholder
+```json
+{
+    "eventSlug": "string",
+    "entrant1SmashIds": [number],
+    "entrant2SmashIds": [number]
+}
+```
 
 ## Response
 
 ### Sample Response
 
 ```json
-Placeholder
+{
+    "matchupMatches": [
+        {
+            "matchId": 58574173,
+            "scores": [
+                3,
+                0
+            ],
+            "legends": [
+                [
+                    "LUCIEN",
+                    "LUCIEN",
+                    "LUCIEN"
+                ],
+                [
+                    "CASPIAN",
+                    "ASURI",
+                    "ASURI"
+                ]
+            ],
+            "maps": [
+                "Small Fortress of Lions",
+                "Small Fortress of Lions",
+                "Small Fortress of Lions"
+            ]
+        },
+        {
+            "matchId": 58574172,
+            "scores": [
+                3,
+                0
+            ],
+            "legends": [
+                [
+                    "LUCIEN",
+                    "LUCIEN",
+                    "LUCIEN"
+                ],
+                [
+                    "VAL",
+                    "VAL",
+                    "CASPIAN"
+                ]
+            ],
+            "maps": [
+                "Small Fortress of Lions",
+                "Small Fortress of Lions",
+                "Miami Dome"
+            ]
+        }
+    ]
+}
 ```
 
 ### Response Elements
 
-Placeholder
+The following data is returned in JSON.
+
+- MatchupMatches
+
+- MatchId
+
+- Scores
+
+- Legends
+
+- Maps
