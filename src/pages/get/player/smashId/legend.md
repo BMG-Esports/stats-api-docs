@@ -16,7 +16,7 @@ Fetches a player's recently played legends from Start.gg.
 
 ### Path Parameters
 
-- **PlayerID** - *number*
+- **PlayerID** - *Integer*
 	- The Start.gg ID of the player.
 
 ### Request Body
@@ -38,6 +38,5 @@ This method does not have a body.
 
 ### Response Elements
 
-- **Legend** - *Object*
-    - Placeholder
-    - <a href="../../../datatypes/legend">Legend Object</a>
+- **<a href="../../../datatypes/legend">Legend</a>** - *Object*
+    - An object containing the player's most recent legend.

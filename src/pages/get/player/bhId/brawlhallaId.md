@@ -16,7 +16,7 @@ Fetches basic information about a player from their BrawlhallaID.
 
 ### Path Parameters
 
-- **BrawlhallaID** - *number*
+- **BrawlhallaID** - *Integer*
 	- The Brawlhalla ID of the player.
 
 ### Request Body
@@ -41,6 +41,5 @@ This method does not have a body.
 
 The following data is returned in JSON.	
 
-- **Player** - *Object*
+- **<a href="../../../datatypes/player">Player</a>** - *Object*
 	- The basic info recorded about a player.
-	- <a href="../../../datatypes/player">Player Object</a>

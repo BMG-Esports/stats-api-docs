@@ -6,7 +6,7 @@ layout: ../../../layouts/Layout.astro
 
 # GetPlayer
 
-Fetches information about a player from their ID.
+Fetches information about a player from a given ID.
 
 ## Request
 
@@ -16,12 +16,8 @@ Fetches information about a player from their ID.
 
 ### Path Parameters
 
-- **PlayerID** - *number*
+- **PlayerID** - *Integer*
 	- The Start.gg ID of the player.
-
-### Request Body
-
-This method does not have a body.
 
 ## Response
 
@@ -44,6 +40,5 @@ This method does not have a body.
 
 The following data is returned in JSON.	
 
-- **Player** - *Object*
+- **<a href="../../datatypes/player">Player</a>** - *Object*
 	- The basic info recorded about a player.
-	- <a href="../../datatypes/player">Player Object</a>

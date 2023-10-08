@@ -10,8 +10,8 @@ An object containing a player's most recently reported legend.
 
 ## Contents
 
-- **name** - *string*
+- **Name** - *String*
     - The name of the legend.
 
-- **count** - *number*
+- **Count** - *Integer*
     - The number of times the player has reported this legend.

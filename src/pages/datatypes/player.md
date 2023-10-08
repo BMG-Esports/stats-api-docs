@@ -10,23 +10,23 @@ An object containing information about a player.
 
 ## Contents
 
-- **smashId** - *number*
+- **SmashId** - *Integer*
 	- The Start.gg ID of the player.
 
-- **brawlhallaId** - *number* - (optional)
+- **BrawlhallaId** - *Integer* - (optional)
 	- The Brawlhalla ID of the player.
 
-- **name** - *string*
+- **Name** - *String*
 	- The name of the player as listed on Start.gg.
 
-- **twitter** - *string* - (optional)
+- **Twitter** - *String* - (optional)
 	- The username of the player's X account as listed on Start.gg.
 
-- **twitch** - *string* - (optional)
+- **Twitch** - *String* - (optional)
 	- The username of the player's Twitch account as listed on Start.gg.
 
-- **pronoun** - *string* - (optional)
+- **Pronoun** - *String* - (optional)
 	- The player's pronouns as listed on Start.gg.
 
-- **country** - *string* - (optional)
+- **Country** - *String* - (optional)
 	- The player's country as listed on Start.gg.

@@ -109,28 +109,5 @@ This method does not have path parameters.
 
 The following data is returned in JSON.
 
-- prPlayers
-
-- playerId
-
-- playerName
-
-- twitter
-
-- twitch
-
-- top8
-
-- top32
-
-- gold
-
-- silver
-
-- bronze
-
-- powerRanking
-
-- points
-
-- earnings
+- **<a href="../../datatypes/prplayer">PrPlayers</a>** - *Object*
+    - An object containing a player's Power Ranking information.

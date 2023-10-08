@@ -131,22 +131,10 @@ This method does not have path parameters.
 
 ### Response Elements
 
-The following data is returned in JSON.
+The following data is returned in JSON.	
 
-- Tournaments
+- **<a href="../../datatypes/tournament">Tournaments</a>** - *Object*
+	- Information about the tournaments.
 
-- Slug
-
-- Tournament Name
-
-- EventName
-
-- Year
-
-- IsOfficial
-
-- IsTwos
-
-- StartTime
-
-- NextToken
+- **NextToken** - *String*
+    - Allows you to move to the next results. 

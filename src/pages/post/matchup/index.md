@@ -56,12 +56,8 @@ This method does not have path parameters.
 
 The following data is returned in JSON.
 
-- Matchups
+- **<a href="../../datatypes/matchup">Matchups</a>** - *Object*
+    - An array of matchup objects involving the specified players.
 
-- Matches
-
-- Games
-
-- Opponent
-
-- NextToken
+- **NextToken** - *String*
+    - Allows you to move to the next results. 

@@ -91,12 +91,5 @@ This method does not have path parameters.
 
 The following data is returned in JSON.
 
-- MatchupMatches
-
-- MatchId
-
-- Scores
-
-- Legends
-
-- Maps
+- **<a href="../../datatypes/matchupmatch.md">MatchupMatches</a>** - *Object*
+    - An object containing information about a specific match from a matchup.

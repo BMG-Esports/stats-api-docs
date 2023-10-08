@@ -195,8 +195,8 @@ This method does not have path parameters.
 
 The following data is returned in JSON.
 
-- MatchupPlacements
+- **<a href="../../datatypes/matchupplacement">MatchupPlacements</a>** - *Object*
+    - An object containing placement comparisons in a matchup.
 
-- Placements
-
-- Tournament
+- **NextToken** - *String*
+    - Allows you to move to the next results. 
