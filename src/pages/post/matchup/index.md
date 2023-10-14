@@ -17,13 +17,22 @@ Returns the head to head stats of specified players.
 ### Query Parameters
 
 - **isOfficial** - *Boolean*
-    - Required. False includes community tournaments, true excludes them.
-- **Entrant1SmashIds** - *Integer(s)*
+    - False includes community tournaments, true excludes them.
+
+- **Entrant1SmashIds** - *Integer[]*
     - At least one is required.
-- **Entrant2SmashIds** - *Integer(s)*
+
+- **Entrant2SmashIds** - *Integer[]*
     - Optional. If included, include the same amount as Entrant1SmashIds.
+
 - **gameMode** - *Integer*
     - Required. For 1v1 use 1, and for 2v2 use 2.
+
+- **MaxResults** - *Integer*
+    - Limits the results to the specified number.
+
+- **NextToken** - *String*
+    - A string specifiying the next page of results.
 
 ## Response
 
@@ -211,7 +220,7 @@ Returns the head to head stats of specified players.
 
 The following data is returned in JSON.
 
-- **Matchups** - *Object*
+- **Matchups** - *Object[]*
     - An array of matchup objects involving the specified players. This is a <a href="../../datatypes/matchup">matchups</a> datatype.
 
 - **NextToken** - *String*

@@ -6,7 +6,7 @@ layout: ../../layouts/Layout.astro
 
 # MatchupPlacement
 
-Returns the placements of specified players in recent tournaments.
+An object containing the placements of specified players in recent tournaments.
 
 ## Content
 

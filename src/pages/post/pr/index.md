@@ -16,12 +16,22 @@ Returns the Power Rankings for the specified region and game mode.
 
 ### Query Parameters
 
-- **gameMode** - *Integer*
+- **GameMode** - *Integer*
     - Required. For 1v1 use 1, and for 2v2 use 2.
-- **region** - *String*
+
+- **Region** - *String*
     - Required. Acceptable regions are NA, EU, SA, SEA, AUS.
+
+- **Page** - *Integer*
+    - Lists the specified page.
+
 - **MaxResults** - *Number*
-    - Optional. Limits results to the specified number.
+    - Limits results to the specified number.
+
+- **OrderBy** - *String*
+    - Sorts the result by a specified parameter.
+    - ex. gold ASC or gold DESC
+    - The sortable fields are PlayerID, PlayerName, Top8, Top32, Gold, Silver, Bronze, PowerRanking, Earnings, Points
 
 ## Response
 
@@ -104,5 +114,5 @@ Returns the Power Rankings for the specified region and game mode.
 
 The following data is returned in JSON.
 
-- **<a href="../../datatypes/prplayer">PrPlayers</a>** - *Object*
-    - An object containing a player's Power Ranking information.
+- **PrPlayers** - *Object[]*
+    - An object containing a player's Power Ranking information. This is a <a href="../../datatypes/prplayer">PrPlayer</a> datatype.

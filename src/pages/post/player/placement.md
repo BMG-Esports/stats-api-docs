@@ -16,12 +16,20 @@ Fetches a player's recent placements from their ID.
 
 ### Query Parameters
 
-- **EntrantSmashIds** - *Integers*
+- **EntrantSmashIds** - *Integer[]*
     - At least one is required.
+
 - **gameMode** - *Integer*
     - Required. For 1v1 use 1, and for 2v2 use 2.
+
 - **isOfficial** - *Boolean*
-    - Required. False includes community tournaments, true excludes them.
+    - False includes community tournaments, true excludes them.
+
+- **MaxResults** - *Integer*
+    - Limits the results to the specified number.
+
+- **NextToken** - *String*
+    - A string specifiying the next page of results.
 
 ## Response
 
@@ -159,5 +167,8 @@ Fetches a player's recent placements from their ID.
 
 This response body can contain the following fields in JSON.
 
-- **PlayerPlacement** - *Object*
+- **PlayerPlacements** - *Object[]*
     - The placements of the player in recent tournaments. This is a <a href="../../datatypes/playerplacement">PlayerPlacement</a> object.
+
+- **NextToken** - *String*
+    - Allows you to move to the next results.

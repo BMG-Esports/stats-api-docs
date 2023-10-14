@@ -18,8 +18,18 @@ Lists the most recent tournaments to populate the API.
 
 - **gameMode** - *Integer*
     - Required. For 1v1 use 1, and for 2v2 use 2.
+
 - **isOfficial** - *Boolean*
-    - Required. False includes community tournaments, true excludes them.
+    - False includes community tournaments, true excludes them.
+
+- **Year** - *Integer*
+    - The year to analyze.
+
+- **MaxResults** - *Integer*
+    - Limits the results to the specified number.
+
+- **NextToken** - *String*
+    - A string specifiying the next page of results.
 
 ## Response
 
@@ -127,7 +137,7 @@ Lists the most recent tournaments to populate the API.
 
 The following data is returned in JSON.	
 
-- **Tournaments** - *Object*
+- **Tournaments** - *Object[]*
 	- Detailed information about the tournaments. This is a <a href="../../datatypes/tournament">tournament</a> datatype.
 
 - **NextToken** - *String*

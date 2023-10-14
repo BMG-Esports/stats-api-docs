@@ -16,12 +16,20 @@ Returns a player's most used legends by year.
 
 ### Query Parameters
 
-- **EntrantSmashIds** - *Integer*
+- **EntrantSmashIds** - *Integer[]*
     - At least one is required.
+
 - **isOfficial** - *Boolean*
-    - Required. False includes community tournaments, true excludes them.
+    - False includes community tournaments, true excludes them.
+
 - **Year** - *Integer*
-    - Required.
+    - The year to analyze.
+
+- **MaxResults** - *Integer*
+    - Limits the results to the specified number.
+
+- **NextToken** - *String*
+    - A string specifiying the next page of results.
 
 ## Response
 
@@ -57,7 +65,7 @@ Returns a player's most used legends by year.
 
 ### Response Elements
 
-- **Legends** - *Object*
+- **Legends** - *Object[]*
     - An array of played legends for the player. This is a <a href="../../datatypes/legend">legend</a> datatype.
 
 - **nextToken** - *String*

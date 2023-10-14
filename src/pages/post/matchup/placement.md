@@ -18,12 +18,21 @@ Compares the placements of specified players in tournaments.
 
 - **isOfficial** - *Boolean*
     - Required. False includes community tournaments, true excludes them.
-- **Entrant1SmashIds** - *Integers*
+
+- **Entrant1SmashIds** - *Integer[]*
     - At least one is required.
-- **Entrant2SmashIds** - *Integers*
+
+- **Entrant2SmashIds** - *Integer[]*
     - At least one is required.
+
 - **gameMode** - *Integer*
     - Required. For 1v1 use 1, and for 2v2 use 2.
+
+- **MaxResults** - *Integer*
+    - Limits the results to the specified number.
+
+- **NextToken** - *String*
+    - A string specifiying the next page of results.
 
 ## Response
 
@@ -191,7 +200,7 @@ Compares the placements of specified players in tournaments.
 
 The following data is returned in JSON.
 
-- **MatchupPlacements** - *Object*
+- **MatchupPlacements** - *Object[]*
     - An object containing placement comparisons in a matchup. This is a <a href="../../datatypes/matchupplacement">MatchupPlacement</a> datatype.
 
 - **NextToken** - *String*

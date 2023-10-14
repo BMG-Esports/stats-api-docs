@@ -18,8 +18,15 @@ Fetches a player's previous teammates from their ID.
 
 - **SmashId** - *Integer*
     - Required. The Start.gg ID of the player.
+
 - **isOfficial** - *Boolean*
-    - Required. False includes community tournaments, true excludes them.
+    - False includes community tournaments, true excludes them.
+
+- **MaxResults** - *Integer*
+    - Limits the results to the specified number.
+
+- **NextToken** - *String*
+    - A string specifiying the next page of results.
 
 ## Response
 
@@ -109,17 +116,8 @@ Fetches a player's previous teammates from their ID.
 
 This response body can contain the following fields in JSON.
 
-- **smashId** - *Integer*
-	- The Start.gg ID of the player.
+- **PlayerTeammates** - *Object[]*
+    - An array containing a player's most popular teammates. This is a <a href="../../datatypes/playerteammate">PlayerTeammate</a> datatype.
 
-- **brawlhallaId** - *Integer*
-	- The Brawlhalla ID of the player.
-
-- **name** - *String*
-	- The name of the player as listed on Start.gg.
-
-- **games** - *Integer*
-    - The total number of games played with this teammate.
-
-- **lastTeamedDate** - *Integer*
-    - The most recent day where the players teamed up in a tournament. This is a UNIX timestamp.
+- **NextToken** - *String*
+    - Allows you to move to the next page of results.

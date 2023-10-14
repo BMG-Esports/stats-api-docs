@@ -16,8 +16,9 @@ Fetches the matches a player played at a specific tournament.
 
 ### Query Parameters
 
-- **EntrantSmashIds** - *Integers*
+- **EntrantSmashIds** - *Integer[]*
     - At least one is required.
+
 - **EventSlug** - *String*
     - The identifying Start.gg slug of a tournament.
 
@@ -254,5 +255,5 @@ Fetches the matches a player played at a specific tournament.
 
 This response body can contain the following fields in JSON.
 
-- **PlayerMatches** - *Object*
+- **PlayerMatches** - *Object[]*
     - An object containing statistics on a player's recent matches. This is a <a href="../../datatypes/playermatch.md">PlayerMatch</a> datatype.

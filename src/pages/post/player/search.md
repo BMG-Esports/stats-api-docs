@@ -18,8 +18,12 @@ Searches Power Ranked players by name.
 
 - **Query** - *String*
     - Required. Your search query.
+
 - **MaxResults** - *Integer*
-    - Optional. Limits results to the specified number.
+    - Limits the results to the specified number.
+
+- **NextToken** - *String*
+    - A string specifiying the next page of results.
 
 ## Response
 
@@ -71,5 +75,8 @@ Searches Power Ranked players by name.
 
 ### Response Elements
 
-- **SearchPlayer** - *Object*
+- **SearchPlayer** - *Object[]*
     - The results of the search. This is a <a href="../../datatypes/searchplayer">SearchPlayer</a> object.
+
+- **NextToken** - *String*
+    - Allows you to move to the next results. 
