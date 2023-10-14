@@ -14,19 +14,14 @@ Fetches a player's recent placements from their ID.
 
 ```https://api.brawltools.com/player/placement```
 
-### Path Parameters
+### Query Parameters
 
-This method does not have path parameters.
-
-### Request Body
-
-```
-{
-    "entrantSmashIds": [number],
-    "gameMode": 1 or 2,
-    "isOfficial": boolean
-}
-```
+- **EntrantSmashIds** - *Integers*
+    - At least one is required.
+- **gameMode** - *Integer*
+    - Required. For 1v1 use 1, and for 2v2 use 2.
+- **isOfficial** - *Boolean*
+    - Required. False includes community tournaments, true excludes them.
 
 ## Response
 

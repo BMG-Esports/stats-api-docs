@@ -14,20 +14,16 @@ Compares the placements of specified players in tournaments.
 
 ```https://api.brawltools.com/matchup/placement```
 
-### Path Parameters
+### Query Parameters
 
-This method does not have path parameters.
-
-### Request Body
-
-```json
-{
-    "isOfficial": boolean,
-    "entrant1SmashIds": [number],
-    "entrant2SmashIds": [number],
-    "gameMode": 1 or 2
-}
-```
+- **isOfficial** - *Boolean*
+    - Required. False includes community tournaments, true excludes them.
+- **Entrant1SmashIds** - *Integers*
+    - At least one is required.
+- **Entrant2SmashIds** - *Integers*
+    - At least one is required.
+- **gameMode** - *Integer*
+    - Required. For 1v1 use 1, and for 2v2 use 2.
 
 ## Response
 

@@ -14,18 +14,12 @@ Fetches the matches a player played at a specific tournament.
 
 ```https://api.brawltools.com/player/match```
 
-### Path Parameters
+### Query Parameters
 
-This method does not have path parameters.
-
-### Request Body
-
-```
-{
-    "entrantSmashIds":[number],
-    "eventSlug": "string"
-}
-```
+- **EntrantSmashIds** - *Integers*
+    - At least one is required.
+- **EventSlug** - *String*
+    - 
 
 ## Response
 

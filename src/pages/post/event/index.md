@@ -14,18 +14,12 @@ Lists the most recent tournaments to populate the API.
 
 ```https://api.brawltools.com/event```
 
-### Path Parameters
+### Query Parameters
 
-This method does not have path parameters.
-
-### Request Body
-
-```json
-{
-    "gameMode": 1 or 2,
-    "isOfficial": boolean
-}
-```
+- **gameMode** - *Integer*
+    - Required. For 1v1 use 1, and for 2v2 use 2.
+- **isOfficial** - *Boolean*
+    - Required. False includes community tournaments, true excludes them.
 
 ## Response
 

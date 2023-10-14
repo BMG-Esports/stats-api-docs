@@ -14,18 +14,12 @@ Fetches a player's previous teammates from their ID.
 
 ```https://api.brawltools.com/player/teammate```
 
-### Path Parameters
+### Query Parameters
 
-This method does not have path parameters.
-
-### Request Body
-
-```
-{
-    "smashId": number,
-    "isOfficial": boolean
-}
-```
+- **SmashId** - *Integer*
+    - Required. The Start.gg ID of the player.
+- **isOfficial** - *Boolean*
+    - Required. False includes community tournaments, true excludes them.
 
 ## Response
 

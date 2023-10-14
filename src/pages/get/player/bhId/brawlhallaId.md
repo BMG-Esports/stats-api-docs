@@ -19,10 +19,6 @@ Fetches basic information about a player from their BrawlhallaID.
 - **BrawlhallaID** - *Integer*
 	- The Brawlhalla ID of the player.
 
-### Request Body
-
-This method does not have a body.
-
 ## Response
 
 ### Sample Response

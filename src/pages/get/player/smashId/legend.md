@@ -19,10 +19,6 @@ Fetches a player's recently played legends from Start.gg.
 - **PlayerID** - *Integer*
 	- The Start.gg ID of the player.
 
-### Request Body
-
-This method does not have a body.
-
 ## Response
 
 ### Sample Response

@@ -14,19 +14,14 @@ Returns any matches specified players played in a specific tournament.
 
 ```https://api.brawltools.com/matchup/match```
 
-### Path Parameters
+### Query Parameters
 
-This method does not have path parameters.
-
-### Request Body
-
-```json
-{
-    "eventSlug": "string",
-    "entrant1SmashIds": [number],
-    "entrant2SmashIds": [number]
-}
-```
+- **EventSlug** - *String*
+    - 
+- **Entrant1SmashIds** - *Integers*
+    - At least one is required.
+- **Entrant2SmashIds** - *Integers*
+    - At least one is required.
 
 ## Response
 

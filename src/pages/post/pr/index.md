@@ -14,19 +14,14 @@ Returns the Power Rankings for the specified region and game mode.
 
 ```https://api.brawltools.com/pr```
 
-### Path Parameters
+### Query Parameters
 
-This method does not have path parameters.
-
-### Request Body
-
-```json
-{
-    "gameMode": number,
-    "region": "string",
-    "maxResults": number - optional
-}
-```
+- **gameMode** - *Integer*
+    - Required. For 1v1 use 1, and for 2v2 use 2.
+- **region** - *String*
+    - Required. Acceptable regions are NA, EU, SA, SEA, AUS.
+- **MaxResults** - *Number*
+    - Optional. Limits results to the specified number.
 
 ## Response
 

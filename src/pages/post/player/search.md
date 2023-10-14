@@ -14,18 +14,12 @@ Placeholder
 
 ```https://api.brawltools.com/player/search```
 
-### Path Parameters
+### Query Parameters
 
-Placeholder
-
-### Request Body
-
-```json
-{
-    "query": "max",
-    "maxResults": 2
-}
-```
+- **Query** - *String*
+    - Required. Your search query.
+- **MaxResults** - *Integer*
+    - Optional. Limits results to the specified number.
 
 ## Response
 

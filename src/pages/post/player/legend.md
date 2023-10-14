@@ -14,9 +14,15 @@ Placeholder
 
 ```https://api.brawltools.com/player/legend```
 
-### Path Parameters
+### Query Parameters
 
-Placeholder
+- **EntrantSmashIds** - *Integer*
+    - At least one is required.
+- **isOfficial** - *Boolean*
+    - Required. False includes community tournaments, true excludes them.
+- **Year** - *Integer*
+    - Required.
+
 
 ### Request Body
 

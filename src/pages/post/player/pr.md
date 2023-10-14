@@ -14,18 +14,13 @@ Fetches a player's Power Ranking information from their ID.
 
 ```https://api.brawltools.com/player/pr```
 
-### Path Parameters
+### Query Parameters
 
-This method does not use path parameters.
+- **EntrantSmashIds** - *Integers*
+    - At least one is required.
+- **gameMode** - *Integer*
+    - Required. For 1v1 use 1, and for 2v2 use 2.
 
-### Request Body
-
-```
-{
-    "entrantSmashIds": [number],
-    "gameMode": 1 or 2
-}
-```
 
 ## Response
 
