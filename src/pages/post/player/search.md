@@ -6,7 +6,7 @@ layout: ../../../layouts/Layout.astro
 
 # SearchPlayers
 
-Placeholder
+Searches Power Ranked players by name.
 
 ## Request
 
@@ -71,4 +71,5 @@ Placeholder
 
 ### Response Elements
 
-Placeholder
+- **SearchPlayer** - *Object*
+    - The results of the search. This is a <a href="../../datatypes/searchplayer">SearchPlayer</a> object.

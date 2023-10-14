@@ -37,5 +37,5 @@ Fetches basic information about a player from their BrawlhallaID.
 
 The following data is returned in JSON.	
 
-- **<a href="../../../datatypes/player">Player</a>** - *Object*
-	- The basic info recorded about a player.
+- **Player** - *Object*
+	- The basic info recorded about on a player. This is a <a href="../../../datatypes/player">player</a> datatype.

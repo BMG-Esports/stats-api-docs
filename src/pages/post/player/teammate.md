@@ -109,17 +109,17 @@ Fetches a player's previous teammates from their ID.
 
 This response body can contain the following fields in JSON.
 
-- **smashId** - *number*
+- **smashId** - *Integer*
 	- The Start.gg ID of the player.
 
-- **brawlhallaId** - *number*
+- **brawlhallaId** - *Integer*
 	- The Brawlhalla ID of the player.
 
-- **name** - *string*
+- **name** - *String*
 	- The name of the player as listed on Start.gg.
 
-- **games** - *number*
+- **games** - *Integer*
     - The total number of games played with this teammate.
 
-- **lastTeamedDate** - *number*
+- **lastTeamedDate** - *Integer*
     - The most recent day where the players teamed up in a tournament. This is a UNIX timestamp.

@@ -127,8 +127,8 @@ Lists the most recent tournaments to populate the API.
 
 The following data is returned in JSON.	
 
-- **<a href="../../datatypes/tournament">Tournaments</a>** - *Object*
-	- Information about the tournaments.
+- **Tournaments** - *Object*
+	- Detailed information about the tournaments. This is a <a href="../../datatypes/tournament">tournament</a> datatype.
 
 - **NextToken** - *String*
     - Allows you to move to the next results. 

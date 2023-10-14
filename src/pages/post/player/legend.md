@@ -6,7 +6,7 @@ layout: ../../../layouts/Layout.astro
 
 # DescribePlayerLegends
 
-Placeholder
+Returns a player's most used legends by year.
 
 ## Request
 
@@ -22,18 +22,6 @@ Placeholder
     - Required. False includes community tournaments, true excludes them.
 - **Year** - *Integer*
     - Required.
-
-
-### Request Body
-
-```json
-{
-    "entrantSmashIds":[153043],
-    "isOfficial": true,
-    "year": 2022
-
-}
-```
 
 ## Response
 
@@ -69,8 +57,8 @@ Placeholder
 
 ### Response Elements
 
- - Legend - array
-    - 
+- **Legends** - *Object*
+    - An array of played legends for the player. This is a <a href="../../datatypes/legend">legend</a> datatype.
 
-- nextToken - string
-    - 
+- **nextToken** - *String*
+    - Allows you to move to the next results. 

@@ -45,6 +45,3 @@ An object containing Power Ranking information for a player.
 
 - **Earnings** - *Float32*
     - The amount of USD the player has earned.
-
-- **Duplicates** - ?
-    - {Placeholder}

@@ -191,8 +191,8 @@ Compares the placements of specified players in tournaments.
 
 The following data is returned in JSON.
 
-- **<a href="../../datatypes/matchupplacement">MatchupPlacements</a>** - *Object*
-    - An object containing placement comparisons in a matchup.
+- **MatchupPlacements** - *Object*
+    - An object containing placement comparisons in a matchup. This is a <a href="../../datatypes/matchupplacement">MatchupPlacement</a> datatype.
 
 - **NextToken** - *String*
     - Allows you to move to the next results. 

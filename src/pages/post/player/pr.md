@@ -21,7 +21,6 @@ Fetches a player's Power Ranking information from their ID.
 - **gameMode** - *Integer*
     - Required. For 1v1 use 1, and for 2v2 use 2.
 
-
 ## Response
 
 ### Sample Response
@@ -45,26 +44,8 @@ Fetches a player's Power Ranking information from their ID.
 
 This response body can contain the following fields in JSON.
 
-- **earnings** - *number*
+- **Earnings** - *Integer*
     - The amount of money the player has earned in USD.
 
-- **top8** - *number*
-    - The number of Top 8 placements the player has recieved.
-
-- **top32** - *number*
-    - The number of Top 32 placements the player has recieved.
-
-- **gold** - *number*
-    - The number of gold medals the player has recieved.
-
-- **silver** - *number*
-    - The number of silver medals the player has recieved.
-
-- **bronze** - *number*
-    - The number of bronze medals the player has recieved.
-
-- **powerRanking** - *number*
-    - The player's current power ranking.
-
-- **region** - *string*
-    - The region the player plays in.
+- **Pr** - Object
+    - An object containing Power Ranking information. This is a <a href="../../datatypes/playerpr">PlayerPr</a> datatype.

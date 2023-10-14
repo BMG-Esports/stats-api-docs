@@ -19,7 +19,7 @@ Fetches the matches a player played at a specific tournament.
 - **EntrantSmashIds** - *Integers*
     - At least one is required.
 - **EventSlug** - *String*
-    - 
+    - The identifying Start.gg slug of a tournament.
 
 ## Response
 
@@ -254,19 +254,5 @@ Fetches the matches a player played at a specific tournament.
 
 This response body can contain the following fields in JSON.
 
-- matchId - number
-
-- scores - array
-
-- legends - array
-
-- maps - array
-
-- **smashId** - *number*
-	- The Start.gg ID of the player.
-
-- **brawlhallaId** - *number*
-	- The Brawlhalla ID of the player.
-
-- **name** - *string*
-	- The name of the player as listed on Start.gg.
+- **PlayerMatches** - *Object*
+    - An object containing statistics on a player's recent matches. This is a <a href="../../datatypes/playermatch.md">PlayerMatch</a> datatype.

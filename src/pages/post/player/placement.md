@@ -159,26 +159,5 @@ Fetches a player's recent placements from their ID.
 
 This response body can contain the following fields in JSON.
 
-- placement - number
-    - The placement the player earned in the tournament.
-
-- slug - string
-    - The Start.gg slug for the tournament.
-
-- tournamentName - string
-    - The full name of the tournament.
-
-- eventName - string
-    - ?
-
-- year - number
-    - The year the tournament was held.
-
-- isOfficial - boolean
-    - ?
-
-- isTwos - boolean
-    - ?
-
-- startTime - number
-    - The time the tournament began in an UNIX timestamp.
+- **PlayerPlacement** - *Object*
+    - The placements of the player in recent tournaments. This is a <a href="../../datatypes/playerplacement">PlayerPlacement</a> object.

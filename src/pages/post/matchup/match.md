@@ -17,7 +17,7 @@ Returns any matches specified players played in a specific tournament.
 ### Query Parameters
 
 - **EventSlug** - *String*
-    - 
+    - The identifying Start.gg slug of a tournament.
 - **Entrant1SmashIds** - *Integers*
     - At least one is required.
 - **Entrant2SmashIds** - *Integers*
@@ -86,5 +86,5 @@ Returns any matches specified players played in a specific tournament.
 
 The following data is returned in JSON.
 
-- **<a href="../../datatypes/matchupmatch.md">MatchupMatches</a>** - *Object*
-    - An object containing information about a specific match from a matchup.
+- **MatchupMatches** - *Object*
+    - An object containing information about a specific match. This is a <a href="../../datatypes/matchupmatch.md">MatchupMatch</a> datatype.

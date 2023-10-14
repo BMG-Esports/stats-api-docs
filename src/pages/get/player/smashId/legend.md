@@ -6,7 +6,7 @@ layout: ../../../../layouts/Layout.astro
 
 # GetPlayerRecentLegend
 
-Fetches a player's recently played legends from Start.gg.
+Fetches a player's recently played legends.
 
 ## Request
 
@@ -34,5 +34,5 @@ Fetches a player's recently played legends from Start.gg.
 
 ### Response Elements
 
-- **<a href="../../../datatypes/legend">Legend</a>** - *Object*
-    - An object containing the player's most recent legend.
+- **Legend** - *Object*
+    - An object containing the player's most recent legend. This is a <a href="../../../datatypes/legend">legend</a> data type.

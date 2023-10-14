@@ -10,7 +10,7 @@ Returns the placements of specified players in recent tournaments.
 
 ## Content
 
-- **Placements** - *Integer*
+- **Placements** - *Integer[]*
     - The placements of the specified players in the tournament.
 
 - **<a href="../datatypes/tournament">Tournament</a>** - *Object*

@@ -13,11 +13,11 @@ An object containing information about a specific match between players.
 - **MatchId** - *Integer*
     - The Start.gg match ID of the match.
 
-- **Scores** - *Integer*
+- **Scores** - *Integer[]*
     - The final score of the match.
 
-- **Legends** - *String*
+- **Legends** - *String[][]*
     - The legends used in each game of the match.
 
-- **Maps** - *String*
+- **Maps** - *String[]*
     - The maps played in each game of the match.
