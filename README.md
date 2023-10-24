@@ -1,40 +1,18 @@
 # stats-api-docs
 
-```
-npm create astro@latest -- --template basics
-```
+Documentation for Brawlhalla esports stats API
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+You can find the documentation itself at https://docs.brawltools.com
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Project Structure
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+This project uses the [Astro](https://docs.astro.build) web framework.
 
-## 🚀 Project Structure
+Astro looks for `.astro` or `.md` files, though we primarily use `.md` files, in the `src/pages/` directory. Each page is exposed as a route based on its path and file name and should correspond with the route of the API endpoint, unless it's a resource or datatype.
 
-Inside of your Astro project, you'll see the following folders and files:
+The `src/components/` directory includes any Astro components that are reused in the project.
 
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
+The `src/layouts/` directory is how the framework for pages is defined. This project only has one layout.
 
 ## 🧞 Commands
 
@@ -49,6 +27,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
