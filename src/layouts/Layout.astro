@@ -40,13 +40,15 @@ import Footer from "../components/Footer.astro";
             window.matchMedia("(prefers-color-scheme: dark)").matches)
         ) {
           document.documentElement.classList.add("dark");
+          document.documentElement.classList.remove("light");
         } else {
           document.documentElement.classList.remove("dark");
+          document.documentElement.classList.add("light");
         }
       }
     
       colorMode();
-      document.addEventListener('astro:beforeload', colorMode);
+      document.addEventListener('astro:after-swap', colorMode);
     </script>
   </body>
 </html>
