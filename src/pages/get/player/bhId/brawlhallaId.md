@@ -17,7 +17,7 @@ Fetches basic information about a player from their BrawlhallaID.
 ### Path Parameters
 
 - **BrawlhallaID** - *Integer*
-	- The Brawlhalla ID of the player.
+	- The BrawlhallaId of the player.
 
 ## Response
 

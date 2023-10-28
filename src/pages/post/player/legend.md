@@ -17,19 +17,19 @@ Returns a player's most used legends by year.
 ### Query Parameters
 
 - **EntrantSmashIds** - *Integer[]*
-    - At least one is required.
+    - Required. The SmashId ID of the player(s).
 
 - **isOfficial** - *Boolean*
-    - False includes community tournaments, true excludes them.
+    - Optional. False includes community tournaments, true excludes them. If omitted, defaults to false.
 
 - **Year** - *Integer*
-    - The year to analyze.
+    - Optional. The year to analyze. If omitted, includes all years.
 
 - **MaxResults** - *Integer*
-    - Limits the results to the specified number.
+    - Optional. Limits the results to the specified number.
 
 - **NextToken** - *String*
-    - A string specifiying the next page of results.
+    - Optional. A string specifiying the next page of results.
 
 ## Response
 

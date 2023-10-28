@@ -20,16 +20,16 @@ Lists the most recent tournaments to populate the API.
     - Required. For 1v1 use 1, and for 2v2 use 2.
 
 - **isOfficial** - *Boolean*
-    - False includes community tournaments, true excludes them.
+    - Optional. False includes community tournaments, true excludes them. If omitted, defaults to false.
 
 - **Year** - *Integer*
-    - The year to analyze.
+    - Optional. The year to analyze. If omitted, includes all years.
 
 - **MaxResults** - *Integer*
-    - Limits the results to the specified number.
+    - Optional. Limits the results to the specified number.
 
 - **NextToken** - *String*
-    - A string specifiying the next page of results.
+    - Optional. A string specifiying the next page of results.
 
 ## Response
 

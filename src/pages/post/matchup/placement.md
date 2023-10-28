@@ -17,22 +17,22 @@ Compares the placements of specified players in tournaments.
 ### Query Parameters
 
 - **isOfficial** - *Boolean*
-    - Required. False includes community tournaments, true excludes them.
+    - Optional. False includes community tournaments, true excludes them. If omitted, defaults to false.
 
 - **Entrant1SmashIds** - *Integer[]*
-    - At least one is required.
+    - Required. The SmashId ID of the player(s).
 
 - **Entrant2SmashIds** - *Integer[]*
-    - At least one is required.
+    - Required. The SmashId ID of the player(s).
 
 - **gameMode** - *Integer*
     - Required. For 1v1 use 1, and for 2v2 use 2.
 
 - **MaxResults** - *Integer*
-    - Limits the results to the specified number.
+    - Optional. Limits the results to the specified number.
 
 - **NextToken** - *String*
-    - A string specifiying the next page of results.
+    - Optional. A string specifiying the next page of results.
 
 ## Response
 

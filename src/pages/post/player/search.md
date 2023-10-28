@@ -20,10 +20,10 @@ Searches Power Ranked players by name.
     - Required. Your search query.
 
 - **MaxResults** - *Integer*
-    - Limits the results to the specified number.
+    - Optional. Limits the results to the specified number.
 
 - **NextToken** - *String*
-    - A string specifiying the next page of results.
+    - Optional. A string specifiying the next page of results.
 
 ## Response
 

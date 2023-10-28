@@ -17,16 +17,16 @@ Fetches a player's previous teammates from their ID.
 ### Query Parameters
 
 - **SmashId** - *Integer*
-    - Required. The Start.gg ID of the player.
+    - Required. The SmashId ID of the player.
 
 - **isOfficial** - *Boolean*
-    - False includes community tournaments, true excludes them.
+    - Optional. False includes community tournaments, true excludes them.
 
 - **MaxResults** - *Integer*
-    - Limits the results to the specified number.
+    - Optional. Limits the results to the specified number.
 
 - **NextToken** - *String*
-    - A string specifiying the next page of results.
+    - Optional. A string specifiying the next page of results.
 
 ## Response
 

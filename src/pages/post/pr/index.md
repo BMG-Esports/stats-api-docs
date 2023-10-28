@@ -23,15 +23,15 @@ Returns the Power Rankings for the specified region and game mode.
     - Required. Acceptable regions are NA, EU, SA, SEA, AUS.
 
 - **Page** - *Integer*
-    - Lists the specified page.
+    - Optional. Lists the specified page.
 
 - **MaxResults** - *Number*
-    - Limits results to the specified number.
+    - Optional. Limits results to the specified number.
 
 - **OrderBy** - *String*
-    - Sorts the result by a specified parameter.
-    - ex. gold ASC or gold DESC
-    - The sortable fields are PlayerID, PlayerName, Top8, Top32, Gold, Silver, Bronze, PowerRanking, Earnings, Points
+    - Optional. Sorts the result by a specified parameter.
+        - ex. gold ASC or gold DESC
+        - The sortable fields are PlayerID, PlayerName, Top8, Top32, Gold, Silver, Bronze, PowerRanking, Earnings, and Points.
 
 ## Response
 

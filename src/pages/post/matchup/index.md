@@ -17,22 +17,22 @@ Returns the head to head stats of specified players.
 ### Query Parameters
 
 - **isOfficial** - *Boolean*
-    - False includes community tournaments, true excludes them.
+    - Optional. False includes community tournaments, true excludes them. If omitted, defaults to false.
 
 - **Entrant1SmashIds** - *Integer[]*
-    - At least one is required.
+    - Required. The SmashId ID of the player(s).
 
 - **Entrant2SmashIds** - *Integer[]*
-    - Optional. If included, include the same amount as Entrant1SmashIds.
+    - Optional. If included, include the same number of IDs as Entrant1SmashIds.
 
 - **gameMode** - *Integer*
     - Required. For 1v1 use 1, and for 2v2 use 2.
 
 - **MaxResults** - *Integer*
-    - Limits the results to the specified number.
+    - Optional. Limits the results to the specified number.
 
 - **NextToken** - *String*
-    - A string specifiying the next page of results.
+    - Optional. A string specifiying the next page of results.
 
 ## Response
 

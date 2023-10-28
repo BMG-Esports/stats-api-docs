@@ -17,19 +17,19 @@ Fetches a player's recent placements from their ID.
 ### Query Parameters
 
 - **EntrantSmashIds** - *Integer[]*
-    - At least one is required.
+    - Required. The SmashId ID of the player(s).
 
 - **gameMode** - *Integer*
     - Required. For 1v1 use 1, and for 2v2 use 2.
 
 - **isOfficial** - *Boolean*
-    - False includes community tournaments, true excludes them.
+    - Optional. False includes community tournaments, true excludes them. If omitted, defaults to false.
 
 - **MaxResults** - *Integer*
-    - Limits the results to the specified number.
+    - Optional. Limits the results to the specified number.
 
 - **NextToken** - *String*
-    - A string specifiying the next page of results.
+    - Optional. A string specifiying the next page of results.
 
 ## Response
 

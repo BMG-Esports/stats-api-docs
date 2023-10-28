@@ -17,7 +17,7 @@ Fetches information about a player from a given ID.
 ### Path Parameters
 
 - **PlayerID** - *Integer*
-	- The Start.gg ID of the player.
+	- The SmashId ID of the player.
 
 ## Response
 

@@ -1,8 +1,8 @@
 # stats-api-docs
 
-Documentation for Brawlhalla esports stats API
+This repository contains documentation for the Brawlhalla esports stats API.
 
-You can find the documentation itself at https://docs.brawltools.com
+This documentation is hosted at https://docs.brawltools.com.
 
 ## Project Structure
 
