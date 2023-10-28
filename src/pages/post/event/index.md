@@ -16,10 +16,10 @@ Lists the most recent tournaments to populate the API.
 
 ### Query Parameters
 
-- **gameMode** - *Integer*
+- **GameMode** - *Integer*
     - Required. For 1v1 use 1, and for 2v2 use 2.
 
-- **isOfficial** - *Boolean*
+- **IsOfficial** - *Boolean*
     - Optional. False includes community tournaments, true excludes them. If omitted, defaults to false.
 
 - **Year** - *Integer*

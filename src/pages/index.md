@@ -6,4 +6,4 @@ layout: ../layouts/Layout.astro
 
 # Brawlhalla Stats API
 
-The Brawlhalla Esports Stats API provides a rich API for getting stats based on historical player performance in Brawlhalla esports tournaments.
+The Brawlhalla Stats API provides a rich API for getting stats based on historical player performance in Brawlhalla esports tournaments.

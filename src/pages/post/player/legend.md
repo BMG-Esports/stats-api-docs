@@ -19,7 +19,7 @@ Returns a player's most used legends by year.
 - **EntrantSmashIds** - *Integer[]*
     - Required. The SmashId ID of the player(s).
 
-- **isOfficial** - *Boolean*
+- **IsOfficial** - *Boolean*
     - Optional. False includes community tournaments, true excludes them. If omitted, defaults to false.
 
 - **Year** - *Integer*
@@ -68,5 +68,5 @@ Returns a player's most used legends by year.
 - **Legends** - *Object[]*
     - An array of played legends for the player. This is a <a href="../../datatypes/legend">legend</a> datatype.
 
-- **nextToken** - *String*
+- **NextToken** - *String*
     - Allows you to move to the next results. 

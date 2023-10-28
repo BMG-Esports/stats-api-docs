@@ -19,10 +19,10 @@ Fetches a player's recent placements from their ID.
 - **EntrantSmashIds** - *Integer[]*
     - Required. The SmashId ID of the player(s).
 
-- **gameMode** - *Integer*
+- **GameMode** - *Integer*
     - Required. For 1v1 use 1, and for 2v2 use 2.
 
-- **isOfficial** - *Boolean*
+- **IsOfficial** - *Boolean*
     - Optional. False includes community tournaments, true excludes them. If omitted, defaults to false.
 
 - **MaxResults** - *Integer*

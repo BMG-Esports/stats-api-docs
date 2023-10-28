@@ -16,7 +16,7 @@ Returns the head to head stats of specified players.
 
 ### Query Parameters
 
-- **isOfficial** - *Boolean*
+- **IsOfficial** - *Boolean*
     - Optional. False includes community tournaments, true excludes them. If omitted, defaults to false.
 
 - **Entrant1SmashIds** - *Integer[]*
@@ -25,7 +25,7 @@ Returns the head to head stats of specified players.
 - **Entrant2SmashIds** - *Integer[]*
     - Optional. If included, include the same number of IDs as Entrant1SmashIds.
 
-- **gameMode** - *Integer*
+- **GameMode** - *Integer*
     - Required. For 1v1 use 1, and for 2v2 use 2.
 
 - **MaxResults** - *Integer*

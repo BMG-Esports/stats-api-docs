@@ -19,7 +19,7 @@ Fetches a player's previous teammates from their ID.
 - **SmashId** - *Integer*
     - Required. The SmashId ID of the player.
 
-- **isOfficial** - *Boolean*
+- **IsOfficial** - *Boolean*
     - Optional. False includes community tournaments, true excludes them.
 
 - **MaxResults** - *Integer*

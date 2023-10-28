@@ -19,7 +19,7 @@ Fetches a player's Power Ranking information from their ID.
 - **EntrantSmashIds** - *Integer[]*
     - Required. The SmashId ID of the player(s).
 
-- **gameMode** - *Integer*
+- **GameMode** - *Integer*
     - Required. For 1v1 use 1, and for 2v2 use 2.
 
 ## Response
