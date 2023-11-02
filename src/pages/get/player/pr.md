@@ -4,7 +4,7 @@ description: 'Documentation for api.brawltools.com'
 layout: ../../../layouts/Layout.astro
 ---
 
-# DescribePlayerPr
+# GetPlayerPr
 
 Fetches a player's Power Ranking information from their ID.
 
@@ -12,7 +12,7 @@ Fetches a player's Power Ranking information from their ID.
 
 ### Syntax
 
-```https://api.brawltools.com/player/pr```
+```https://api.brawltools.com/v1/player/pr```
 
 ### Query Parameters
 

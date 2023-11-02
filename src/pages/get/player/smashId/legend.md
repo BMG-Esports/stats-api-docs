@@ -12,12 +12,12 @@ Fetches a player's recently played legends.
 
 ### Syntax
 
-```https://api.brawltools.com/player/:PlayerID/legend```
+```https://api.brawltools.com/v1/player/:PlayerID/legend```
 
 ### Path Parameters
 
 - **PlayerID** - *Integer*
-	- The SmashId ID of the player.
+	- Required. The SmashId ID of the player.
 
 ## Response
 

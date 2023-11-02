@@ -4,7 +4,7 @@ description: 'Documentation for api.brawltools.com'
 layout: ../../../layouts/Layout.astro
 ---
 
-# DescribePlayerMatches
+# GetPlayerMatches
 
 Fetches the matches a player played at a specific tournament.
 
@@ -12,7 +12,7 @@ Fetches the matches a player played at a specific tournament.
 
 ### Syntax
 
-```https://api.brawltools.com/player/match```
+```https://api.brawltools.com/v1/player/match```
 
 ### Query Parameters
 

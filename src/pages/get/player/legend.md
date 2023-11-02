@@ -4,7 +4,7 @@ description: 'Documentation for api.brawltools.com'
 layout: ../../../layouts/Layout.astro
 ---
 
-# DescribePlayerLegends
+# GetPlayerLegends
 
 Returns a player's most used legends by year.
 
@@ -12,7 +12,7 @@ Returns a player's most used legends by year.
 
 ### Syntax
 
-```https://api.brawltools.com/player/legend```
+```https://api.brawltools.com/v1/player/legend```
 
 ### Query Parameters
 

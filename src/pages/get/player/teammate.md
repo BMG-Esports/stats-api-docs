@@ -4,7 +4,7 @@ description: 'Documentation for api.brawltools.com'
 layout: ../../../layouts/Layout.astro
 ---
 
-# DescribePlayerTeammates
+# GetPlayerTeammates
 
 Fetches a player's previous teammates from their ID.
 
@@ -12,7 +12,7 @@ Fetches a player's previous teammates from their ID.
 
 ### Syntax
 
-```https://api.brawltools.com/player/teammate```
+```https://api.brawltools.com/v1/player/teammate```
 
 ### Query Parameters
 

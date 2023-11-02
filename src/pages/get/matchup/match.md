@@ -4,7 +4,7 @@ description: 'Documentation for api.brawltools.com'
 layout: ../../../layouts/Layout.astro
 ---
 
-# DescribeMatchupMatches
+# GetMatchupMatches
 
 Returns any matches specified players played in a specific tournament.
 
@@ -12,7 +12,7 @@ Returns any matches specified players played in a specific tournament.
 
 ### Syntax
 
-```https://api.brawltools.com/matchup/match```
+```https://api.brawltools.com/v1/matchup/match```
 
 ### Query Parameters
 

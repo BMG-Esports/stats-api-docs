@@ -4,29 +4,26 @@ description: 'Documentation for api.brawltools.com'
 layout: ../../../layouts/Layout.astro
 ---
 
-# DescribeMatchupPlacements
+# GetPlayerPlacements
 
-Compares the placements of specified players in tournaments.
+Fetches a player's recent placements from their ID.
 
 ## Request
 
 ### Syntax
 
-```https://api.brawltools.com/matchup/placement```
+```https://api.brawltools.com/v1/player/placement```
 
 ### Query Parameters
 
-- **IsOfficial** - *Boolean*
-    - Optional. False includes community tournaments, true excludes them. If omitted, defaults to false.
-
-- **Entrant1SmashIds** - *Integer[]*
-    - Required. The SmashId ID of the player(s).
-
-- **Entrant2SmashIds** - *Integer[]*
+- **EntrantSmashIds** - *Integer[]*
     - Required. The SmashId ID of the player(s).
 
 - **GameMode** - *Integer*
     - Required. For 1v1 use 1, and for 2v2 use 2.
+
+- **IsOfficial** - *Boolean*
+    - Optional. False includes community tournaments, true excludes them. If omitted, defaults to false.
 
 - **MaxResults** - *Integer*
     - Optional. Limits the results to the specified number.
@@ -40,27 +37,9 @@ Compares the placements of specified players in tournaments.
 
 ```json
 {
-    "matchupPlacements": [
+    "playerPlacements": [
         {
-            "placements": [
-                1,
-                9
-            ],
-            "tournament": {
-                "slug": "tournament/north-america-autumn-championship-2023/event/brawlhalla-championship-1v1",
-                "tournamentName": "North America - Autumn Championship 2023",
-                "eventName": "Brawlhalla Championship 1v1",
-                "year": 2023,
-                "isOfficial": true,
-                "isTwos": false,
-                "startTime": 1695572100
-            }
-        },
-        {
-            "placements": [
-                7,
-                129
-            ],
+            "placement": 129,
             "tournament": {
                 "slug": "tournament/dreamhack-valencia-2023/event/brawlhalla-1v1",
                 "tournamentName": "DreamHack Valencia 2023",
@@ -72,10 +51,7 @@ Compares the placements of specified players in tournaments.
             }
         },
         {
-            "placements": [
-                25,
-                5
-            ],
+            "placement": 5,
             "tournament": {
                 "slug": "tournament/dreamhack-dallas-2023/event/brawlhalla-1v1",
                 "tournamentName": "DreamHack Dallas 2023",
@@ -87,10 +63,7 @@ Compares the placements of specified players in tournaments.
             }
         },
         {
-            "placements": [
-                2,
-                7
-            ],
+            "placement": 7,
             "tournament": {
                 "slug": "tournament/dreamhack-san-diego-2023/event/brawlhalla-1v1",
                 "tournamentName": "DreamHack San Diego 2023",
@@ -102,10 +75,7 @@ Compares the placements of specified players in tournaments.
             }
         },
         {
-            "placements": [
-                4,
-                17
-            ],
+            "placement": 17,
             "tournament": {
                 "slug": "tournament/north-america-spring-championship-2023/event/brawlhalla-championship-1v1",
                 "tournamentName": "North America - Spring Championship 2023",
@@ -117,10 +87,7 @@ Compares the placements of specified players in tournaments.
             }
         },
         {
-            "placements": [
-                5,
-                9
-            ],
+            "placement": 9,
             "tournament": {
                 "slug": "tournament/north-america-winter-championship-2023/event/brawlhalla-championship-1v1",
                 "tournamentName": "North America - Winter Championship 2023",
@@ -132,10 +99,7 @@ Compares the placements of specified players in tournaments.
             }
         },
         {
-            "placements": [
-                9,
-                13
-            ],
+            "placement": 13,
             "tournament": {
                 "slug": "tournament/brawlhalla-world-championship-expo-2022/event/1v1",
                 "tournamentName": "Brawlhalla World Championship Expo 2022",
@@ -147,10 +111,19 @@ Compares the placements of specified players in tournaments.
             }
         },
         {
-            "placements": [
-                5,
-                7
-            ],
+            "placement": 385,
+            "tournament": {
+                "slug": "tournament/north-america-summer-championship-2022/event/brawlhalla-championship-1v1",
+                "tournamentName": "North America - Summer Championship 2022",
+                "eventName": "Brawlhalla Championship 1v1",
+                "year": 2022,
+                "isOfficial": true,
+                "isTwos": false,
+                "startTime": 1659283200
+            }
+        },
+        {
+            "placement": 7,
             "tournament": {
                 "slug": "tournament/brawlhalla-midseason-championship/event/brawlhalla-championship-1v1",
                 "tournamentName": "Brawlhalla Midseason Championship",
@@ -162,46 +135,40 @@ Compares the placements of specified players in tournaments.
             }
         },
         {
-            "placements": [
-                3,
-                9
-            ],
+            "placement": 7,
             "tournament": {
-                "slug": "tournament/north-america-winter-championship-2022/event/brawlhalla-championship-1v1",
-                "tournamentName": "North America - Winter Championship 2022",
+                "slug": "tournament/north-america-spring-championship-2022/event/brawlhalla-championship-1v1",
+                "tournamentName": "North America - Spring Championship 2022",
                 "eventName": "Brawlhalla Championship 1v1",
                 "year": 2022,
                 "isOfficial": true,
                 "isTwos": false,
-                "startTime": 1644166800
+                "startTime": 1652025600
             }
         },
         {
-            "placements": [
-                3,
-                17
-            ],
+            "placement": 2,
             "tournament": {
-                "slug": "tournament/north-america-brawlhalla-world-championship-2021/event/brawlhalla-championship-1v1",
-                "tournamentName": "North America - Brawlhalla World Championship 2021",
+                "slug": "tournament/north-america-steelseries-invitational-2022/event/brawlhalla-championship-1v1",
+                "tournamentName": "North America - SteelSeries Invitational 2022",
                 "eventName": "Brawlhalla Championship 1v1",
-                "year": 2021,
+                "year": 2022,
                 "isOfficial": true,
                 "isTwos": false,
-                "startTime": 1637434800
+                "startTime": 1650218400
             }
         }
     ],
-    "nextToken": "1637434800"
+    "nextToken": "1650218400"
 }
 ```
 
 ### Response Elements
 
-The following data is returned in JSON.
+This response body can contain the following fields in JSON.
 
-- **MatchupPlacements** - *Object[]*
-    - An object containing placement comparisons in a matchup. This is a <a href="../../datatypes/matchupplacement">MatchupPlacement</a> datatype.
+- **PlayerPlacements** - *Object[]*
+    - The placements of the player in recent tournaments. This is a <a href="../../datatypes/playerplacement">PlayerPlacement</a> object.
 
 - **NextToken** - *String*
-    - Allows you to move to the next results. 
+    - Allows you to move to the next results.

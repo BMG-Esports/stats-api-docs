@@ -4,7 +4,7 @@ description: 'Documentation for api.brawltools.com'
 layout: ../../../layouts/Layout.astro
 ---
 
-# DescribeMatchup
+# GetMatchup
 
 Returns the head to head stats of specified players.
 
@@ -12,7 +12,7 @@ Returns the head to head stats of specified players.
 
 ### Syntax
 
-```https://api.brawltools.com/matchup```
+```https://api.brawltools.com/v1/matchup```
 
 ### Query Parameters
 

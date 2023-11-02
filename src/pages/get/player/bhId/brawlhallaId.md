@@ -12,12 +12,12 @@ Fetches basic information about a player from their BrawlhallaID.
 
 ### Syntax
 
-```https://api.brawltools.com/player/bhId/:BrawlhallaID```
+```https://api.brawltools.com/v1/player/bhId/:BrawlhallaID```
 
 ### Path Parameters
 
 - **BrawlhallaID** - *Integer*
-	- The BrawlhallaId of the player.
+	- Required. The BrawlhallaId of the player.
 
 ## Response
 

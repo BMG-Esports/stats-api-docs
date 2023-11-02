@@ -12,7 +12,7 @@ Lists the most recent tournaments to populate the API.
 
 ### Syntax
 
-```https://api.brawltools.com/event```
+```https://api.brawltools.com/v1/event```
 
 ### Query Parameters
 

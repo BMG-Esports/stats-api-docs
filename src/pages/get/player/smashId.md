@@ -12,12 +12,12 @@ Fetches information about a player from a given ID.
 
 ### Syntax
 
-```https://api.brawltools.com/player/:PlayerID```
+```https://api.brawltools.com/v1/player/:PlayerID```
 
 ### Path Parameters
 
 - **PlayerID** - *Integer*
-	- The SmashId ID of the player.
+	- Required. The SmashId ID of the player.
 
 ## Response
 
