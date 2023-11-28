@@ -42,14 +42,16 @@
 
 <style lang="scss">
   #sidebar {
-    width: 20%;
-    min-width: 16rem;
     padding-top: 3rem;
-    transition: width 1s ease, min-width 1s ease;
+    width: 0;
+    min-width: 0;
+    transition:
+      width 1s ease,
+      min-width 1s ease;
 
-    &.hidden {
-      width: 0;
-      min-width: 0;
+    &.visible {
+      width: 20%;
+      min-width: 16rem;
     }
     @media (min-width: 1024px) {
       width: 20%;
@@ -60,13 +62,12 @@
       list-style: none;
       margin-bottom: 5rem;
       padding-left: 2rem;
-      
+
       li {
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
 
         a {
-          
           transition: color 0.5s ease;
           color: var(--text-color-link);
           text-decoration: inherit;
@@ -84,5 +85,4 @@
       }
     }
   }
-  
 </style>
