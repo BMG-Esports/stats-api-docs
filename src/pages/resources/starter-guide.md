@@ -16,13 +16,13 @@ This is a starter guide to using the API and SDK. This guide is tailored to user
 ## Steps
 
 1. Verify Node.js is installed.
-    - In a terminal, type `node -v` and verify that you recieve a response similar to `v18.17.1`.
+    - In a terminal, type `node -v` and verify that you receive  a response similar to `v18.17.1`.
         - Terminals on Windows include Command Prompt, PowerShell, Terminal, and Visual Studio Code's terminal.
-    - If you do not recieve a response in the terminal, or you recieve an error, you must install Node.js from <a href="https://nodejs.org/en/">their website</a>.
+    - If you do not receive  a response in the terminal, or you receive  an error, you must install Node.js from <a href="https://nodejs.org/en/">their website</a>.
 2. Install the SDK.
     - The SDK can be found <a href="https://www.npmjs.com/package/@bmg-esports/sdk">here</a>. Follow the installation guide on the page in your terminal.
 3. Use the SDK.
-    - This is a sample Javascript example using the <a href="../get/player/smashId">GetPlayer</a> method in a single file.
+    - This is a sample JavaScript example using the <a href="../get/player/smashId">GetPlayer</a> method in a single file.
     - This function uses `async` and `await`. To learn about these concepts, refer to the MDN pages: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function">async function</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await">await</a>.
     ```js
     const sdk = require("@bmg-esports/sdk")
