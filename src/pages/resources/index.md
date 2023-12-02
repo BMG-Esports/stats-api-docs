@@ -8,7 +8,7 @@ layout: ../../layouts/Layout.astro
 
 ## How can I use this API?
 
-The easiest way to interface with the API is by using the <a href="https://www.npmjs.com/package/bh-esports-api-typescript">esports-api Javascript SDK</a>. It can be used with both Javascript and Typescript, and is easy to initialize.
+The easiest way to interface with the API is by using the <a href="https://www.npmjs.com/package/@bmg-esports/sdk">eSports SDK</a>. It can be used with both Javascript and Typescript, and is easy to initialize.
 
 ## What is a SmashId?
 
