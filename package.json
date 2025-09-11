@@ -10,7 +10,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^3.0.8",
+    "astro": "^5.13.2",
     "sass": "^1.66.1"
+  },
+  "devDependencies": {
+    "prettier": "3.6.2"
   }
 }

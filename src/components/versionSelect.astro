@@ -1,0 +1,13 @@
+---
+---
+<label for="version-select">Select Version</label>
+<select name="version-select" id="version-select">
+    <option value="1">Version One</option>
+    <option value="2" selected>Version Two</option>
+</select>
+
+<script>
+    const dropdown = document.getElementById("version-select") as HTMLSelectElement;
+    dropdown?.addEventListener("change", (event) => window.location.href = `/requests/v${event.target?.value ?? 2}/pr`);
+</script>
+

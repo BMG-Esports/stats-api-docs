@@ -1,43 +1,31 @@
+---
+import VersionSelect from "./versionSelect.astro";
+import { getCollection } from "astro:content";
+
+const collection = await getCollection("documentation", ({ data }) => {
+  return data.version === 'v2' && data.content === 'request'
+})
+---
+
 <nav id="sidebar">
+  <VersionSelect />
   <ul>
     <li class="heading">Getting Started</li>
-    <li><a href="/">About</a></li>
-    <li><a href="/resources/starter-guide">Starter Guide</a></li>
-    <li><a href="/resources/errors">Errors</a></li>
-    <li><a href="/resources">Resources</a></li>
-    <!-- <li><a href="/auth">Authentication</a></li> -->
-    <li class="heading">Player</li>
-    <li><a href="/get/player/smashId">GetPlayer</a></li>
-    <li><a href="/get/player/bhId/brawlhallaId">GetPlayerByBhId</a></li>
-    <li><a href="/get/player/teammate">GetPlayerTeammates</a></li>
-    <li><a href="/get/player/pr">GetPlayerPr</a></li>
-    <!-- <li><a href="/post/player">ListPlayers</a></li> -->
-    <li><a href="/get/player/placement">GetPlayerPlacements</a></li>
-    <li><a href="/get/player/match">GetPlayerMatches</a></li>
-    <li><a href="/get/player/legend">GetPlayerLegends</a></li>
-    <li><a href="/get/player/smashId/legend">GetPlayerRecentLegend</a></li>
-    <li><a href="/get/player/search">SearchPlayers</a></li>
-    <li class="heading">Matchup</li>
-    <li><a href="/get/matchup">GetMatchup</a></li>
-    <li><a href="/get/matchup/placement">GetMatchupPlacements</a></li>
-    <li><a href="/get/matchup/match">GetMatchupMatches</a></li>
-    <li class="heading">Event</li>
-    <li><a href="/get/event">ListEvents</a></li>
-    <li class="heading">Power Rankings</li>
-    <li><a href="/get/pr">ListPr</a></li>
+  </ul>
+  <ul>
+    <li class="heading">Requests</li>
+    <ul>
+    {
+      collection.map((page) => (
+        <li>
+          <a href={`${page.id.slice(12)}`}>{page.data.title}</a>
+        </li>
+      ))
+    }
+  </ul>
+  </ul>
+  <ul>
     <li class="heading">Datatypes</li>
-    <li><a href="/datatypes/player">Player</a></li>
-    <li><a href="/datatypes/playermatch">PlayerMatch</a></li>
-    <li><a href="/datatypes/playerplacement">PlayerPlacement</a></li>
-    <li><a href="/datatypes/playerpr">PlayerPr</a></li>
-    <li><a href="/datatypes/playerteammate">PlayerTeammate</a></li>
-    <li><a href="/datatypes/tournament">Tournament</a></li>
-    <li><a href="/datatypes/legend">Legend</a></li>
-    <li><a href="/datatypes/matchup">Matchup</a></li>
-    <li><a href="/datatypes/matchupmatch">MatchupMatch</a></li>
-    <li><a href="/datatypes/matchupplacement">MatchupPlacement</a></li>
-    <li><a href="/datatypes/prplayer">PrPlayer</a></li>
-    <li><a href="/datatypes/searchplayer">SearchPlayer</a></li>
   </ul>
 </nav>
 
