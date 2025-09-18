@@ -3,75 +3,48 @@ import VersionSelect from "./versionSelect.astro";
 import { getCollection } from "astro:content";
 
 const collection = await getCollection("documentation", ({ data }) => {
-  return data.version === 'v2' && data.content === 'request'
-})
+  return data.version === "v2" && data.content === "request";
+});
 ---
 
-<nav id="sidebar">
+<nav
+  id="sidebar"
+  class="pt-12 w-0 min-w-0 [&.visible]:min-w-64 [&.visible]:w-1/5 lg:min-w-64! lg:w-1/5 transition ease-in-out delay-1000"
+>
   <VersionSelect />
-  <ul>
-    <li class="heading">Getting Started</li>
-  </ul>
-  <ul>
-    <li class="heading">Requests</li>
-    <ul>
+  <ul class="list-none mb-20 pl-8">
+    <li id="header" class="mx-6 mt-2 font-bold text-black dark:text-white">
+      Getting Started
+    </li>
+    <li class="mx-2">
+      <a
+        class="decoration-inherit text-cyan-300 dark:text-amber-400 hover:text-teal-300 hover:dark:text-yellow-300 transition ease-in-out duration-500"
+        href="/"
+        >Test
+      </a>
+    </li>
+    <li id="header" class="mx-6 mt-2 font-bold text-black dark:text-white">
+      Requests
+    </li>
     {
       collection.map((page) => (
-        <li>
-          <a href={`${page.id.slice(12)}`}>{page.data.title}</a>
+        <li class="mx-2 mt-1">
+          <a
+            class="decoration-inherit text-cyan-300 dark:text-amber-400 hover:text-teal-300 hover:dark:text-yellow-300 transition ease-in-out duration-500"
+            href={`${page.id.slice(0)}`}
+          >
+            {page.data.title}
+          </a>
         </li>
       ))
     }
-  </ul>
-  </ul>
-  <ul>
-    <li class="heading">Datatypes</li>
+    <li class="mx-6 mt-2 font-bold text-black dark:text-white">Datatypes</li>
+    <li class="mx-2">
+      <a
+        class="decoration-inherit text-cyan-300 dark:text-amber-400 hover:text-teal-300 hover:dark:text-yellow-300 transition ease-in-out duration-500"
+        href="/"
+        >Test
+      </a>
+    </li>
   </ul>
 </nav>
-
-<style lang="scss">
-  #sidebar {
-    padding-top: 3rem;
-    width: 0;
-    min-width: 0;
-    transition:
-      width 1s ease,
-      min-width 1s ease;
-
-    &.visible {
-      width: 20%;
-      min-width: 16rem;
-    }
-    @media (min-width: 1024px) {
-      width: 20%;
-      min-width: 16rem !important;
-    }
-
-    ul {
-      list-style: none;
-      margin-bottom: 5rem;
-      padding-left: 2rem;
-
-      li {
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-
-        a {
-          transition: color 0.5s ease;
-          color: var(--text-color-link);
-          text-decoration: inherit;
-
-          &:hover {
-            color: var(--text-color-link-hover);
-          }
-        }
-      }
-
-      .heading {
-        font-weight: bold;
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
-      }
-    }
-  }
-</style>

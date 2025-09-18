@@ -1,6 +1,6 @@
 ---
-title: Brawlhalla Stats API
-description: "Documentation for api.brawltools.com"
+title: GetMatchupPlacements
+description: Documentation for api.brawltools.com.
 content: request
 version: v2
 ---

@@ -1,6 +1,6 @@
 ---
 title: PlayerMatches Object
-description: "Documentation for api.brawltools.com"
+description: Documentation for api.brawltools.com.
 content: datatype
 version: v1
 ---

@@ -1,15 +1,21 @@
 ---
-title: Matchup Objects
-description: Documentation for api.brawltools.com
+title: Matchup Object
+description: Documentation for api.brawltools.com.
 content: datatype
 version: v1
 ---
 
-# Matchup
+# Matchup Object
 
 An object containing the matchup information of specified players.
 
 ## Contents
+
+| Parameter | Type                               | Description                                       |
+| --------- | ---------------------------------- | ------------------------------------------------- |
+| matches   | Array                              | The number of matches won by each player or team. |
+| games     | Array                              | The number of games won by each player or team.   |
+| Opponent  | <a href="player">Player Object</a> | The opponent of the player(s).                    |
 
 - **Matches** - _Integer[]_
   - The number of matches won by each player or team.

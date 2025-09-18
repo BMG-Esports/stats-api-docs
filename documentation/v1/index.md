@@ -1,7 +1,8 @@
 ---
 title: Brawlhalla Stats API
-description: Documentation for api.brawltools.com.
-layout: ../layouts/Layout.astro
+description: .Documentation for api.brawltools.com.
+content: page
+version: v1
 ---
 
 # Brawlhalla Stats API

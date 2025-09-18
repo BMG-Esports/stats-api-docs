@@ -1,6 +1,6 @@
 ---
 title: GetPlayerTeammates
-description: "Documentation for api.brawltools.com"
+description: Documentation for api.brawltools.com.
 content: request
 version: v1
 ---

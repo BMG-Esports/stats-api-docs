@@ -1,6 +1,6 @@
 ---
-title: Brawlhalla Stats API
-description: "Documentation for api.brawltools.com"
+title: GetPlayerLegends
+description: Documentation for api.brawltools.com.
 content: request
 version: v2
 ---

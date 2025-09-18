@@ -1,6 +1,6 @@
 ---
 title: Brawlhalla Stats API
-description: "Documentation for api.brawltools.com"
+description: Documentation for api.brawltools.com.
 content: resource
 version: v1
 ---

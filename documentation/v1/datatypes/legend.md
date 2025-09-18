@@ -1,18 +1,17 @@
 ---
-title: Legend Objects
+title: Legend Object
 description: Documentation for api.brawltools.com.
 content: datatype
 version: v1
 ---
 
-# Legend
+# Legend Object
 
 An object containing a player's most recently reported legend.
 
 ## Contents
 
-- **Name** - _String_
-  - The name of the legend.
-
-- **Count** - _Integer_
-  - The number of times the player has reported this legend.
+| Parameter | Type    | Description                                              |
+| --------- | ------- | -------------------------------------------------------- |
+| name      | String  | The name of the legend.                                  |
+| count     | Integer | The number of times the player has reported this legend. |

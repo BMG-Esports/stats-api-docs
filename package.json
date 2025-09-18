@@ -10,10 +10,15 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.13",
     "astro": "^5.13.2",
-    "sass": "^1.66.1"
+    "daisyui": "^5.1.10",
+    "sass": "^1.66.1",
+    "tailwindcss": "^4.1.13"
   },
   "devDependencies": {
-    "prettier": "3.6.2"
+    "@tailwindcss/typography": "^0.5.16",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.14"
   }
 }

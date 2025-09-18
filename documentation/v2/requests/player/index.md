@@ -1,6 +1,6 @@
 ---
 title: GetPlayer
-description: "Documentation for api.brawltools.com"
+description: Documentation for api.brawltools.com.
 content: request
 version: v2
 ---

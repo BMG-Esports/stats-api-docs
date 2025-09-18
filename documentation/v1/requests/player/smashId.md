@@ -1,6 +1,6 @@
 ---
 title: GetPlayer (start.gg ID)
-description: "Documentation for api.brawltools.com"
+description: Documentation for api.brawltools.com.
 content: request
 version: v1
 ---
