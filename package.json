@@ -12,7 +12,6 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
     "astro": "^5.13.2",
-    "daisyui": "^5.1.10",
     "sass": "^1.66.1",
     "tailwindcss": "^4.1.13"
   },
