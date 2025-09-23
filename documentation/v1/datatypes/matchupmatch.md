@@ -1,24 +1,19 @@
 ---
 title: MatchupMatch Objects
 description: Documentation for api.brawltools.com.
-content: datatype
+content: datatypes
 version: v1
 ---
 
-# MatchupMatch
+# MatchupMatch Object
 
 An object containing information about a specific match between players.
 
 ## Contents
 
-- **MatchId** - _Integer_
-  - The Start.gg match ID of the match.
-
-- **Scores** - _Integer[]_
-  - The final score of the match.
-
-- **Legends** - _String[][]_
-  - The legends used in each game of the match.
-
-- **Maps** - _String[]_
-  - The maps played in each game of the match.
+| Parameter | Type           | Description                                 |
+| --------- | -------------- | ------------------------------------------- |
+| matchId   | Integer        | The Start.gg match ID of the match.         |
+| scores    | Integer        | The final score of the match.               |
+| legends   | Array (String) | The legends used in each game of the match. |
+| maps      | Array (String) | The maps played in each game of the match.  |

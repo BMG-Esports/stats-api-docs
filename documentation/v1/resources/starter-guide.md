@@ -1,7 +1,7 @@
 ---
 title: Brawlhalla Stats API Starter Guide
 description: Documentation for api.brawltools.com.
-content: resource
+content: resources
 version: v1
 ---
 

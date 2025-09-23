@@ -1,7 +1,7 @@
 ---
 title: GetPlayerPr
 description: Documentation for api.brawltools.com.
-content: request
+content: requests
 version: v2
 ---
 

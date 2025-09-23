@@ -5,6 +5,9 @@ import { getCollection } from "astro:content";
 const collection = await getCollection("documentation", ({ data }) => {
   return data.version === "v2" && data.content === "request";
 });
+
+const test = await getCollection("documentation");
+test.map((page) => console.log(page.id));
 ---
 
 <nav
@@ -19,7 +22,7 @@ const collection = await getCollection("documentation", ({ data }) => {
     <li class="mx-2">
       <a
         class="decoration-inherit text-cyan-300 dark:text-amber-400 hover:text-teal-300 hover:dark:text-yellow-300 transition ease-in-out duration-500"
-        href="/"
+        href="./."
         >Test
       </a>
     </li>
