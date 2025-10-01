@@ -13,12 +13,15 @@ Fetches information about a player from a given start.gg ID.
 
 ### Syntax
 
-`https://api.brawltools.com/v1/player/:PlayerID`
+```
+https://api.brawltools.com/v1/player/:PlayerID
+```
 
 ### Path Parameters
 
-- **PlayerID** - _Integer_
-  - Required. The SmashId ID of the player.
+| Parameter | Type    | Description                              |
+| --------- | ------- | ---------------------------------------- |
+| playerId  | Integer | Required. The start.gg ID of the player. |
 
 ## Response
 
@@ -41,5 +44,6 @@ Fetches information about a player from a given start.gg ID.
 
 The following data is returned in JSON.
 
-- **Player** - _Object_
-  - The basic info recorded about on a player. This is a <a href="../../../datatypes/player">player</a> datatype.
+| Parameter | Type   | Description                                                                                                   |
+| --------- | ------ | ------------------------------------------------------------------------------------------------------------- |
+| player    | Object | The basic info recorded about on a player. This is a <a href="../../../datatypes/player">player</a> datatype. |

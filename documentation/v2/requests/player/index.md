@@ -38,4 +38,4 @@ Returns information on a player based on their playerID.
 }
 ```
 
-This endpoint returns a [player](../../../datatypes/v2/player.md) object.
+This endpoint returns a [player](../../datatypes/player) object.

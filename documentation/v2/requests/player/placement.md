@@ -18,7 +18,7 @@ Fetches a player's recent placements from their ID.
 ### Query Parameters
 
 - **EntrantSmashIds** - _Integer[]_
-  - Required. The SmashId ID of the player(s).
+  - Required. The start.gg ID of the player(s).
 
 - **GameMode** - _Integer_
   - Required. For 1v1 use 1, and for 2v2 use 2.

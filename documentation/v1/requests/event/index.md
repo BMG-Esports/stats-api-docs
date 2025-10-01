@@ -13,24 +13,19 @@ Lists the most recent tournaments to populate the API.
 
 ### Syntax
 
-`https://api.brawltools.com/v1/event`
+```
+https://api.brawltools.com/v1/event
+```
 
 ### Query Parameters
 
-- **GameMode** - _Integer_
-  - Required. For 1v1 use 1, and for 2v2 use 2.
-
-- **IsOfficial** - _Boolean_
-  - Optional. False includes community tournaments, true excludes them. If omitted, defaults to false.
-
-- **Year** - _Integer_
-  - Optional. The year to analyze. If omitted, includes all years.
-
-- **MaxResults** - _Integer_
-  - Optional. Limits the results to the specified number.
-
-- **NextToken** - _String_
-  - Optional. A string specifiying the next page of results.
+| Parameter  | Type    | Description                                                                                        |
+| ---------- | ------- | -------------------------------------------------------------------------------------------------- |
+| gameMode   | Integer | Required. For 1v1 use 1, and for 2v2 use 2.                                                        |
+| isOfficial | Boolean | Optional. False includes community tournaments, true excludes them. If omitted, defaults to false. |
+| year       | Integer | Optional. The year to analyze. If omitted, includes all years.                                     |
+| maxResults | Integer | Optional. Limits the results to the specified number.                                              |
+| nextToken  | String  | Optional. A string specifiying the next page of results.                                           |
 
 ## Response
 
@@ -138,8 +133,7 @@ Lists the most recent tournaments to populate the API.
 
 The following data is returned in JSON.
 
-- **Tournaments** - _Object[]_
-  - Detailed information about the tournaments. This is a <a href="../../datatypes/tournament">tournament</a> datatype.
-
-- **NextToken** - _String_
-  - Allows you to move to the next results.
+| Parameter   | Type   | Description                                                                                                         |
+| ----------- | ------ | ------------------------------------------------------------------------------------------------------------------- |
+| tournaments | Object | Detailed information about the tournaments. This is a <a href="../../datatypes/tournament">tournament</a> datatype. |
+| nextToken   | String | Allows you to move to the next results.                                                                             |

@@ -21,10 +21,10 @@ Compares the placements of specified players in tournaments.
   - Optional. False includes community tournaments, true excludes them. If omitted, defaults to false.
 
 - **Entrant1SmashIds** - _Integer[]_
-  - Required. The SmashId ID of the player(s).
+  - Required. The start.gg ID of the player(s).
 
 - **Entrant2SmashIds** - _Integer[]_
-  - Required. The SmashId ID of the player(s).
+  - Required. The start.gg ID of the player(s).
 
 - **GameMode** - _Integer_
   - Required. For 1v1 use 1, and for 2v2 use 2.

@@ -11,11 +11,8 @@ An object containing information about a player's 2v2 teams.
 
 ## Contents
 
-- **Player** - _Object_
-  - An object containing information on a player's teammate. This is a <a href="../datatypes/player">Player</a> datatype.
-
-- **Games** - _Integer_
-  - The total number of games played with this teammate.
-
-- **LastTeamedDate** - _Integer_
-  - The most recent day where the players teamed up in a tournament. This is a UNIX timestamp.
+| Parameter      | Type    | Description                                                                                                           |
+| -------------- | ------- | --------------------------------------------------------------------------------------------------------------------- |
+| player         | Object  | An object containing information on a player's teammate. This is a <a href="../datatypes/player">Player</a> datatype. |
+| games          | Integer | The total number of games played with this teammate.                                                                  |
+| lastTeamedDate | Integer | The most recent day where the players teamed up in a tournament. This is a UNIX timestamp.                            |

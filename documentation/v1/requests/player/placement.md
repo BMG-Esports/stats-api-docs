@@ -13,24 +13,19 @@ Fetches a player's recent placements from their ID.
 
 ### Syntax
 
-`https://api.brawltools.com/v1/player/placement`
+```
+https://api.brawltools.com/v1/player/placement
+```
 
 ### Query Parameters
 
-- **EntrantSmashIds** - _Integer[]_
-  - Required. The SmashId ID of the player(s).
-
-- **GameMode** - _Integer_
-  - Required. For 1v1 use 1, and for 2v2 use 2.
-
-- **IsOfficial** - _Boolean_
-  - Optional. False includes community tournaments, true excludes them. If omitted, defaults to false.
-
-- **MaxResults** - _Integer_
-  - Optional. Limits the results to the specified number.
-
-- **NextToken** - _String_
-  - Optional. A string specifiying the next page of results.
+| Parameter       | Type            | Description                                                                                        |
+| --------------- | --------------- | -------------------------------------------------------------------------------------------------- |
+| entrantSmashIds | Array (Integer) | Required. The start.gg ID of the player(s).                                                        |
+| gameMode        | Integer         | Required. For 1v1 use 1, and for 2v2 use 2.                                                        |
+| isOfficial      | Boolean         | Optional. False includes community tournaments, true excludes them. If omitted, defaults to false. |
+| maxResults      | Integer         | Optional. Limits the results to the specified number.                                              |
+| nextToken       | String          | Optional. A string specifiying the next page of results.                                           |
 
 ## Response
 
@@ -168,8 +163,7 @@ Fetches a player's recent placements from their ID.
 
 This response body can contain the following fields in JSON.
 
-- **PlayerPlacements** - _Object[]_
-  - The placements of the player in recent tournaments. This is a <a href="../../datatypes/playerplacement">PlayerPlacement</a> object.
-
-- **NextToken** - _String_
-  - Allows you to move to the next results.
+| Parameter        | Type   | Description                                                                                                                         |
+| ---------------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| playerPlacements | Object | The placements of the player in recent tournaments. This is a <a href="../../datatypes/playerplacement">PlayerPlacement</a> object. |
+| nextToken        | String | Allows you to move to the next results.                                                                                             |

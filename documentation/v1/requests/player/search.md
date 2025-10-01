@@ -13,18 +13,17 @@ Searches Power Ranked players by name.
 
 ### Syntax
 
-`https://api.brawltools.com/v1/player/search`
+```
+https://api.brawltools.com/v1/player/search
+```
 
 ### Query Parameters
 
-- **Query** - _String_
-  - Required. Your search query.
-
-- **MaxResults** - _Integer_
-  - Optional. Limits the results to the specified number.
-
-- **NextToken** - _String_
-  - Optional. A string specifiying the next page of results.
+| Parameter  | Type    | Description                                              |
+| ---------- | ------- | -------------------------------------------------------- |
+| query      | String  | Required. Your search query.                             |
+| maxResults | Integer | Optional. Limits the results to the specified number.    |
+| nextToken  | String  | Optional. A string specifiying the next page of results. |
 
 ## Response
 
@@ -76,8 +75,9 @@ Searches Power Ranked players by name.
 
 ### Response Elements
 
-- **SearchPlayer** - _Object[]_
-  - The results of the search. This is a <a href="../../datatypes/searchplayer">SearchPlayer</a> object.
+The following data is returned in JSON.
 
-- **NextToken** - _String_
-  - Allows you to move to the next results.
+| Parameter    | Type   | Description                                                                                          |
+| ------------ | ------ | ---------------------------------------------------------------------------------------------------- |
+| searchPlayer | Object | The results of the search. This is a <a href="../../datatypes/searchplayer">SearchPlayer</a> object. |
+| nextToken    | String | Allows you to move to the next results.                                                              |

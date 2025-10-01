@@ -17,8 +17,9 @@ Fetches a player's recently played legends.
 
 ### Path Parameters
 
-- **PlayerID** - _Integer_
-  - Required. The SmashId ID of the player.
+| Parameter | Type    | Description                              |
+| --------- | ------- | ---------------------------------------- |
+| playerId  | Integer | Required. The start.gg ID of the player. |
 
 ## Response
 
@@ -35,5 +36,6 @@ Fetches a player's recently played legends.
 
 ### Response Elements
 
-- **Legend** - _Object_
-  - An object containing the player's most recent legend. This is a <a href="../../../datatypes/legend">legend</a> data type.
+| Parameter | Type   | Description                                                                                                               |
+| --------- | ------ | ------------------------------------------------------------------------------------------------------------------------- |
+| legend    | Object | An object containing the player's most recent legend. This is a <a href="../../../datatypes/legend">legend</a> data type. |

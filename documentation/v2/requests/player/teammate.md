@@ -18,7 +18,7 @@ Fetches a player's previous teammates from their ID.
 ### Query Parameters
 
 - **SmashId** - _Integer_
-  - Required. The SmashId ID of the player.
+  - Required. The start.gg ID of the player.
 
 - **IsOfficial** - _Boolean_
   - Optional. False includes community tournaments, true excludes them.

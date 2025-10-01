@@ -11,8 +11,7 @@ An object containing the placements a player has in recent tournaments.
 
 ## Contents
 
-- **Placement** - _Integer_
-  - The placement the player earned in the tournament.
-
-- **<a href="tournament">Tournament</a>** - _Object_
-  - An object with tournament information.
+| Parameter  | Type    | Description                                                                             |
+| ---------- | ------- | --------------------------------------------------------------------------------------- |
+| placement  | Integer | The placement the player earned in the tournament.                                      |
+| tournament | Object  | Information about the tournament. This is a <a href="tournament">tournament</a> object. |

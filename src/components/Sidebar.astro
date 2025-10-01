@@ -3,11 +3,8 @@ import VersionSelect from "./VersionSelect.astro";
 import { getCollection } from "astro:content";
 
 const collection = await getCollection("documentation", ({ data }) => {
-  return data.version === "v2" && data.content === "request";
+  return data.version === "v1" && data.content === "requests";
 });
-
-const test = await getCollection("documentation");
-test.map((page) => console.log(page.id));
 ---
 
 <nav

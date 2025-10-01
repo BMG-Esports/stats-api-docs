@@ -21,7 +21,7 @@ Returns the head to head stats of specified players.
   - Optional. False includes community tournaments, true excludes them. If omitted, defaults to false.
 
 - **Entrant1SmashIds** - _Integer[]_
-  - Required. The SmashId ID of the player(s).
+  - Required. The start.gg ID of the player(s).
 
 - **Entrant2SmashIds** - _Integer[]_
   - Optional. If included, include the same number of IDs as Entrant1SmashIds.

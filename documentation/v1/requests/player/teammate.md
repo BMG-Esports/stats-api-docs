@@ -13,21 +13,18 @@ Fetches a player's previous teammates from their ID.
 
 ### Syntax
 
-`https://api.brawltools.com/v1/player/teammate`
+```
+https://api.brawltools.com/v1/player/teammate
+```
 
 ### Query Parameters
 
-- **SmashId** - _Integer_
-  - Required. The SmashId ID of the player.
-
-- **IsOfficial** - _Boolean_
-  - Optional. False includes community tournaments, true excludes them.
-
-- **MaxResults** - _Integer_
-  - Optional. Limits the results to the specified number.
-
-- **NextToken** - _String_
-  - Optional. A string specifiying the next page of results.
+| Parameter  | Type    | Description                                                         |
+| ---------- | ------- | ------------------------------------------------------------------- |
+| smashId    | Integer | Required. The start.gg ID of the player.                            |
+| isOfficial | Boolean | Optional. False includes community tournaments, true excludes them. |
+| maxResults | Integer | Optional. Limits the results to the specified number.               |
+| nextToken  | String  | Optional. A string specifiying the next page of results.            |
 
 ## Response
 
@@ -117,8 +114,7 @@ Fetches a player's previous teammates from their ID.
 
 This response body can contain the following fields in JSON.
 
-- **PlayerTeammates** - _Object[]_
-  - An array containing a player's most popular teammates. This is a <a href="../../datatypes/playerteammate">PlayerTeammate</a> datatype.
-
-- **NextToken** - _String_
-  - Allows you to move to the next page of results.
+| Parameter       | Type   | Description                                                                                                                            |
+| --------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------- |
+| playerTeammates | Object | An array containing a player's most popular teammates. This is a <a href="../../datatypes/playerteammate">PlayerTeammate</a> datatype. |
+| nextToken       | String | Allows you to move to the next page of results.                                                                                        |

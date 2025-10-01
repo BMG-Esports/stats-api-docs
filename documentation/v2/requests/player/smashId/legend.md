@@ -18,7 +18,7 @@ Fetches a player's recently played legends.
 ### Path Parameters
 
 - **PlayerID** - _Integer_
-  - Required. The SmashId ID of the player.
+  - Required. The start.gg ID of the player.
 
 ## Response
 

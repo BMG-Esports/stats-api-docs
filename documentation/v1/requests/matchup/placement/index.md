@@ -13,27 +13,20 @@ Compares the placements of specified players in tournaments.
 
 ### Syntax
 
-`https://api.brawltools.com/v1/matchup/placement`
+```
+https://api.brawltools.com/v1/matchup/placement
+```
 
 ### Query Parameters
 
-- **IsOfficial** - _Boolean_
-  - Optional. False includes community tournaments, true excludes them. If omitted, defaults to false.
-
-- **Entrant1SmashIds** - _Integer[]_
-  - Required. The SmashId ID of the player(s).
-
-- **Entrant2SmashIds** - _Integer[]_
-  - Required. The SmashId ID of the player(s).
-
-- **GameMode** - _Integer_
-  - Required. For 1v1 use 1, and for 2v2 use 2.
-
-- **MaxResults** - _Integer_
-  - Optional. Limits the results to the specified number.
-
-- **NextToken** - _String_
-  - Optional. A string specifiying the next page of results.
+| Parameter        | Type            | Description                                                                                        |
+| ---------------- | --------------- | -------------------------------------------------------------------------------------------------- |
+| isOfficial       | Boolean         | Optional. False includes community tournaments, true excludes them. If omitted, defaults to false. |
+| entrant1SmashIds | Array (Integer) | Required. The start.gg ID of the player(s).                                                        |
+| entrant2SmashIds | Array (Integer) | Required. The start.gg ID of the player(s).                                                        |
+| gameMode         | Integer         | Required. For 1v1 use 1, and for 2v2 use 2.                                                        |
+| maxResults       | Integer         | Optional. Limits the results to the specified number.                                              |
+| nextToken        | String          | Optional. A string specifiying the next page of results.                                           |
 
 ## Response
 
@@ -171,8 +164,7 @@ Compares the placements of specified players in tournaments.
 
 The following data is returned in JSON.
 
-- **MatchupPlacements** - _Object[]_
-  - An object containing placement comparisons in a matchup. This is a <a href="../../datatypes/matchupplacement">MatchupPlacement</a> datatype.
-
-- **NextToken** - _String_
-  - Allows you to move to the next results.
+| Parameter         | Type   | Description                                                                                                                                  |
+| ----------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| matchupPlacements | Object | An object containing placement comparisons in a matchup. This is a <a href="../../datatypes/matchupplacement">MatchupPlacement</a> datatype. |
+| nextToken         | String | Allows you to move to the next results.                                                                                                      |

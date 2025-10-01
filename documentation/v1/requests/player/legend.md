@@ -17,20 +17,13 @@ Returns a player's most used legends by year.
 
 ### Query Parameters
 
-- **EntrantSmashIds** - _Integer[]_
-  - Required. The SmashId ID of the player(s).
-
-- **IsOfficial** - _Boolean_
-  - Optional. False includes community tournaments, true excludes them. If omitted, defaults to false.
-
-- **Year** - _Integer_
-  - Optional. The year to analyze. If omitted, includes all years.
-
-- **MaxResults** - _Integer_
-  - Optional. Limits the results to the specified number.
-
-- **NextToken** - _String_
-  - Optional. A string specifiying the next page of results.
+| Parameter       | Type            | Description                                                                                        |
+| --------------- | --------------- | -------------------------------------------------------------------------------------------------- |
+| entrantSmashIds | Array (Integer) | Required. The start.gg ID of the player(s).                                                        |
+| isOfficial      | Boolean         | Optional. False includes community tournaments, true excludes them. If omitted, defaults to false. |
+| year            | Integer         | Optional. The year to analyze. If omitted, includes all years.                                     |
+| maxResults      | Integer         | Optional. Limits the results to the specified number.                                              |
+| nextToken       | String          | Optional. A string specifiying the next page of results.                                           |
 
 ## Response
 
@@ -66,8 +59,7 @@ Returns a player's most used legends by year.
 
 ### Response Elements
 
-- **Legends** - _Object[]_
-  - An array of played legends for the player. This is a <a href="../../datatypes/legend">legend</a> datatype.
-
-- **NextToken** - _String_
-  - Allows you to move to the next results.
+| Parameter | Type   | Description                                                                                                |
+| --------- | ------ | ---------------------------------------------------------------------------------------------------------- |
+| legends   | Object | An array of played legends for the player. This is a <a href="../../datatypes/legend">legend</a> datatype. |
+| nextToken | String | Allows you to move to the next results.                                                                    |

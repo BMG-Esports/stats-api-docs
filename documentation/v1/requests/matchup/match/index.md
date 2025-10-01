@@ -13,18 +13,17 @@ Returns any matches specified players played in a specific tournament.
 
 ### Syntax
 
-`https://api.brawltools.com/v1/matchup/match`
+```
+https://api.brawltools.com/v1/matchup/match
+```
 
 ### Query Parameters
 
-- **EventSlug** - _String_
-  - Required. The identifying Start.gg slug of a tournament.
-
-- **Entrant1SmashIds** - _Integer[]_
-  - Required. The SmashId ID of the player(s).
-
-- **Entrant2SmashIds** - _Integer[]_
-  - Required. The SmashId ID of the player(s).
+| Parameter        | Type            | Description                                              |
+| ---------------- | --------------- | -------------------------------------------------------- |
+| eventSlug        | String          | Required. The identifying start.gg slug of a tournament. |
+| entrant1SmashIds | Array (Integer) | Required. The start.gg ID of the player(s).              |
+| entrant2SmashIds | Array (Integer) | Required. The start.gg ID of the player(s).              |
 
 ## Response
 
@@ -67,5 +66,6 @@ Returns any matches specified players played in a specific tournament.
 
 The following data is returned in JSON.
 
-- **MatchupMatches** - _Object[]_
-  - An object containing information about a specific match. This is a <a href="../../datatypes/matchupmatch.md">MatchupMatch</a> datatype.
+| Parameter      | Type   | Description                                                                                                                             |
+| -------------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+| matchupMatches | Object | An object containing information about a specific match. This is a <a href="../../datatypes/matchupmatch.md">MatchupMatch</a> datatype. |

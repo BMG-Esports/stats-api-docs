@@ -18,7 +18,7 @@ Returns a player's most used legends by year.
 ### Query Parameters
 
 - **EntrantSmashIds** - _Integer[]_
-  - Required. The SmashId ID of the player(s).
+  - Required. The start.gg ID of the player(s).
 
 - **IsOfficial** - _Boolean_
   - Optional. False includes community tournaments, true excludes them. If omitted, defaults to false.

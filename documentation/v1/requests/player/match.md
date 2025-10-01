@@ -17,11 +17,10 @@ Fetches the matches a player played at a specific tournament.
 
 ### Query Parameters
 
-- **EntrantSmashIds** - _Integer[]_
-  - Required. The SmashId ID of the player(s).
-
-- **EventSlug** - _String_
-  - Required. The identifying Start.gg slug of a tournament.
+| Parameter       | Type            | Description                                              |
+| --------------- | --------------- | -------------------------------------------------------- |
+| entrantSmashIds | Array (Integer) | Required. The start.gg ID of the player(s).              |
+| eventSlug       | String          | Required. The identifying start.gg slug of a tournament. |
 
 ## Response
 
@@ -154,5 +153,6 @@ Fetches the matches a player played at a specific tournament.
 
 This response body can contain the following fields in JSON.
 
-- **PlayerMatches** - _Object[]_
-  - An object containing statistics on a player's recent matches. This is a <a href="../../datatypes/playermatch.md">PlayerMatch</a> datatype.
+| Parameter     | Type   | Description                                                                                                                                |
+| ------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| playerMatches | Object | An object containing statistics on a player's recent matches. This is a <a href="../../datatypes/playermatch.md">PlayerMatch</a> datatype. |

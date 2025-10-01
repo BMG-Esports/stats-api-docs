@@ -18,10 +18,10 @@ Fetches the matches a player played at a specific tournament.
 ### Query Parameters
 
 - **EntrantSmashIds** - _Integer[]_
-  - Required. The SmashId ID of the player(s).
+  - Required. The start.gg ID of the player(s).
 
 - **EventSlug** - _String_
-  - Required. The identifying Start.gg slug of a tournament.
+  - Required. The identifying start.gg slug of a tournament.
 
 ## Response
 
