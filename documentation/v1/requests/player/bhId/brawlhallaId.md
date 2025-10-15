@@ -13,7 +13,9 @@ Fetches basic information about a player from their BrawlhallaID.
 
 ### Syntax
 
-`https://api.brawltools.com/v1/player/bhId/:BrawlhallaID`
+```url
+https://api.brawltools.com/v1/player/bhId/:BrawlhallaID
+```
 
 ### Path Parameters
 

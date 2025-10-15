@@ -13,24 +13,19 @@ Lists the most recent tournaments to populate the API.
 
 ### Syntax
 
-`https://api.brawltools.com/v1/event`
+```url
+https://api.brawltools.com/v2/event
+```
 
 ### Query Parameters
 
-- **GameMode** - _Integer_
-  - Required. For 1v1 use 1, and for 2v2 use 2.
-
-- **IsOfficial** - _Boolean_
-  - Optional. False includes community tournaments, true excludes them. If omitted, defaults to false.
-
-- **Year** - _Integer_
-  - Optional. The year to analyze. If omitted, includes all years.
-
-- **MaxResults** - _Integer_
-  - Optional. Limits the results to the specified number.
-
-- **NextToken** - _String_
-  - Optional. A string specifiying the next page of results.
+| Parameter  | Type    | Description                                                                                        |
+| ---------- | ------- | -------------------------------------------------------------------------------------------------- |
+| gameMode   | Integer | Required. Use 1 for 1v1 and 2 for 2v2.                                                             |
+| isOfficial | Boolean | Optional. False includes community tournaments, true excludes them. If omitted, defaults to false. |
+| year       | Integer | Optional. The year to analyze. If omitted, includes all years.                                     |
+| maxResults | Integer | Optional. Limits results to the specified number.                                                  |
+| nextToken  | String  | Optional. A string specifiying the next page of results.                                           |
 
 ## Response
 
@@ -40,97 +35,117 @@ Lists the most recent tournaments to populate the API.
 {
   "tournaments": [
     {
-      "slug": "tournament/north-america-autumn-championship-2023/event/brawlhalla-championship-1v1",
-      "tournamentName": "North America - Autumn Championship 2023",
-      "eventName": "Brawlhalla Championship 1v1",
-      "year": 2023,
+      "id": "eb84e618-2941-42b7-09c7-08dd66f60e0c",
+      "tournamentName": "Autumn Championship - North America 2025 - 1v1",
+      "eventName": null,
+      "year": 2025,
       "isOfficial": true,
       "isTwos": false,
-      "startTime": 1695572100
+      "isOnline": true,
+      "startTime": 1757866549,
+      "host": "CM"
     },
     {
-      "slug": "tournament/south-america-autumn-championship-2023/event/brawlhalla-championship-1v1",
-      "tournamentName": "South America - Autumn Championship 2023",
-      "eventName": "Brawlhalla Championship 1v1",
-      "year": 2023,
+      "id": "5acf121c-4da9-490f-43df-08dd69fad61e",
+      "tournamentName": "Autumn Championship - South America 2025 - 1v1",
+      "eventName": null,
+      "year": 2025,
       "isOfficial": true,
       "isTwos": false,
-      "startTime": 1695489300
+      "isOnline": true,
+      "startTime": 1757783754,
+      "host": "CM"
     },
     {
-      "slug": "tournament/europe-autumn-championship-2023/event/brawlhalla-championship-1v1",
-      "tournamentName": "Europe - Autumn Championship 2023",
-      "eventName": "Brawlhalla Championship 1v1",
-      "year": 2023,
+      "id": "f4eba356-ea18-458c-43dd-08dd69fad61e",
+      "tournamentName": "Autumn Championship - Europe 2025 - 1v1",
+      "eventName": null,
+      "year": 2025,
       "isOfficial": true,
       "isTwos": false,
-      "startTime": 1695471300
+      "isOnline": true,
+      "startTime": 1757765725,
+      "host": "CM"
     },
     {
-      "slug": "tournament/southeast-asia-autumn-championship-2023/event/brawlhalla-championship-1v1",
-      "tournamentName": "Southeast Asia - Autumn Championship 2023",
-      "eventName": "Brawlhalla Championship 1v1",
-      "year": 2023,
+      "id": "4bf7b68f-43ec-4c36-09c4-08dd66f60e0c",
+      "tournamentName": "Autumn Championship - Middle East 2025 - 1v1",
+      "eventName": null,
+      "year": 2025,
       "isOfficial": true,
       "isTwos": false,
-      "startTime": 1695428100
+      "isOnline": true,
+      "startTime": 1757682910,
+      "host": "CM"
     },
     {
-      "slug": "tournament/australia-autumn-championship-2023/event/brawlhalla-championship-1v1",
-      "tournamentName": "Australia - Autumn Championship 2023",
-      "eventName": "Brawlhalla Championship 1v1",
-      "year": 2023,
+      "id": "c136e542-b3f4-4817-09c3-08dd66f60e0c",
+      "tournamentName": "Autumn Championship - Southeast Asia 2025 - 1v1",
+      "eventName": null,
+      "year": 2025,
       "isOfficial": true,
       "isTwos": false,
-      "startTime": 1695424500
+      "isOnline": true,
+      "startTime": 1757675739,
+      "host": "CM"
     },
     {
-      "slug": "tournament/brawlhalla-summer-royale-2023/event/brawlhalla-championship-1v1",
-      "tournamentName": "Brawlhalla - Summer Royale 2023",
-      "eventName": "Brawlhalla Championship 1v1",
-      "year": 2023,
+      "id": "9ac7e953-be8a-405f-09bf-08dd66f60e0c",
+      "tournamentName": "Summer Championship - North America 2025 - 1v1",
+      "eventName": null,
+      "year": 2025,
       "isOfficial": true,
       "isTwos": false,
-      "startTime": 1693663200
+      "isOnline": true,
+      "startTime": 1753028263,
+      "host": "CM"
     },
     {
-      "slug": "tournament/north-america-summer-championship-2023/event/brawlhalla-championship-1v1",
-      "tournamentName": "North America - Summer Championship 2023",
-      "eventName": "Brawlhalla Championship 1v1",
-      "year": 2023,
+      "id": "0ab757b4-5094-48eb-43d6-08dd69fad61e",
+      "tournamentName": "Summer Championship - South America 2025 - 1v1",
+      "eventName": null,
+      "year": 2025,
       "isOfficial": true,
       "isTwos": false,
-      "startTime": 1690733700
+      "isOnline": true,
+      "startTime": 1752945556,
+      "host": "CM"
     },
     {
-      "slug": "tournament/south-america-summer-championship-2023/event/brawlhalla-championship-1v1",
-      "tournamentName": "South America - Summer Championship 2023",
-      "eventName": "Brawlhalla Championship 1v1",
-      "year": 2023,
+      "id": "d21254e3-0028-4805-09be-08dd66f60e0c",
+      "tournamentName": "Summer Championship - Europe 2025 - 1v1",
+      "eventName": null,
+      "year": 2025,
       "isOfficial": true,
       "isTwos": false,
-      "startTime": 1690650900
+      "isOnline": true,
+      "startTime": 1752927384,
+      "host": "CM"
     },
     {
-      "slug": "tournament/europe-summer-championship-2023/event/brawlhalla-championship-1v1",
-      "tournamentName": "Europe - Summer Championship 2023",
-      "eventName": "Brawlhalla Championship 1v1",
-      "year": 2023,
+      "id": "1effc345-85ce-42f5-09bc-08dd66f60e0c",
+      "tournamentName": "Summer Championship - Middle East 2025 - 1v1",
+      "eventName": null,
+      "year": 2025,
       "isOfficial": true,
       "isTwos": false,
-      "startTime": 1690632900
+      "isOnline": true,
+      "startTime": 1752844552,
+      "host": "CM"
     },
     {
-      "slug": "tournament/southeast-asia-summer-championship-2023/event/brawlhalla-championship-1v1",
-      "tournamentName": "Southeast Asia - Summer Championship 2023",
-      "eventName": "Brawlhalla Championship 1v1",
-      "year": 2023,
+      "id": "b452c703-7461-4a40-09ba-08dd66f60e0c",
+      "tournamentName": "Summer Championship - Southeast Asia 2025 - 1v1",
+      "eventName": null,
+      "year": 2025,
       "isOfficial": true,
       "isTwos": false,
-      "startTime": 1690589700
+      "isOnline": true,
+      "startTime": 1752837392,
+      "host": "CM"
     }
   ],
-  "nextToken": "1690589700"
+  "nextToken": "1752837392"
 }
 ```
 
@@ -138,8 +153,7 @@ Lists the most recent tournaments to populate the API.
 
 The following data is returned in JSON.
 
-- **Tournaments** - _Object[]_
-  - Detailed information about the tournaments. This is a <a href="../../datatypes/tournament">tournament</a> datatype.
-
-- **NextToken** - _String_
-  - Allows you to move to the next results.
+| Parameter   | Type   | Description                                                                                                         |
+| ----------- | ------ | ------------------------------------------------------------------------------------------------------------------- |
+| tournaments | Object | Detailed information about the tournaments. This is a <a href="../../datatypes/tournament">tournament</a> datatype. |
+| nextToken   | String | Allows you to move to the next results.                                                                             |

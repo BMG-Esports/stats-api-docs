@@ -1,27 +1,27 @@
 ---
-title: GetPlayerByBhId
+title: GetPlayer (Challengermode ID)
 description: Documentation for api.brawltools.com.
 content: requests
 version: v2
 ---
 
-# GetPlayerByBhId
+# GetPlayer (Challengermode ID)
 
-Fetches basic information about a player from their BrawlhallaID.
+Returns information on a player based on their Challengermode ID.
 
 ## Request
 
 ### Syntax
 
 ```url
-https://api.brawltools.com/v2/player/bhId/:brawlhallaId
+https://api.brawltools.com/v2/player/cmId/:cmPlayerId
 ```
 
 ### Path Parameters
 
-| Parameter    | Description                        |
-| ------------ | ---------------------------------- |
-| brawlhallaId | The Brawlhalla ID for this player. |
+| Parameter  | Description                            |
+| ---------- | -------------------------------------- |
+| cmPlayerId | The Challengermode ID for this player. |
 
 ## Response
 

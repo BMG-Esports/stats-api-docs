@@ -13,26 +13,21 @@ Returns the Power Rankings for the specified region and game mode.
 
 ### Syntax
 
-`https://api.brawltools.com/v1/pr`
+```url
+https://api.brawltools.com/v2/pr
+```
 
 ### Query Parameters
 
-- **GameMode** - _Integer_
-  - Required. For 1v1 use 1, and for 2v2 use 2.
+| Parameter  | Type    | Description                                                  |
+| ---------- | ------- | ------------------------------------------------------------ |
+| page       | Integer | Optional. Lists the specified page.                          |
+| gameMode   | Integer | Required. For 1v1 use 1, and for 2v2 use 2.                  |
+| region     | String  | Required. Acceptable regions are NA, EU, SA, SEA, AUS.       |
+| maxResults | Number  | Optional. Limits results to the specified number.            |
+| orderBy    | String  | Optional. Sorts the result by a specified parameter.  Use ASC for ascending and DESC for descending order. |
 
-- **Region** - _String_
-  - Required. Acceptable regions are NA, EU, SA, SEA, AUS.
-
-- **Page** - _Integer_
-  - Optional. Lists the specified page.
-
-- **MaxResults** - _Number_
-  - Optional. Limits results to the specified number.
-
-- **OrderBy** - _String_
-  - Optional. Sorts the result by a specified parameter.
-    - ex. gold ASC or gold DESC
-    - The sortable fields are PlayerID, PlayerName, Top8, Top32, Gold, Silver, Bronze, PowerRanking, Earnings, and Points.
+- The sortable fields are PlayerID, PlayerName, Top8, Top32, Gold, Silver, Bronze, PowerRanking, Earnings, and Points.
 
 ## Response
 
@@ -115,5 +110,6 @@ Returns the Power Rankings for the specified region and game mode.
 
 The following data is returned in JSON.
 
-- **PrPlayers** - _Object[]_
-  - An object containing a player's Power Ranking information. This is a <a href="../../datatypes/prplayer">PrPlayer</a> datatype.
+| Element   | Type   | Description                                                  |
+| --------- | ------ | ------------------------------------------------------------ |
+| prPlayers | Object | An object containing a player's Power Ranking information. This is a <a href="../../datatypes/prplayer">PrPlayer</a> datatype. |

@@ -2,7 +2,7 @@
 title: Matchup Object
 description: Documentation for api.brawltools.com.
 content: datatypes
-version: v1
+version: v2
 ---
 
 # Matchup Object

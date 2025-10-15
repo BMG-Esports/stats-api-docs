@@ -13,7 +13,7 @@ Fetches information about a player from a given start.gg ID.
 
 ### Syntax
 
-```
+```url
 https://api.brawltools.com/v1/player/:PlayerID
 ```
 

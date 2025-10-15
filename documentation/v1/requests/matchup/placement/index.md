@@ -13,7 +13,7 @@ Compares the placements of specified players in tournaments.
 
 ### Syntax
 
-```
+```url
 https://api.brawltools.com/v1/matchup/placement
 ```
 

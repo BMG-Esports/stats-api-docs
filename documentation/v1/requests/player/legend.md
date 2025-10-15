@@ -13,7 +13,9 @@ Returns a player's most used legends by year.
 
 ### Syntax
 
-`https://api.brawltools.com/v1/player/legend`
+```url
+https://api.brawltools.com/v1/player/legend
+```
 
 ### Query Parameters
 

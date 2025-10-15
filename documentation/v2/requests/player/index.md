@@ -1,27 +1,31 @@
 ---
-title: GetPlayer
+title: GetPlayer (Player ID)
 description: Documentation for api.brawltools.com.
 content: requests
 version: v2
 ---
 
-## Request
-
-```
-GET https://api.brawltools.com/v2/player/:playerID
-```
-
-## Usage
+# GetPlayer (PlayerID)
 
 Returns information on a player based on their playerID.
 
-## Path Parameters
+## Request
 
-| Parameter | Description                     |
-| --------- | ------------------------------- |
-| playerId  | The interal ID for this player. |
+### Syntax
+
+```url
+https://api.brawltools.com/v2/player/:playerID
+```
+
+### Path Parameters
+
+| Parameter | Description                      |
+| --------- | -------------------------------- |
+| playerId  | The internal ID for this player. |
 
 ## Response
+
+### Sample Response
 
 ```json
 {
@@ -38,4 +42,10 @@ Returns information on a player based on their playerID.
 }
 ```
 
-This endpoint returns a [player](../../datatypes/player) object.
+### Response Elements
+
+The following data is returned in JSON.
+
+| Element | Type   | Description                                                  |
+| ------- | ------ | ------------------------------------------------------------ |
+| player  | Object | Detailed information of the player. This is a [player](../../datatypes/player) object. |

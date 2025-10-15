@@ -13,7 +13,7 @@ Fetches a player's recent placements from their ID.
 
 ### Syntax
 
-```
+```url
 https://api.brawltools.com/v1/player/placement
 ```
 

@@ -13,15 +13,16 @@ Fetches the matches a player played at a specific tournament.
 
 ### Syntax
 
-`https://api.brawltools.com/v1/player/match`
+```url
+https://api.brawltools.com/v2/player/match
+```
 
 ### Query Parameters
 
-- **EntrantSmashIds** - _Integer[]_
-  - Required. The start.gg ID of the player(s).
-
-- **EventSlug** - _String_
-  - Required. The identifying start.gg slug of a tournament.
+| Parameter    | Type   | Description                                          |
+| ------------ | ------ | ---------------------------------------------------- |
+| tournamentId | string | Required. The ID of the tournament.                  |
+| playerIds    | string | Required. The ID(s) of the player(s) being searched. |
 
 ## Response
 
@@ -154,5 +155,6 @@ Fetches the matches a player played at a specific tournament.
 
 This response body can contain the following fields in JSON.
 
-- **PlayerMatches** - _Object[]_
-  - An object containing statistics on a player's recent matches. This is a <a href="../../datatypes/playermatch.md">PlayerMatch</a> datatype.
+| Element       | Type   | Description                                                  |
+| ------------- | ------ | ------------------------------------------------------------ |
+| playerMatches | Object | An object containing statistics on a player's recent matches. This is a <a href="../../datatypes/playermatch.md">PlayerMatch</a> datatype. |

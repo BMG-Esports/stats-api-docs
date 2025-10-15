@@ -13,7 +13,9 @@ Fetches a player's recently played legends.
 
 ### Syntax
 
-`https://api.brawltools.com/v1/player/:PlayerID/legend`
+```url
+https://api.brawltools.com/v1/player/:PlayerID/legend
+```
 
 ### Path Parameters
 

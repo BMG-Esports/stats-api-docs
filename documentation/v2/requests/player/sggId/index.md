@@ -1,27 +1,27 @@
 ---
-title: GetPlayerByBhId
+title: GetPlayer (Start.gg ID)
 description: Documentation for api.brawltools.com.
 content: requests
 version: v2
 ---
 
-# GetPlayerByBhId
+# GetPlayer (Start.gg ID)
 
-Fetches basic information about a player from their BrawlhallaID.
+Returns information on a player based on their Start.gg ID.
 
 ## Request
 
 ### Syntax
 
 ```url
-https://api.brawltools.com/v2/player/bhId/:brawlhallaId
+https://api.brawltools.com/v2/player/sgg/:sggPlayerId
 ```
 
 ### Path Parameters
 
-| Parameter    | Description                        |
-| ------------ | ---------------------------------- |
-| brawlhallaId | The Brawlhalla ID for this player. |
+| Parameter   | Description                      |
+| ----------- | -------------------------------- |
+| sggPlayerId | The Start.gg ID for this player. |
 
 ## Response
 

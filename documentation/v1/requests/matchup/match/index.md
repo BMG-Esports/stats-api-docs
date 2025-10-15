@@ -13,7 +13,7 @@ Returns any matches specified players played in a specific tournament.
 
 ### Syntax
 
-```
+```url
 https://api.brawltools.com/v1/matchup/match
 ```
 

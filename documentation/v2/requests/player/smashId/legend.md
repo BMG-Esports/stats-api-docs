@@ -13,12 +13,15 @@ Fetches a player's recently played legends.
 
 ### Syntax
 
-`https://api.brawltools.com/v1/player/:PlayerID/legend`
+```url
+https://api.brawltools.com/v2/player/:PlayerID/legend
+```
 
 ### Path Parameters
 
-- **PlayerID** - _Integer_
-  - Required. The start.gg ID of the player.
+| Parameter | Type    | Description                                    |
+| --------- | ------- | ---------------------------------------------- |
+| playerId  | Integer | Required. The ID of the player being searched. |
 
 ## Response
 
@@ -35,5 +38,6 @@ Fetches a player's recently played legends.
 
 ### Response Elements
 
-- **Legend** - _Object_
-  - An object containing the player's most recent legend. This is a <a href="../../../datatypes/legend">legend</a> data type.
+| Element | Type   | Description                                                  |
+| ------- | ------ | ------------------------------------------------------------ |
+| legend  | Object | An object containing the player's most recent legend. This is a <a href="../../../datatypes/legend">legend</a> data type. |

@@ -13,7 +13,7 @@ Fetches a player's Power Ranking information from their ID.
 
 ### Syntax
 
-```
+```url
 https://api.brawltools.com/v1/player/pr
 ```
 

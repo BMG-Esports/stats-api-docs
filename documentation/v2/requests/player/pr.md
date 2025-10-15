@@ -13,15 +13,16 @@ Fetches a player's Power Ranking information from their ID.
 
 ### Syntax
 
-`https://api.brawltools.com/v1/player/pr`
+```url
+https://api.brawltools.com/v2/player/pr
+```
 
 ### Query Parameters
 
-- **EntrantSmashIds** - _Integer[]_
-  - Required. The start.gg ID of the player(s).
-
-- **GameMode** - _Integer_
-  - Required. For 1v1 use 1, and for 2v2 use 2.
+| Parameter | Type    | Description                                         |
+| --------- | ------- | --------------------------------------------------- |
+| playerIds | String  | Required. The ID(s) of the player(s) being searched |
+| gameMode  | Integer | Required. For 1v1 use 1, and for 2v2 use 2.         |
 
 ## Response
 
@@ -46,8 +47,7 @@ Fetches a player's Power Ranking information from their ID.
 
 This response body can contain the following fields in JSON.
 
-- **Earnings** - _Integer_
-  - The amount of money the player has earned in USD.
-
-- **Pr** - Object
-  - An object containing Power Ranking information. This is a <a href="../../datatypes/playerpr">PlayerPr</a> datatype.
+| Element  | Type    | Description                                                  |
+| -------- | ------- | ------------------------------------------------------------ |
+| earnings | Integer | The amount of money the player has earned in USD.            |
+| pr       | Object  | An object containing Power Ranking information. This is a <a href="../../datatypes/playerpr">PlayerPr</a> datatype. |

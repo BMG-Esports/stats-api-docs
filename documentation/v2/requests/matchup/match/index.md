@@ -13,18 +13,17 @@ Returns any matches specified players played in a specific tournament.
 
 ### Syntax
 
-`https://api.brawltools.com/v1/matchup/match`
+```url
+https://api.brawltools.com/v2/matchup/match
+```
 
 ### Query Parameters
 
-- **EventSlug** - _String_
-  - Required. The identifying start.gg slug of a tournament.
-
-- **Entrant1SmashIds** - _Integer[]_
-  - Required. The start.gg ID of the player(s).
-
-- **Entrant2SmashIds** - _Integer[]_
-  - Required. The start.gg ID of the player(s).
+| Parameter         | Type   | Description                                                        |
+| ----------------- | ------ | ------------------------------------------------------------------ |
+| tournamentId      | String | Required. The unique slug of a tournament.                         |
+| entrant1PlayerIds | String | Required. The unique ID of the player(s).                          |
+| entrant2PlayerIds | String | Optional. If included, include the same number of IDs as entrant1. |
 
 ## Response
 
@@ -34,30 +33,10 @@ Returns any matches specified players played in a specific tournament.
 {
   "matchupMatches": [
     {
-      "matchId": 58574173,
-      "scores": [3, 0],
-      "legends": [
-        ["LUCIEN", "LUCIEN", "LUCIEN"],
-        ["CASPIAN", "ASURI", "ASURI"]
-      ],
-      "maps": [
-        "Small Fortress of Lions",
-        "Small Fortress of Lions",
-        "Small Fortress of Lions"
-      ]
-    },
-    {
-      "matchId": 58574172,
-      "scores": [3, 0],
-      "legends": [
-        ["LUCIEN", "LUCIEN", "LUCIEN"],
-        ["VAL", "VAL", "CASPIAN"]
-      ],
-      "maps": [
-        "Small Fortress of Lions",
-        "Small Fortress of Lions",
-        "Miami Dome"
-      ]
+      "matchId": 77664268,
+      "scores": [3, 2],
+      "legends": [[""], [""]],
+      "maps": [""]
     }
   ]
 }
@@ -67,5 +46,6 @@ Returns any matches specified players played in a specific tournament.
 
 The following data is returned in JSON.
 
-- **MatchupMatches** - _Object[]_
-  - An object containing information about a specific match. This is a <a href="../../datatypes/matchupmatch.md">MatchupMatch</a> datatype.
+| Parameter      | Type   | Description                                                                                                                             |
+| -------------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+| matchupMatches | Object | An object containing information about a specific match. This is a <a href="../../datatypes/matchupmatch.md">MatchupMatch</a> datatype. |

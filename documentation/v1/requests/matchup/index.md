@@ -13,7 +13,7 @@ Returns the head to head stats of specified players.
 
 ### Syntax
 
-```
+```url
 https://api.brawltools.com/v1/matchup
 ```
 
@@ -157,4 +157,4 @@ The following data is returned in JSON.
 | Parameter | Type   | Description                                                                                                                     |
 | --------- | ------ | ------------------------------------------------------------------------------------------------------------------------------- |
 | matchups  | Object | An array of matchup objects involving the specified players. This is a <a href="../../datatypes/matchup">matchups</a> datatype. |
-| nextToken | String | Allows you to move to the next page of results.                                                                                 |
+| nextToken | String | A string to be used as a nextToken argument.                                                                                    |

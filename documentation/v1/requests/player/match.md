@@ -13,7 +13,9 @@ Fetches the matches a player played at a specific tournament.
 
 ### Syntax
 
-`https://api.brawltools.com/v1/player/match`
+```url
+https://api.brawltools.com/v1/player/match
+```
 
 ### Query Parameters
 

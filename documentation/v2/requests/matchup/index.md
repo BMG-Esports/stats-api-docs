@@ -13,27 +13,20 @@ Returns the head to head stats of specified players.
 
 ### Syntax
 
-`https://api.brawltools.com/v1/matchup`
+```url
+https://api.brawltools.com/v2/matchup
+```
 
 ### Query Parameters
 
-- **IsOfficial** - _Boolean_
-  - Optional. False includes community tournaments, true excludes them. If omitted, defaults to false.
-
-- **Entrant1SmashIds** - _Integer[]_
-  - Required. The start.gg ID of the player(s).
-
-- **Entrant2SmashIds** - _Integer[]_
-  - Optional. If included, include the same number of IDs as Entrant1SmashIds.
-
-- **GameMode** - _Integer_
-  - Required. For 1v1 use 1, and for 2v2 use 2.
-
-- **MaxResults** - _Integer_
-  - Optional. Limits the results to the specified number.
-
-- **NextToken** - _String_
-  - Optional. A string specifiying the next page of results.
+| Parameter         | Type            | Description                                                  |
+| ----------------- | --------------- | ------------------------------------------------------------ |
+| entrant1PlayerIds | Array (Integer) | Required. The ID(s) of the player(s) being searched.         |
+| entrant2PlayerIds | Array (Integer) | Optional. If included, include the same number of IDs as entrant1. |
+| gameMode          | Integer         | Required. For 1v1 use 1, and for 2v2 use 2.                  |
+| isOfficial        | Boolean         | Optional. False includes community tournaments, true excludes them. If omitted, defaults to false. |
+| maxResults        | Integer         | Optional. Limits the results to the specified number.        |
+| nextToken         | String          | Optional. A string specifiying the next page of results.     |
 
 ## Response
 
@@ -43,117 +36,197 @@ Returns the head to head stats of specified players.
 {
   "matchups": [
     {
-      "matches": [17, 9],
-      "games": [60, 48],
+      "matches": [
+        17,
+        9
+      ],
+      "games": [
+        60,
+        48
+      ],
       "opponent": [
         {
-          "smashId": 153043,
+          "playerId": 146606,
+          "sggPlayerId": null,
+          "cmPlayerId": null,
           "brawlhallaId": 257670,
           "name": "Boomie"
         }
       ]
     },
     {
-      "matches": [13, 9],
-      "games": [47, 39],
+      "matches": [
+        15,
+        9
+      ],
+      "games": [
+        53,
+        40
+      ],
       "opponent": [
         {
-          "smashId": 263473,
+          "playerId": 120786,
+          "sggPlayerId": null,
+          "cmPlayerId": null,
           "brawlhallaId": 1479056,
           "name": "wrenchd"
         }
       ]
     },
     {
-      "matches": [12, 3],
-      "games": [36, 10],
+      "matches": [
+        14,
+        5
+      ],
+      "games": [
+        46,
+        31
+      ],
       "opponent": [
         {
-          "smashId": 275580,
+          "playerId": 160000,
+          "sggPlayerId": null,
+          "cmPlayerId": null,
+          "brawlhallaId": 30226535,
+          "name": "Raydish"
+        }
+      ]
+    },
+    {
+      "matches": [
+        10,
+        6
+      ],
+      "games": [
+        37,
+        29
+      ],
+      "opponent": [
+        {
+          "playerId": 145913,
+          "sggPlayerId": null,
+          "cmPlayerId": null,
+          "brawlhallaId": 5832489,
+          "name": "java"
+        }
+      ]
+    },
+    {
+      "matches": [
+        10,
+        5
+      ],
+      "games": [
+        32,
+        26
+      ],
+      "opponent": [
+        {
+          "playerId": 51494,
+          "sggPlayerId": null,
+          "cmPlayerId": null,
+          "brawlhallaId": 6096753,
+          "name": "luna"
+        }
+      ]
+    },
+    {
+      "matches": [
+        12,
+        3
+      ],
+      "games": [
+        37,
+        17
+      ],
+      "opponent": [
+        {
+          "playerId": 142100,
+          "sggPlayerId": null,
+          "cmPlayerId": null,
+          "brawlhallaId": 33116656,
+          "name": "megD"
+        }
+      ]
+    },
+    {
+      "matches": [
+        12,
+        3
+      ],
+      "games": [
+        36,
+        10
+      ],
+      "opponent": [
+        {
+          "playerId": 147522,
+          "sggPlayerId": null,
+          "cmPlayerId": null,
           "brawlhallaId": 1281444,
           "name": "Phazon"
         }
       ]
     },
     {
-      "matches": [10, 1],
-      "games": [28, 7],
+      "matches": [
+        8,
+        6
+      ],
+      "games": [
+        33,
+        24
+      ],
       "opponent": [
         {
-          "smashId": 266888,
-          "brawlhallaId": 3001049,
-          "name": "Simba"
-        }
-      ]
-    },
-    {
-      "matches": [4, 5],
-      "games": [19, 17],
-      "opponent": [
-        {
-          "smashId": 728941,
+          "playerId": 81144,
+          "sggPlayerId": null,
+          "cmPlayerId": null,
           "brawlhallaId": 1396588,
           "name": "STING RAY"
         }
       ]
     },
     {
-      "matches": [7, 2],
-      "games": [24, 9],
+      "matches": [
+        13,
+        1
+      ],
+      "games": [
+        36,
+        7
+      ],
       "opponent": [
         {
-          "smashId": 328895,
-          "brawlhallaId": 3666461,
-          "name": "Snowy"
+          "playerId": 146944,
+          "sggPlayerId": null,
+          "cmPlayerId": null,
+          "brawlhallaId": 3001049,
+          "name": "simb3"
         }
       ]
     },
     {
-      "matches": [6, 3],
-      "games": [20, 11],
+      "matches": [
+        8,
+        5
+      ],
+      "games": [
+        29,
+        23
+      ],
       "opponent": [
         {
-          "smashId": 153671,
-          "brawlhallaId": 285963,
-          "name": "Cody Travis"
-        }
-      ]
-    },
-    {
-      "matches": [7, 2],
-      "games": [22, 9],
-      "opponent": [
-        {
-          "smashId": 153396,
-          "brawlhallaId": null,
-          "name": "Isidroo"
-        }
-      ]
-    },
-    {
-      "matches": [8, 1],
-      "games": [19, 5],
-      "opponent": [
-        {
-          "smashId": 767408,
-          "brawlhallaId": 91026,
-          "name": "Remmy"
-        }
-      ]
-    },
-    {
-      "matches": [5, 2],
-      "games": [18, 10],
-      "opponent": [
-        {
-          "smashId": 263960,
-          "brawlhallaId": 1565267,
-          "name": "noeL"
+          "playerId": 168635,
+          "sggPlayerId": null,
+          "cmPlayerId": null,
+          "brawlhallaId": 2205970,
+          "name": "Impala"
         }
       ]
     }
   ],
-  "nextToken": "7-28-263960"
+  "nextToken": "13-52-168635"
 }
 ```
 
@@ -161,8 +234,7 @@ Returns the head to head stats of specified players.
 
 The following data is returned in JSON.
 
-- **Matchups** - _Object[]_
-  - An array of matchup objects involving the specified players. This is a <a href="../../datatypes/matchup">matchups</a> datatype.
-
-- **NextToken** - _String_
-  - Allows you to move to the next page of results.
+| Parameter | Type   | Description                                                                                                                     |
+| --------- | ------ | ------------------------------------------------------------------------------------------------------------------------------- |
+| matchups  | Object | An array of matchup objects involving the specified players. This is a <a href="../../datatypes/matchup">matchups</a> datatype. |
+| nextToken | String | A string to be used as a nextToken argument.                                                                                 |

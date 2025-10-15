@@ -13,7 +13,7 @@ Searches Power Ranked players by name.
 
 ### Syntax
 
-```
+```url
 https://api.brawltools.com/v1/player/search
 ```
 

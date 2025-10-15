@@ -13,7 +13,7 @@ Returns the Power Rankings for the specified region and game mode.
 
 ### Syntax
 
-```
+```url
 https://api.brawltools.com/v1/pr
 ```
 
