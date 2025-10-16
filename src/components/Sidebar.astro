@@ -2,9 +2,12 @@
 import VersionSelect from "./VersionSelect.astro";
 import { getCollection } from "astro:content";
 
-const collection = await getCollection("documentation", ({ data }) => {
-  return data.version === "v1" && data.content === "requests";
-});
+const version = Astro.url.pathname.split("/")[1];
+
+const collection = await getCollection(
+  "documentation",
+  ({ data }) => data.version === version
+);
 ---
 
 <nav
@@ -16,35 +19,51 @@ const collection = await getCollection("documentation", ({ data }) => {
     <li id="header" class="mx-6 mt-2 font-bold text-black dark:text-white">
       Getting Started
     </li>
-    <li class="mx-2">
-      <a
-        class="decoration-inherit text-cyan-300 dark:text-amber-400 hover:text-teal-300 hover:dark:text-yellow-300 transition ease-in-out duration-500"
-        href="./."
-        >Test
-      </a>
-    </li>
+    {
+      collection
+        .filter(({ data }) => data.content === "resources")
+        .map((page) => (
+          <li class="mx-2">
+            <a
+              class="decoration-inherit text-cyan-300 dark:text-amber-400 hover:text-teal-300 hover:dark:text-yellow-300 transition ease-in-out duration-500"
+              href={`/${page.id.slice(0)}`}
+            >
+              {page.data.title}
+            </a>
+          </li>
+        ))
+    }
     <li id="header" class="mx-6 mt-2 font-bold text-black dark:text-white">
       Requests
     </li>
     {
-      collection.map((page) => (
-        <li class="mx-2 mt-1">
-          <a
-            class="decoration-inherit text-cyan-300 dark:text-amber-400 hover:text-teal-300 hover:dark:text-yellow-300 transition ease-in-out duration-500"
-            href={`/${page.id.slice(0)}`}
-          >
-            {page.data.title}
-          </a>
-        </li>
-      ))
+      collection
+        .filter(({ data }) => data.content === "requests")
+        .map((page) => (
+          <li class="mx-2 mt-1">
+            <a
+              class="decoration-inherit text-cyan-300 dark:text-amber-400 hover:text-teal-300 hover:dark:text-yellow-300 transition ease-in-out duration-500"
+              href={`/${page.id.slice(0)}`}
+            >
+              {page.data.title}
+            </a>
+          </li>
+        ))
     }
     <li class="mx-6 mt-2 font-bold text-black dark:text-white">Datatypes</li>
-    <li class="mx-2">
-      <a
-        class="decoration-inherit text-cyan-300 dark:text-amber-400 hover:text-teal-300 hover:dark:text-yellow-300 transition ease-in-out duration-500"
-        href="/"
-        >Test
-      </a>
-    </li>
+    {
+      collection
+        .filter(({ data }) => data.content === "datatypes")
+        .map((page) => (
+          <li class="mx-2">
+            <a
+              class="decoration-inherit text-cyan-300 dark:text-amber-400 hover:text-teal-300 hover:dark:text-yellow-300 transition ease-in-out duration-500"
+              href={`/${page.id.slice(0)}`}
+            >
+              {page.data.title}
+            </a>
+          </li>
+        ))
+    }
   </ul>
 </nav>
