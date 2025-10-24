@@ -5,7 +5,7 @@ content: datatypes
 version: v2
 ---
 
-# Player Object
+# Player
 
 An object containing information about a player.
 

@@ -1,5 +1,5 @@
 ---
-title: MatchupPlacement Objects
+title: MatchupPlacement Object
 description: Documentation for api.brawltools.com.
 content: datatypes
 version: v2

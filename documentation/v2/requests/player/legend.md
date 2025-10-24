@@ -19,13 +19,13 @@ https://api.brawltools.com/v2/player/legend
 
 ### Query Parameters
 
-| Parameter  | Type    | Description                                                  |
-| ---------- | ------- | ------------------------------------------------------------ |
-| playerIds  | String  | Required. The ID(s) of the player(s).                        |
-| isOfficial | Boolean | Optional. False includes community tournaments, true excludes them. If omitted, defaults to false. |
-| year       | Integer | Optional. The year to analyze. If omitted, includes all years. |
-| maxResults | Integer | Optional. Limits the results to the specified number.        |
-| nextToken  | String  | Optional. A string specifying the next page of results.      |
+| Parameter  | Type    | Required | Description                                                  |
+| ---------- | ------- | -------- | ------------------------------------------------------------ |
+| playerIds  | String  | ✔️        | The ID(s) of the player(s).                                  |
+| isOfficial | Boolean | ❌        | False includes community tournaments, true excludes them. If omitted, defaults to false. |
+| year       | Integer | ❌        | The year to analyze. If omitted, includes all years.         |
+| maxResults | Integer | ❌        | Limits the results to the specified number.                  |
+| nextToken  | String  | ❌        | A string specifying the next page of results.                |
 
 ## Response
 
@@ -63,5 +63,5 @@ https://api.brawltools.com/v2/player/legend
 
 | Element   | Type   | Description                                                  |
 | --------- | ------ | ------------------------------------------------------------ |
-| legends   | Object | An array of played legends for the player. This is a <a href="../../datatypes/legend">legend</a> datatype. |
+| legends   | Object | An array of played legends for the player. This is a <a href="../../datatypes/legend">Legend</a> datatype. |
 | nextToken | String | A string to be used as a nextToken argument.                 |

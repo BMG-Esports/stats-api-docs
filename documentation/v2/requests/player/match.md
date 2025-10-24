@@ -19,10 +19,10 @@ https://api.brawltools.com/v2/player/match
 
 ### Query Parameters
 
-| Parameter    | Type   | Description                                          |
-| ------------ | ------ | ---------------------------------------------------- |
-| tournamentId | string | Required. The ID of the tournament.                  |
-| playerIds    | string | Required. The ID(s) of the player(s) being searched. |
+| Parameter    | Type   | Required | Description                                |
+| ------------ | ------ | -------- | ------------------------------------------ |
+| tournamentId | string | ✔️        | The ID of the tournament.                  |
+| playerIds    | string | ✔️        | The ID(s) of the player(s) being searched. |
 
 ## Response
 
@@ -157,4 +157,4 @@ This response body can contain the following fields in JSON.
 
 | Element       | Type   | Description                                                  |
 | ------------- | ------ | ------------------------------------------------------------ |
-| playerMatches | Object | An object containing statistics on a player's recent matches. This is a <a href="../../datatypes/playermatch.md">PlayerMatch</a> datatype. |
+| playerMatches | Object | An object containing statistics on a player's recent matches. This is a <a href="../../datatypes/playermatch">PlayerMatch</a> datatype. |

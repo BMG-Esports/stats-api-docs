@@ -5,7 +5,7 @@ content: datatypes
 version: v2
 ---
 
-# Legend Object
+# Legend
 
 An object containing a player's most recently reported legend.
 

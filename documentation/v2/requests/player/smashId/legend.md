@@ -19,9 +19,9 @@ https://api.brawltools.com/v2/player/:PlayerID/legend
 
 ### Path Parameters
 
-| Parameter | Type    | Description                                    |
-| --------- | ------- | ---------------------------------------------- |
-| playerId  | Integer | Required. The ID of the player being searched. |
+| Parameter | Type    | Description                          |
+| --------- | ------- | ------------------------------------ |
+| playerId  | Integer | The ID of the player being searched. |
 
 ## Response
 
@@ -40,4 +40,4 @@ https://api.brawltools.com/v2/player/:PlayerID/legend
 
 | Element | Type   | Description                                                  |
 | ------- | ------ | ------------------------------------------------------------ |
-| legend  | Object | An object containing the player's most recent legend. This is a <a href="../../../datatypes/legend">legend</a> data type. |
+| legend  | Object | An object containing the player's most recent legend. This is a <a href="../../../datatypes/legend">Legend</a> data type. |

@@ -19,10 +19,10 @@ https://api.brawltools.com/v1/player/match
 
 ### Query Parameters
 
-| Parameter       | Type            | Description                                              |
-| --------------- | --------------- | -------------------------------------------------------- |
-| entrantSmashIds | Array (Integer) | Required. The start.gg ID of the player(s).              |
-| eventSlug       | String          | Required. The identifying start.gg slug of a tournament. |
+| Parameter       | Type            | Required | Description                                    |
+| --------------- | --------------- | -------- | ---------------------------------------------- |
+| entrantSmashIds | Array (Integer) | ✔️        | The Start.gg ID of the player(s).              |
+| eventSlug       | String          | ✔️        | The identifying Start.gg slug of a tournament. |
 
 ## Response
 

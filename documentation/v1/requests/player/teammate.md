@@ -19,12 +19,12 @@ https://api.brawltools.com/v1/player/teammate
 
 ### Query Parameters
 
-| Parameter  | Type    | Description                                                         |
-| ---------- | ------- | ------------------------------------------------------------------- |
-| smashId    | Integer | Required. The start.gg ID of the player.                            |
-| isOfficial | Boolean | Optional. False includes community tournaments, true excludes them. |
-| maxResults | Integer | Optional. Limits the results to the specified number.               |
-| nextToken  | String  | Optional. A string specifiying the next page of results.            |
+| Parameter  | Type    |      | Description                                               |
+| ---------- | ------- | ---- | --------------------------------------------------------- |
+| smashId    | Integer | ✔️    | The Start.gg ID of the player.                            |
+| isOfficial | Boolean | ❌    | False includes community tournaments, true excludes them. |
+| maxResults | Integer | ❌    | Limits the results to the specified number.               |
+| nextToken  | String  | ❌    | A string specifying the next page of results.             |
 
 ## Response
 

@@ -19,13 +19,13 @@ https://api.brawltools.com/v2/player/placement
 
 ### Query Parameters
 
-| Parameter  | Type    | Description                                                  |
-| ---------- | ------- | ------------------------------------------------------------ |
-| playerIds  | String  | Required. The ID(s) of the player(s) being searched.         |
-| gameMode   | Integer | Required. For 1v1 use 1, and for 2v2 use 2.                  |
-| isOfficial | Boolean | Optional. False includes community tournaments, true excludes them. If omitted, defaults to false. |
-| maxResults | Integer | Optional. Limits the results to the specified number.        |
-| nextToken  | String  | Optional. A string specifying the next page of results.      |
+| Parameter  | Type    | Required | Description                                                  |
+| ---------- | ------- | -------- | ------------------------------------------------------------ |
+| playerIds  | String  | ✔️        | The ID(s) of the player(s) being searched.                   |
+| gameMode   | Integer | ✔️        | For 1v1 use 1, and for 2v2 use 2.                            |
+| isOfficial | Boolean | ❌        | False includes community tournaments, true excludes them. If omitted, defaults to false. |
+| maxResults | Integer | ❌        | Limits the results to the specified number.                  |
+| nextToken  | String  | ❌        | A string specifying the next page of results.                |
 
 ## Response
 

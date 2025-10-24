@@ -19,10 +19,10 @@ https://api.brawltools.com/v2/player/pr
 
 ### Query Parameters
 
-| Parameter | Type    | Description                                         |
-| --------- | ------- | --------------------------------------------------- |
-| playerIds | String  | Required. The ID(s) of the player(s) being searched |
-| gameMode  | Integer | Required. For 1v1 use 1, and for 2v2 use 2.         |
+| Parameter | Type    | Required | Description                               |
+| --------- | ------- | -------- | ----------------------------------------- |
+| playerIds | String  | ✔️        | The ID(s) of the player(s) being searched |
+| gameMode  | Integer | ✔️        | For 1v1 use 1, and for 2v2 use 2.         |
 
 ## Response
 

@@ -1,11 +1,11 @@
 ---
-title: GetPlayer (Player ID)
+title: GetPlayer
 description: Documentation for api.brawltools.com.
 content: requests
 version: v2
 ---
 
-# GetPlayer (PlayerID)
+# GetPlayer
 
 Returns information on a player based on their playerID.
 
@@ -48,4 +48,4 @@ The following data is returned in JSON.
 
 | Element | Type   | Description                                                  |
 | ------- | ------ | ------------------------------------------------------------ |
-| player  | Object | Detailed information of the player. This is a [player](../../datatypes/player) object. |
+| player  | Object | Detailed information of the player. This is a [Player](../../datatypes/player) object. |

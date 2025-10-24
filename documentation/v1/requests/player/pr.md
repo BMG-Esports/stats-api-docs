@@ -19,10 +19,10 @@ https://api.brawltools.com/v1/player/pr
 
 ### Query Parameters
 
-| Parameter       | Type            | Description                                 |
-| --------------- | --------------- | ------------------------------------------- |
-| entrantSmashIds | Array (Integer) | Required. The start.gg ID of the player(s). |
-| gameMode        | Integer         | Required. For 1v1 use 1, and for 2v2 use 2. |
+| Parameter       | Type            | Required | Description                       |
+| --------------- | --------------- | -------- | --------------------------------- |
+| entrantSmashIds | Array (Integer) | ✔️        | The Start.gg ID of the player(s). |
+| gameMode        | Integer         | ✔️        | For 1v1 use 1, and for 2v2 use 2. |
 
 ## Response
 

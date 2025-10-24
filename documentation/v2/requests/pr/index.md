@@ -19,13 +19,13 @@ https://api.brawltools.com/v2/pr
 
 ### Query Parameters
 
-| Parameter  | Type    | Description                                                  |
-| ---------- | ------- | ------------------------------------------------------------ |
-| page       | Integer | Optional. Lists the specified page.                          |
-| gameMode   | Integer | Required. For 1v1 use 1, and for 2v2 use 2.                  |
-| region     | String  | Required. Acceptable regions are NA, EU, SA, SEA, AUS.       |
-| maxResults | Number  | Optional. Limits results to the specified number.            |
-| orderBy    | String  | Optional. Sorts the result by a specified parameter.  Use ASC for ascending and DESC for descending order. |
+| Parameter  | Type    | Required | Description                                                  |
+| ---------- | ------- | -------- | ------------------------------------------------------------ |
+| page       | Integer | ❌        | Lists the specified page.                                    |
+| gameMode   | Integer | ✔️        | For 1v1 use 1, and for 2v2 use 2.                            |
+| region     | String  | ✔️        | Acceptable regions are NA, EU, SA, SEA, AUS.                 |
+| maxResults | Number  | ❌        | Limits results to the specified number.                      |
+| orderBy    | String  | ❌        | Sorts the result by a specified parameter. Use ASC for ascending and DESC for descending order. |
 
 - The sortable fields are PlayerID, PlayerName, Top8, Top32, Gold, Silver, Bronze, PowerRanking, Earnings, and Points.
 
@@ -110,6 +110,6 @@ https://api.brawltools.com/v2/pr
 
 The following data is returned in JSON.
 
-| Element   | Type   | Description                                                  |
-| --------- | ------ | ------------------------------------------------------------ |
+| Element   | Type   | Description                                                                                                                    |
+| --------- | ------ | ------------------------------------------------------------------------------------------------------------------------------ |
 | prPlayers | Object | An object containing a player's Power Ranking information. This is a <a href="../../datatypes/prplayer">PrPlayer</a> datatype. |

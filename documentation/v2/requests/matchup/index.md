@@ -19,14 +19,24 @@ https://api.brawltools.com/v2/matchup
 
 ### Query Parameters
 
-| Parameter         | Type            | Description                                                  |
-| ----------------- | --------------- | ------------------------------------------------------------ |
-| entrant1PlayerIds | Array (Integer) | Required. The ID(s) of the player(s) being searched.         |
-| entrant2PlayerIds | Array (Integer) | Optional. If included, include the same number of IDs as entrant1. |
-| gameMode          | Integer         | Required. For 1v1 use 1, and for 2v2 use 2.                  |
-| isOfficial        | Boolean         | Optional. False includes community tournaments, true excludes them. If omitted, defaults to false. |
-| maxResults        | Integer         | Optional. Limits the results to the specified number.        |
-| nextToken         | String          | Optional. A string specifiying the next page of results.     |
+| Parameter         | Type            | Required | Description                                                  |
+| ----------------- | --------------- | -------- | ------------------------------------------------------------ |
+| entrant1PlayerIds | Array (Integer) | ✔️        | The first set of ID(s) for the player(s) being searched.     |
+| entrant2PlayerIds | Array (Integer) | ❌        | The second set of ID(s) for the player(s) being searched.    |
+| gameMode          | Integer         | ✔️        | For 1v1 use 1, and for 2v2 use 2. If either entrant parameter has two players, 2 must be set. |
+| isOfficial        | Boolean         | ❌        | False includes community tournaments, true excludes them. If omitted, defaults to false. |
+| maxResults        | Integer         | ❌        | Limits the results to the specified number.                  |
+| nextToken         | String          | ❌        | A string specifying the next page of results.                |
+
+This endpoint has multiple use cases:
+
+- Searching one individual player in either game mode to return a list of their opponents by total cumulative matches.
+
+- Searching two individual players in 1v1 to find the total number of matches and games played against each other.
+- Searching two teams in 2v2 to find the total number of matches and games played against each other.
+
+- Searching two individual players in 2v2 to find their total (all teams combined) game and match instances.
+- Searching one individual player against a team to find the total number of games and matches the individual player played across teams.
 
 ## Response
 
@@ -234,7 +244,7 @@ https://api.brawltools.com/v2/matchup
 
 The following data is returned in JSON.
 
-| Parameter | Type   | Description                                                                                                                     |
-| --------- | ------ | ------------------------------------------------------------------------------------------------------------------------------- |
-| matchups  | Object | An array of matchup objects involving the specified players. This is a <a href="../../datatypes/matchup">matchups</a> datatype. |
-| nextToken | String | A string to be used as a nextToken argument.                                                                                 |
+| Parameter | Type   | Description                                                  |
+| --------- | ------ | ------------------------------------------------------------ |
+| matchups  | Object | An array of matchup objects involving the specified players. This is a <a href="../../datatypes/matchup">Matchups</a> datatype. |
+| nextToken | String | A string to be used as a nextToken argument.                 |

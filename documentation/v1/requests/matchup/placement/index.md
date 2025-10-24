@@ -19,14 +19,14 @@ https://api.brawltools.com/v1/matchup/placement
 
 ### Query Parameters
 
-| Parameter        | Type            | Description                                                                                        |
-| ---------------- | --------------- | -------------------------------------------------------------------------------------------------- |
-| isOfficial       | Boolean         | Optional. False includes community tournaments, true excludes them. If omitted, defaults to false. |
-| entrant1SmashIds | Array (Integer) | Required. The start.gg ID of the player(s).                                                        |
-| entrant2SmashIds | Array (Integer) | Required. The start.gg ID of the player(s).                                                        |
-| gameMode         | Integer         | Required. For 1v1 use 1, and for 2v2 use 2.                                                        |
-| maxResults       | Integer         | Optional. Limits the results to the specified number.                                              |
-| nextToken        | String          | Optional. A string specifiying the next page of results.                                           |
+| Parameter        | Type            | Required | Description                                                  |
+| ---------------- | --------------- | -------- | ------------------------------------------------------------ |
+| isOfficial       | Boolean         | ❌        | False includes community tournaments, true excludes them. If omitted, defaults to false. |
+| entrant1SmashIds | Array (Integer) | ✔️        | The Start.gg ID of the player(s).                            |
+| entrant2SmashIds | Array (Integer) | ✔️        | The Start.gg ID of the player(s).                            |
+| gameMode         | Integer         | ✔️        | For 1v1 use 1, and for 2v2 use 2.                            |
+| maxResults       | Integer         | ❌        | Limits the results to the specified number.                  |
+| nextToken        | String          | ❌        | A string specifying the next page of results.                |
 
 ## Response
 

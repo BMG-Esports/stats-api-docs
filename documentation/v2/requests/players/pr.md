@@ -20,13 +20,13 @@ https://api.brawltools.com/v2/players/pr
 
 ### Query Parameters
 
-| Parameter | Type    | Description                                         |
-| --------- | ------- | --------------------------------------------------- |
-| playerIds | String  | The ID of the player being searched.                |
-| bhIds     | String  | The Brawlhalla ID of the player being searched.     |
-| sggIds    | String  | The Start.gg ID of the player being searched.       |
-| cmIds     | String  | The Challengermode ID of the player being searched. |
-| gameMode  | Integer | Optional. For 1v1 use 1, and for 2v2 use 2.         |
+| Parameter | Type    | Required | Description                                         |
+| --------- | ------- | -------- | --------------------------------------------------- |
+| playerIds | String  | ✔️        | The ID of the player being searched.                |
+| bhIds     | String  | ✔️        | The Brawlhalla ID of the player being searched.     |
+| sggIds    | String  | ✔️        | The Start.gg ID of the player being searched.       |
+| cmIds     | String  | ✔️        | The Challengermode ID of the player being searched. |
+| gameMode  | Integer | ❌        | For 1v1 use 1, and for 2v2 use 2.                   |
 
 Only one of the player ID types will be accepted. Using more than one will result in a 400 Response.
 
@@ -63,5 +63,5 @@ Only one of the player ID types will be accepted. Using more than one will resul
 
 | Element | Type   | Description                                                  |
 | ------- | ------ | ------------------------------------------------------------ |
-| player  | Object | Detailed information of the player. This is a [player](../../datatypes/player) object. |
+| player  | Object | Detailed information of the player. This is a [Player](../../datatypes/player) object. |
 | pr      | Object | The player's Power Ranking information. This is a [PlayerPr](../../datatypes/playerpr) object. |

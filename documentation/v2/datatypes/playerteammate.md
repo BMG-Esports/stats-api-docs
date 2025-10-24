@@ -1,5 +1,5 @@
 ---
-title: PlayerTeammate
+title: PlayerTeammate Object
 description: Documentation for api.brawltools.com.
 content: datatypes
 version: v2

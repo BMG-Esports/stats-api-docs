@@ -48,5 +48,4 @@ The following data is returned in JSON.
 
 | Element | Type   | Description                                                  |
 | ------- | ------ | ------------------------------------------------------------ |
-| player  | Object | Detailed information of the player. This is a [player](../../datatypes/player) object. |
-
+| player  | Object | Detailed information of the player. This is a [Player](../../../datatypes/player) object. |

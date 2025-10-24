@@ -5,18 +5,18 @@ content: datatypes
 version: v1
 ---
 
-# Player Object
+# Player
 
 An object containing information about a player.
 
 ## Contents
 
-| Parameter    | Type    | Description                                                                  |
-| ------------ | ------- | ---------------------------------------------------------------------------- |
-| smashId      | Integer | The start.gg ID of the player.                                               |
-| brawlhallaId | Integer | The Brawlhalla ID of the player.                                             |
-| name         | String  | The name of the player.                                                      |
+| Parameter    | Type    | Description                                                  |
+| ------------ | ------- | ------------------------------------------------------------ |
+| smashId      | Integer | The Start.gg ID of the player.                               |
+| brawlhallaId | Integer | The Brawlhalla ID of the player.                             |
+| name         | String  | The name of the player.                                      |
 | twitter      | String  | The username of the player's X (formerly Twitter) account. Omitted if empty. |
-| twitch       | String  | The username of the player's Twitch.tv account. Omitted if empty.            |
-| country      | String  | The player's originating country. Omitted if empty.                          |
-| pronoun      | String  | The player's pronouns as listed on start.gg. Omitted if empty.               |
+| twitch       | String  | The username of the player's Twitch.tv account. Omitted if empty. |
+| country      | String  | The player's originating country. Omitted if empty.          |
+| pronoun      | String  | The player's pronouns as listed on Start.gg. Omitted if empty. |

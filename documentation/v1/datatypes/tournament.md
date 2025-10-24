@@ -13,7 +13,7 @@ An object containing information about a tournament.
 
 | Parameter      | Type    | Description                                                 |
 | -------------- | ------- | ----------------------------------------------------------- |
-| slug           | String  | The identifying start.gg slug of a tournament.              |
+| slug           | String  | The identifying Start.gg slug of a tournament.              |
 | tournamentName | String  | The official name of the tournament.                        |
 | eventName      | String  | The name of the tournament event.                           |
 | year           | Integer | The year the tournament was held.                           |

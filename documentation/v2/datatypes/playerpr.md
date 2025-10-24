@@ -1,5 +1,5 @@
 ---
-title: PlayerPr
+title: PlayerPr Object
 description: Documentation for api.brawltools.com.
 content: datatypes
 version: v2

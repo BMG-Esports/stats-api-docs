@@ -19,9 +19,9 @@ https://api.brawltools.com/v1/player/:PlayerID/legend
 
 ### Path Parameters
 
-| Parameter | Type    | Description                              |
-| --------- | ------- | ---------------------------------------- |
-| playerId  | Integer | Required. The start.gg ID of the player. |
+| Parameter | Type    | Description                    |
+| --------- | ------- | ------------------------------ |
+| playerId  | Integer | The Start.gg ID of the player. |
 
 ## Response
 
@@ -38,6 +38,6 @@ https://api.brawltools.com/v1/player/:PlayerID/legend
 
 ### Response Elements
 
-| Parameter | Type   | Description                                                                                                               |
-| --------- | ------ | ------------------------------------------------------------------------------------------------------------------------- |
-| legend    | Object | An object containing the player's most recent legend. This is a <a href="../../../datatypes/legend">legend</a> data type. |
+| Parameter | Type   | Description                                                  |
+| --------- | ------ | ------------------------------------------------------------ |
+| legend    | Object | An object containing the player's most recent legend. This is a <a href="../../../datatypes/legend">Legend</a> data type. |

@@ -19,13 +19,13 @@ https://api.brawltools.com/v1/pr
 
 ### Query Parameters
 
-| Parameter  | Type    | Description                                                                      |
-| ---------- | ------- | -------------------------------------------------------------------------------- |
-| gameMode   | Integer | Required. For 1v1 use 1, and for 2v2 use 2.                                      |
-| region     | String  | Required. Valid regions are NA, EU, SA, SEA, AUS.                                |
-| page       | Integer | Optional. Lists the specified page.                                              |
-| maxResults | Number  | Optional. Limits results to the specified number.                                |
-| orderBy    | String  | Optional. Sorts the result by a specified parameter. (ex. gold ASC or gold DESC) |
+| Parameter  | Type    | Required | Description                                                  |
+| ---------- | ------- | -------- | ------------------------------------------------------------ |
+| gameMode   | Integer | ✔️        | For 1v1 use 1, and for 2v2 use 2.                            |
+| region     | String  | ✔️        | Valid regions are NA, EU, SA, SEA, AUS.                      |
+| page       | Integer | ❌        | Lists the specified page.                                    |
+| maxResults | Number  | ❌        | Limits results to the specified number.                      |
+| orderBy    | String  | ❌        | Sorts the result by a specified parameter. (ex. gold ASC or gold DESC) |
 
 Valid orderBy parameters are playerID, playerName, top8, top32, gold, silver, bronze, powerRanking, and earnings.
 

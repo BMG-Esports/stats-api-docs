@@ -1,11 +1,11 @@
 ---
-title: GetPlayer (Challengermode ID)
+title: GetPlayerByCmId
 description: Documentation for api.brawltools.com.
 content: requests
 version: v2
 ---
 
-# GetPlayer (Challengermode ID)
+# GetPlayerByCmId
 
 Returns information on a player based on their Challengermode ID.
 
@@ -48,5 +48,4 @@ The following data is returned in JSON.
 
 | Element | Type   | Description                                                  |
 | ------- | ------ | ------------------------------------------------------------ |
-| player  | Object | Detailed information of the player. This is a [player](../../datatypes/player) object. |
-
+| player  | Object | Detailed information of the player. This is a [Player](../../../datatypes/player) object. |

@@ -19,14 +19,14 @@ https://api.brawltools.com/v2/matchup/placement
 
 ### Query Parameters
 
-| Parameter         | Type    | Description                                                  |
-| ----------------- | ------- | ------------------------------------------------------------ |
-| entrant1PlayerIds | Integer | Required. The ID(s) of the first team.                       |
-| entrant2PlayerIds | Integer | Required. The ID(s) of the second team.                      |
-| gameMode          | Integer | Required. For 1v1 use 1, and for 2v2 use 2.                  |
-| isOfficial        | Boolean | Optional. False includes community tournaments, true excludes them. If omitted, defaults to false. |
-| maxResults        | Integer | Optional. Limits the results to the specified number.        |
-| nextToken         | String  | Optional. A string specifiying the next page of results.     |
+| Parameter         | Type    | Required | Description                                                  |
+| ----------------- | ------- | -------- | ------------------------------------------------------------ |
+| entrant1PlayerIds | Integer | ✔️        | The ID(s) of the first team.                                 |
+| entrant2PlayerIds | Integer | ✔️        | The ID(s) of the second team.                                |
+| gameMode          | Integer | ✔️        | For 1v1 use 1, and for 2v2 use 2.                            |
+| isOfficial        | Boolean | ❌        | False includes community tournaments, true excludes them. If omitted, defaults to false. |
+| maxResults        | Integer | ❌        | Limits the results to the specified number.                  |
+| nextToken         | String  | ❌        | Optional. A string specifying the next page of results.      |
 
 ## Response
 

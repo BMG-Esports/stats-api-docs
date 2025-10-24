@@ -19,12 +19,12 @@ https://api.brawltools.com/v2/player/teammate
 
 ### Query Parameters
 
-| Parameters | Type    | Description                                                  |
-| ---------- | ------- | ------------------------------------------------------------ |
-| playerId   | Integer | Required. The ID of the player being searched.               |
-| maxResults | Integer | Optional. Limits the results to the specified number.        |
-| isOfficial | Boolean | Optional. False includes community tournaments, true excludes them. |
-| nextToken  | String  | Optional. A string specifiying the next page of results.     |
+| Parameters | Type    | Required | Description                                               |
+| ---------- | ------- | -------- | --------------------------------------------------------- |
+| playerId   | Integer | ✔️        | The ID of the player being searched.                      |
+| maxResults | Integer | ❌        | Limits the results to the specified number.               |
+| isOfficial | Boolean | ❌        | False includes community tournaments, true excludes them. |
+| nextToken  | String  | ❌        | A string specifiying the next page of results.            |
 
 ## Response
 

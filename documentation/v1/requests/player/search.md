@@ -19,11 +19,11 @@ https://api.brawltools.com/v1/player/search
 
 ### Query Parameters
 
-| Parameter  | Type    | Description                                              |
-| ---------- | ------- | -------------------------------------------------------- |
-| query      | String  | Required. Your search query.                             |
-| maxResults | Integer | Optional. Limits the results to the specified number.    |
-| nextToken  | String  | Optional. A string specifiying the next page of results. |
+| Parameter  | Type    | Required | Description                                   |
+| ---------- | ------- | -------- | --------------------------------------------- |
+| query      | String  | ✔️        | Your search query.                            |
+| maxResults | Integer | ❌        | Limits the results to the specified number.   |
+| nextToken  | String  | ❌        | A string specifying the next page of results. |
 
 ## Response
 

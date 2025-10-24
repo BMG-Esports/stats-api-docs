@@ -5,7 +5,7 @@ content: datatypes
 version: v1
 ---
 
-# Matchup Object
+# Matchup
 
 An object containing the matchup information of specified players.
 
