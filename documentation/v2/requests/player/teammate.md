@@ -19,12 +19,12 @@ https://api.brawltools.com/v2/player/teammate
 
 ### Query Parameters
 
-| Parameters | Type    | Required | Description                                               |
-| ---------- | ------- | -------- | --------------------------------------------------------- |
-| playerId   | Integer | ✔️        | The ID of the player being searched.                      |
-| maxResults | Integer | ❌        | Limits the results to the specified number.               |
-| isOfficial | Boolean | ❌        | False includes community tournaments, true excludes them. |
-| nextToken  | String  | ❌        | A string specifiying the next page of results.            |
+| Parameters | Type    | Required | Description                                                                                   |
+| ---------- | ------- | -------- | --------------------------------------------------------------------------------------------- |
+| playerId   | Integer | ✔️       | The esports ID of the player being searched.                                                  |
+| maxResults | Integer | ❌       | Limits the results to the specified number, with a maximum of 50. If omitted, defaults to 10. |
+| isOfficial | Boolean | ❌       | False includes community tournaments, true excludes them.                                     |
+| nextToken  | String  | ❌       | A string specifiying the next page of results.                                                |
 
 ## Response
 
@@ -114,8 +114,7 @@ https://api.brawltools.com/v2/player/teammate
 
 This response body can contain the following fields in JSON.
 
-| Element         | Type   | Description                                                  |
-| --------------- | ------ | ------------------------------------------------------------ |
-| playerTeammates | Object | An array containing a player's most popular teammates. This is a <a href="../../datatypes/playerteammate">PlayerTeammate</a> datatype. |
-| nextToken       | String | A string to be used as a nextToken argument.                 |
-
+| Element         | Type   | Description                                                                                                               |
+| --------------- | ------ | ------------------------------------------------------------------------------------------------------------------------- |
+| playerTeammates | Object | An array containing a player's most popular teammates. This is a [PlayerTeammate](/v2/datatypes/playerteammate) datatype. |
+| nextToken       | String | A string to be used as a nextToken argument.                                                                              |

@@ -21,9 +21,9 @@ https://api.brawltools.com/v1/matchup/match
 
 | Parameter        | Type            | Required? | Description                                    |
 | ---------------- | --------------- | --------- | ---------------------------------------------- |
-| eventSlug        | String          | ✔️         | The identifying Start.gg slug of a tournament. |
-| entrant1SmashIds | Array (Integer) | ✔️         | The Start.gg ID of the player(s).              |
-| entrant2SmashIds | Array (Integer) | ✔️         | The Start.gg ID of the player(s).              |
+| eventSlug        | String          | ✔️        | The identifying Start.gg slug of a tournament. |
+| entrant1SmashIds | Array (Integer) | ✔️        | The Start.gg ID of the player(s).              |
+| entrant2SmashIds | Array (Integer) | ✔️        | The Start.gg ID of the player(s).              |
 
 ## Response
 
@@ -66,6 +66,6 @@ https://api.brawltools.com/v1/matchup/match
 
 The following data is returned in JSON.
 
-| Parameter      | Type   | Description                                                                                                                             |
-| -------------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------- |
-| matchupMatches | Object | An object containing information about a specific match. This is a <a href="../../datatypes/matchupmatch.md">MatchupMatch</a> datatype. |
+| Parameter      | Type   | Description                                                                                                             |
+| -------------- | ------ | ----------------------------------------------------------------------------------------------------------------------- |
+| matchupMatches | Object | An object containing information about a specific match. This is a [MatchupMatch](/v1/datatypes/matchupmatch) datatype. |

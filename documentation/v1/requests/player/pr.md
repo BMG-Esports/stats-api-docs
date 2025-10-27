@@ -50,4 +50,4 @@ This response body can contain the following fields in JSON.
 | Parameter | Type    | Description                                                                                                         |
 | --------- | ------- | ------------------------------------------------------------------------------------------------------------------- |
 | earnings  | Integer | The amount of money the player has earned in USD.                                                                   |
-| pr        | Object  | An object containing Power Ranking information. This is a <a href="../../datatypes/playerpr">PlayerPr</a> datatype. |
+| pr        | Object  | An object containing Power Ranking information. This is a [PlayerPr](/v1/datatypes/playerpr) datatype. |

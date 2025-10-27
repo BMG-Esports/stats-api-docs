@@ -21,8 +21,8 @@ https://api.brawltools.com/v1/player/match
 
 | Parameter       | Type            | Required | Description                                    |
 | --------------- | --------------- | -------- | ---------------------------------------------- |
-| entrantSmashIds | Array (Integer) | ✔️        | The Start.gg ID of the player(s).              |
-| eventSlug       | String          | ✔️        | The identifying Start.gg slug of a tournament. |
+| entrantSmashIds | Array (Integer) | ✔️       | The Start.gg ID of the player(s).              |
+| eventSlug       | String          | ✔️       | The identifying Start.gg slug of a tournament. |
 
 ## Response
 
@@ -155,6 +155,6 @@ https://api.brawltools.com/v1/player/match
 
 This response body can contain the following fields in JSON.
 
-| Parameter     | Type   | Description                                                                                                                                |
-| ------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| playerMatches | Object | An object containing statistics on a player's recent matches. This is a <a href="../../datatypes/playermatch.md">PlayerMatch</a> datatype. |
+| Parameter     | Type   | Description                                                                                                                |
+| ------------- | ------ | -------------------------------------------------------------------------------------------------------------------------- |
+| playerMatches | Object | An object containing statistics on a player's recent matches. This is a [PlayerMatch](/v1/datatypes/playermatch) datatype. |

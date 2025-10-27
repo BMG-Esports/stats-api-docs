@@ -1,11 +1,11 @@
 ---
-title: MatchupMatch Object
+title: MatchupMatch
 description: Documentation for api.brawltools.com.
 content: datatypes
 version: v2
 ---
 
-# MatchupMatch
+# MatchupMatch Object
 
 An object containing information about a specific match between players.
 

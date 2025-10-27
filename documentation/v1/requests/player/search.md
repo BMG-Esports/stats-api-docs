@@ -19,11 +19,11 @@ https://api.brawltools.com/v1/player/search
 
 ### Query Parameters
 
-| Parameter  | Type    | Required | Description                                   |
-| ---------- | ------- | -------- | --------------------------------------------- |
-| query      | String  | ✔️        | Your search query.                            |
-| maxResults | Integer | ❌        | Limits the results to the specified number.   |
-| nextToken  | String  | ❌        | A string specifying the next page of results. |
+| Parameter  | Type    | Required | Description                                                                                   |
+| ---------- | ------- | -------- | --------------------------------------------------------------------------------------------- |
+| query      | String  | ✔️       | Your search query.                                                                            |
+| maxResults | Integer | ❌       | Limits the results to the specified number.                                                   |
+| nextToken  | String  | ❌       | Limits the results to the specified number, with a maximum of 25. If omitted, defaults to 10. |
 
 ## Response
 
@@ -77,7 +77,7 @@ https://api.brawltools.com/v1/player/search
 
 The following data is returned in JSON.
 
-| Parameter    | Type   | Description                                                                                          |
-| ------------ | ------ | ---------------------------------------------------------------------------------------------------- |
-| searchPlayer | Object | The results of the search. This is a <a href="../../datatypes/searchplayer">SearchPlayer</a> object. |
-| nextToken    | String | Allows you to move to the next results.                                                              |
+| Parameter    | Type   | Description                                                                             |
+| ------------ | ------ | --------------------------------------------------------------------------------------- |
+| searchPlayer | Object | The results of the search. This is a [SearchPlayer](/v1/datatypes/searchplayer) object. |
+| nextToken    | String | Allows you to move to the next results.                                                 |

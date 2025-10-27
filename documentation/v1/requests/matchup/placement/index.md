@@ -19,14 +19,14 @@ https://api.brawltools.com/v1/matchup/placement
 
 ### Query Parameters
 
-| Parameter        | Type            | Required | Description                                                  |
-| ---------------- | --------------- | -------- | ------------------------------------------------------------ |
-| isOfficial       | Boolean         | ❌        | False includes community tournaments, true excludes them. If omitted, defaults to false. |
-| entrant1SmashIds | Array (Integer) | ✔️        | The Start.gg ID of the player(s).                            |
-| entrant2SmashIds | Array (Integer) | ✔️        | The Start.gg ID of the player(s).                            |
-| gameMode         | Integer         | ✔️        | For 1v1 use 1, and for 2v2 use 2.                            |
-| maxResults       | Integer         | ❌        | Limits the results to the specified number.                  |
-| nextToken        | String          | ❌        | A string specifying the next page of results.                |
+| Parameter        | Type            | Required | Description                                                                                   |
+| ---------------- | --------------- | -------- | --------------------------------------------------------------------------------------------- |
+| isOfficial       | Boolean         | ❌       | False includes community tournaments, true excludes them. If omitted, defaults to false.      |
+| entrant1SmashIds | Array (Integer) | ✔️       | The Start.gg ID of the player(s).                                                             |
+| entrant2SmashIds | Array (Integer) | ✔️       | The Start.gg ID of the player(s).                                                             |
+| gameMode         | Integer         | ✔️       | For 1v1 use 1, and for 2v2 use 2.                                                             |
+| maxResults       | Integer         | ❌       | Limits the results to the specified number, with a maximum of 50. If omitted, defaults to 10. |
+| nextToken        | String          | ❌       | A string specifying the next page of results.                                                 |
 
 ## Response
 
@@ -164,7 +164,7 @@ https://api.brawltools.com/v1/matchup/placement
 
 The following data is returned in JSON.
 
-| Parameter         | Type   | Description                                                                                                                                  |
-| ----------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| matchupPlacements | Object | An object containing placement comparisons in a matchup. This is a <a href="../../datatypes/matchupplacement">MatchupPlacement</a> datatype. |
-| nextToken         | String | Allows you to move to the next results.                                                                                                      |
+| Parameter         | Type   | Description                                                                                                                     |
+| ----------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------- |
+| matchupPlacements | Object | An object containing placement comparisons in a matchup. This is a [MatchupPlacement](/v1/datatypes/matchupplacement) datatype. |
+| nextToken         | String | Allows you to move to the next results.                                                                                         |

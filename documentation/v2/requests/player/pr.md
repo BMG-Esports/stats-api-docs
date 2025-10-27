@@ -21,8 +21,8 @@ https://api.brawltools.com/v2/player/pr
 
 | Parameter | Type    | Required | Description                               |
 | --------- | ------- | -------- | ----------------------------------------- |
-| playerIds | String  | ✔️        | The ID(s) of the player(s) being searched |
-| gameMode  | Integer | ✔️        | For 1v1 use 1, and for 2v2 use 2.         |
+| playerIds | String  | ✔️       | The ID(s) of the player(s) being searched |
+| gameMode  | Integer | ✔️       | For 1v1 use 1, and for 2v2 use 2.         |
 
 ## Response
 
@@ -47,7 +47,7 @@ https://api.brawltools.com/v2/player/pr
 
 This response body can contain the following fields in JSON.
 
-| Element  | Type    | Description                                                  |
-| -------- | ------- | ------------------------------------------------------------ |
-| earnings | Integer | The amount of money the player has earned in USD.            |
-| pr       | Object  | An object containing Power Ranking information. This is a <a href="../../datatypes/playerpr">PlayerPr</a> datatype. |
+| Element  | Type    | Description                                                                                            |
+| -------- | ------- | ------------------------------------------------------------------------------------------------------ |
+| earnings | Integer | The amount of money the player has earned in USD.                                                      |
+| pr       | Object  | An object containing Power Ranking information. This is a [PlayerPr](/v2/datatypes/playerpr) datatype. |

@@ -38,6 +38,6 @@ https://api.brawltools.com/v1/player/:PlayerID/legend
 
 ### Response Elements
 
-| Parameter | Type   | Description                                                  |
-| --------- | ------ | ------------------------------------------------------------ |
-| legend    | Object | An object containing the player's most recent legend. This is a <a href="../../../datatypes/legend">Legend</a> data type. |
+| Parameter | Type   | Description                                                                                               |
+| --------- | ------ | --------------------------------------------------------------------------------------------------------- |
+| legend    | Object | An object containing the player's most recent legend. This is a [Legend](/v1/datatypes/legend) data type. |

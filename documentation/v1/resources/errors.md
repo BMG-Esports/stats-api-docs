@@ -1,5 +1,5 @@
 ---
-title: Brawlhalla Stats API Errors
+title: Status Codes
 description: Documentation for api.brawltools.com.
 content: resources
 version: v1

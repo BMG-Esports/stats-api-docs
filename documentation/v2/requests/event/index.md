@@ -23,8 +23,8 @@ https://api.brawltools.com/v2/event
 | ---------- | ------- | -------- | ------------------------------------------------------------ |
 | gameMode   | Integer | ✔️        | Use 1 for 1v1 and 2 for 2v2.                                 |
 | isOfficial | Boolean | ❌        | False includes community tournaments, true excludes them. If omitted, defaults to false. |
-| year       | Integer | ❌        | The year to analyze. If omitted, includes all years.         |
-| maxResults | Integer | ❌        | Limits results to the specified number.                      |
+| year       | Integer | ❌        | The year to filter results to.                               |
+| maxResults | Integer | ❌        | Limits the results to the specified number, with a maximum of 50. If omitted, defaults to 10. |
 | nextToken  | String  | ❌        | A string specifiying the next page of results.               |
 
 ## Response
@@ -155,5 +155,5 @@ The following data is returned in JSON.
 
 | Parameter   | Type   | Description                                                  |
 | ----------- | ------ | ------------------------------------------------------------ |
-| tournaments | Object | Detailed information about the tournaments. This is a <a href="../../datatypes/tournament">Tournament</a> datatype. |
+| tournaments | Object | Detailed information about the tournaments. This is a [Tournament](/v2/datatypes/tournament) datatype. |
 | nextToken   | String | Allows you to move to the next results.                      |

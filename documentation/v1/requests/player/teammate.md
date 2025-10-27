@@ -19,12 +19,12 @@ https://api.brawltools.com/v1/player/teammate
 
 ### Query Parameters
 
-| Parameter  | Type    |      | Description                                               |
-| ---------- | ------- | ---- | --------------------------------------------------------- |
-| smashId    | Integer | ✔️    | The Start.gg ID of the player.                            |
-| isOfficial | Boolean | ❌    | False includes community tournaments, true excludes them. |
-| maxResults | Integer | ❌    | Limits the results to the specified number.               |
-| nextToken  | String  | ❌    | A string specifying the next page of results.             |
+| Parameter  | Type    |     | Description                                                                                   |
+| ---------- | ------- | --- | --------------------------------------------------------------------------------------------- |
+| smashId    | Integer | ✔️  | The Start.gg ID of the player.                                                                |
+| isOfficial | Boolean | ❌  | False includes community tournaments, true excludes them.                                     |
+| maxResults | Integer | ❌  | Limits the results to the specified number, with a maximum of 50. If omitted, defaults to 10. |
+| nextToken  | String  | ❌  | A string specifying the next page of results.                                                 |
 
 ## Response
 
@@ -114,7 +114,7 @@ https://api.brawltools.com/v1/player/teammate
 
 This response body can contain the following fields in JSON.
 
-| Parameter       | Type   | Description                                                                                                                            |
-| --------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| playerTeammates | Object | An array containing a player's most popular teammates. This is a <a href="../../datatypes/playerteammate">PlayerTeammate</a> datatype. |
-| nextToken       | String | Allows you to move to the next page of results.                                                                                        |
+| Parameter       | Type   | Description                                                                                                               |
+| --------------- | ------ | ------------------------------------------------------------------------------------------------------------------------- |
+| playerTeammates | Object | An array containing a player's most popular teammates. This is a [PlayerTeammate](/v1/datatypes/playerteammate) datatype. |
+| nextToken       | String | Allows you to move to the next page of results.                                                                           |

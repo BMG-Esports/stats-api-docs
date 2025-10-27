@@ -1,17 +1,17 @@
 ---
-title: Player Object
+title: Player
 description: Documentation for api.brawltools.com.
 content: datatypes
 version: v1
 ---
 
-# Player
+# Player Object
 
 An object containing information about a player.
 
 ## Contents
 
-| Parameter    | Type    | Description                                                  |
+| Attribute    | Type    | Description                                                  |
 | ------------ | ------- | ------------------------------------------------------------ |
 | smashId      | Integer | The Start.gg ID of the player.                               |
 | brawlhallaId | Integer | The Brawlhalla ID of the player.                             |

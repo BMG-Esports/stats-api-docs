@@ -19,13 +19,13 @@ https://api.brawltools.com/v1/player/placement
 
 ### Query Parameters
 
-| Parameter       | Type            | Required | Description                                                  |
-| --------------- | --------------- | -------- | ------------------------------------------------------------ |
-| entrantSmashIds | Array (Integer) | ✔️        | The Start.gg ID of the player(s).                            |
-| gameMode        | Integer         | ✔️        | For 1v1 use 1, and for 2v2 use 2.                            |
-| isOfficial      | Boolean         | ❌        | False includes community tournaments, true excludes them. If omitted, defaults to false. |
-| maxResults      | Integer         | ❌        | Limits the results to the specified number.                  |
-| nextToken       | String          | ❌        | A string specifying the next page of results.                |
+| Parameter       | Type            | Required | Description                                                                                   |
+| --------------- | --------------- | -------- | --------------------------------------------------------------------------------------------- |
+| entrantSmashIds | Array (Integer) | ✔️       | The Start.gg ID of the player(s).                                                             |
+| gameMode        | Integer         | ✔️       | For 1v1 use 1, and for 2v2 use 2.                                                             |
+| isOfficial      | Boolean         | ❌       | False includes community tournaments, true excludes them. If omitted, defaults to false.      |
+| maxResults      | Integer         | ❌       | Limits the results to the specified number, with a maximum of 50. If omitted, defaults to 10. |
+| nextToken       | String          | ❌       | A string specifying the next page of results.                                                 |
 
 ## Response
 
@@ -163,7 +163,7 @@ https://api.brawltools.com/v1/player/placement
 
 This response body can contain the following fields in JSON.
 
-| Parameter        | Type   | Description                                                                                                                         |
-| ---------------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------- |
-| playerPlacements | Object | The placements of the player in recent tournaments. This is a <a href="../../datatypes/playerplacement">PlayerPlacement</a> object. |
-| nextToken        | String | Allows you to move to the next results.                                                                                             |
+| Parameter        | Type   | Description                                                                                                            |
+| ---------------- | ------ | ---------------------------------------------------------------------------------------------------------------------- |
+| playerPlacements | Object | The placements of the player in recent tournaments. This is a [PlayerPlacement](/v1/datatypes/playerplacement) object. |
+| nextToken        | String | Allows you to move to the next results.                                                                                |

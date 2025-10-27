@@ -1,19 +1,19 @@
 ---
-title: Tournament Object
+title: Tournament
 description: Documentation for api.brawltools.com.
 content: datatypes
 version: v1
 ---
 
-# Tournament
+# Tournament Object
 
 An object containing information about a tournament.
 
 ## Contents
 
-| Parameter      | Type    | Description                                                 |
+| Attribute      | Type    | Description                                                 |
 | -------------- | ------- | ----------------------------------------------------------- |
-| slug           | String  | The identifying Start.gg slug of a tournament.              |
+| slug           | String  | The Start.gg slug of a tournament.                          |
 | tournamentName | String  | The official name of the tournament.                        |
 | eventName      | String  | The name of the tournament event.                           |
 | year           | Integer | The year the tournament was held.                           |

@@ -19,14 +19,14 @@ https://api.brawltools.com/v2/matchup
 
 ### Query Parameters
 
-| Parameter         | Type            | Required | Description                                                  |
-| ----------------- | --------------- | -------- | ------------------------------------------------------------ |
-| entrant1PlayerIds | Array (Integer) | ✔️        | The first set of ID(s) for the player(s) being searched.     |
-| entrant2PlayerIds | Array (Integer) | ❌        | The second set of ID(s) for the player(s) being searched.    |
-| gameMode          | Integer         | ✔️        | For 1v1 use 1, and for 2v2 use 2. If either entrant parameter has two players, 2 must be set. |
-| isOfficial        | Boolean         | ❌        | False includes community tournaments, true excludes them. If omitted, defaults to false. |
-| maxResults        | Integer         | ❌        | Limits the results to the specified number.                  |
-| nextToken         | String          | ❌        | A string specifying the next page of results.                |
+| Parameter         | Type            | Required | Description                                                                                   |
+| ----------------- | --------------- | -------- | --------------------------------------------------------------------------------------------- |
+| entrant1PlayerIds | Array (Integer) | ✔️       | The first set of ID(s) for the player(s) being searched.                                      |
+| entrant2PlayerIds | Array (Integer) | ❌       | The second set of ID(s) for the player(s) being searched.                                     |
+| gameMode          | Integer         | ✔️       | For 1v1 use 1, and for 2v2 use 2. If either entrant parameter has two players, 2 must be set. |
+| isOfficial        | Boolean         | ❌       | False includes community tournaments, true excludes them. If omitted, defaults to false.      |
+| maxResults        | Integer         | ❌       | Limits the results to the specified number, with a maximum of 50. If omitted, defaults to 10. |
+| nextToken         | String          | ❌       | A string specifying the next page of results.                                                 |
 
 This endpoint has multiple use cases:
 
@@ -46,14 +46,8 @@ This endpoint has multiple use cases:
 {
   "matchups": [
     {
-      "matches": [
-        17,
-        9
-      ],
-      "games": [
-        60,
-        48
-      ],
+      "matches": [17, 9],
+      "games": [60, 48],
       "opponent": [
         {
           "playerId": 146606,
@@ -65,14 +59,8 @@ This endpoint has multiple use cases:
       ]
     },
     {
-      "matches": [
-        15,
-        9
-      ],
-      "games": [
-        53,
-        40
-      ],
+      "matches": [15, 9],
+      "games": [53, 40],
       "opponent": [
         {
           "playerId": 120786,
@@ -84,14 +72,8 @@ This endpoint has multiple use cases:
       ]
     },
     {
-      "matches": [
-        14,
-        5
-      ],
-      "games": [
-        46,
-        31
-      ],
+      "matches": [14, 5],
+      "games": [46, 31],
       "opponent": [
         {
           "playerId": 160000,
@@ -103,14 +85,8 @@ This endpoint has multiple use cases:
       ]
     },
     {
-      "matches": [
-        10,
-        6
-      ],
-      "games": [
-        37,
-        29
-      ],
+      "matches": [10, 6],
+      "games": [37, 29],
       "opponent": [
         {
           "playerId": 145913,
@@ -122,14 +98,8 @@ This endpoint has multiple use cases:
       ]
     },
     {
-      "matches": [
-        10,
-        5
-      ],
-      "games": [
-        32,
-        26
-      ],
+      "matches": [10, 5],
+      "games": [32, 26],
       "opponent": [
         {
           "playerId": 51494,
@@ -141,14 +111,8 @@ This endpoint has multiple use cases:
       ]
     },
     {
-      "matches": [
-        12,
-        3
-      ],
-      "games": [
-        37,
-        17
-      ],
+      "matches": [12, 3],
+      "games": [37, 17],
       "opponent": [
         {
           "playerId": 142100,
@@ -160,14 +124,8 @@ This endpoint has multiple use cases:
       ]
     },
     {
-      "matches": [
-        12,
-        3
-      ],
-      "games": [
-        36,
-        10
-      ],
+      "matches": [12, 3],
+      "games": [36, 10],
       "opponent": [
         {
           "playerId": 147522,
@@ -179,14 +137,8 @@ This endpoint has multiple use cases:
       ]
     },
     {
-      "matches": [
-        8,
-        6
-      ],
-      "games": [
-        33,
-        24
-      ],
+      "matches": [8, 6],
+      "games": [33, 24],
       "opponent": [
         {
           "playerId": 81144,
@@ -198,14 +150,8 @@ This endpoint has multiple use cases:
       ]
     },
     {
-      "matches": [
-        13,
-        1
-      ],
-      "games": [
-        36,
-        7
-      ],
+      "matches": [13, 1],
+      "games": [36, 7],
       "opponent": [
         {
           "playerId": 146944,
@@ -217,14 +163,8 @@ This endpoint has multiple use cases:
       ]
     },
     {
-      "matches": [
-        8,
-        5
-      ],
-      "games": [
-        29,
-        23
-      ],
+      "matches": [8, 5],
+      "games": [29, 23],
       "opponent": [
         {
           "playerId": 168635,
@@ -244,7 +184,7 @@ This endpoint has multiple use cases:
 
 The following data is returned in JSON.
 
-| Parameter | Type   | Description                                                  |
-| --------- | ------ | ------------------------------------------------------------ |
-| matchups  | Object | An array of matchup objects involving the specified players. This is a <a href="../../datatypes/matchup">Matchups</a> datatype. |
-| nextToken | String | A string to be used as a nextToken argument.                 |
+| Parameter | Type   | Description                                                                                                         |
+| --------- | ------ | ------------------------------------------------------------------------------------------------------------------- |
+| matchups  | Object | An array of matchup objects involving the specified players. This is a [Matchups](/v2/datatypes/matchups) datatype. |
+| nextToken | String | A string to be used as a nextToken argument.                                                                        |

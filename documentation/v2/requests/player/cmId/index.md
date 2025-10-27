@@ -46,6 +46,6 @@ https://api.brawltools.com/v2/player/cmId/:cmPlayerId
 
 The following data is returned in JSON.
 
-| Element | Type   | Description                                                  |
-| ------- | ------ | ------------------------------------------------------------ |
-| player  | Object | Detailed information of the player. This is a [Player](../../../datatypes/player) object. |
+| Element | Type   | Description                                                                          |
+| ------- | ------ | ------------------------------------------------------------------------------------ |
+| player  | Object | Detailed information of the player. This is a [Player](/v2/datatypes/player) object. |

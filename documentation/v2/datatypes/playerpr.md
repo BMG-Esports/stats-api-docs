@@ -1,17 +1,17 @@
 ---
-title: PlayerPr Object
+title: PlayerPr
 description: Documentation for api.brawltools.com.
 content: datatypes
 version: v2
 ---
 
-# PlayerPr
+# PlayerPr Object
 
 An object containing Power Ranking information on a player.
 
 ## Content
 
-| Parameter    | Type    | Description                                              |
+| Attribute    | Type    | Description                                              |
 | ------------ | ------- | -------------------------------------------------------- |
 | top8         | Integer | The number of Top 8 placements the player has recieved.  |
 | top32        | Integer | The number of Top 32 placements the player has recieved. |

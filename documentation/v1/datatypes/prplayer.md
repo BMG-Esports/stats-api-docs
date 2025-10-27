@@ -1,17 +1,17 @@
 ---
-title: PrPlayer Object
+title: PrPlayer
 description: Documentation for api.brawltools.com.
 content: datatypes
 version: v1
 ---
 
-# PrPlayer
+# PrPlayer Object
 
 An object containing Power Ranking information for a player.
 
 ## Contents
 
-| Parameter    | Type    | Description                                                  |
+| Attribute    | Type    | Description                                                  |
 | ------------ | ------- | ------------------------------------------------------------ |
 | playerId     | Integer | The player's Start.gg ID.                                    |
 | playerName   | String  | The player's username.                                       |

@@ -13,19 +13,19 @@ Returns a player's most used legends by year.
 
 ### Syntax
 
-````url
+```url
 https://api.brawltools.com/v2/player/legend
-````
+```
 
 ### Query Parameters
 
-| Parameter  | Type    | Required | Description                                                  |
-| ---------- | ------- | -------- | ------------------------------------------------------------ |
-| playerIds  | String  | ✔️        | The ID(s) of the player(s).                                  |
-| isOfficial | Boolean | ❌        | False includes community tournaments, true excludes them. If omitted, defaults to false. |
-| year       | Integer | ❌        | The year to analyze. If omitted, includes all years.         |
-| maxResults | Integer | ❌        | Limits the results to the specified number.                  |
-| nextToken  | String  | ❌        | A string specifying the next page of results.                |
+| Parameter  | Type    | Required | Description                                                                                  |
+| ---------- | ------- | -------- | -------------------------------------------------------------------------------------------- |
+| playerIds  | String  | ✔️       | The ID(s) of the player(s).                                                                  |
+| isOfficial | Boolean | ❌       | False includes community tournaments, true excludes them. If omitted, defaults to false.     |
+| year       | Integer | ❌       | The year to filter results to.                                                               |
+| maxResults | Integer | ❌       | Limits the results to the specified number, with a maximum of 10. If omitted, defaults to 5. |
+| nextToken  | String  | ❌       | A string specifying the next page of results.                                                |
 
 ## Response
 
@@ -61,7 +61,7 @@ https://api.brawltools.com/v2/player/legend
 
 ### Response Elements
 
-| Element   | Type   | Description                                                  |
-| --------- | ------ | ------------------------------------------------------------ |
-| legends   | Object | An array of played legends for the player. This is a <a href="../../datatypes/legend">Legend</a> datatype. |
-| nextToken | String | A string to be used as a nextToken argument.                 |
+| Element   | Type   | Description                                                                                   |
+| --------- | ------ | --------------------------------------------------------------------------------------------- |
+| legends   | Object | An array of played legends for the player. This is a [Legend](/v2/datatypes/legend) datatype. |
+| nextToken | String | A string to be used as a nextToken argument.                                                  |

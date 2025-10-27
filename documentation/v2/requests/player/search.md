@@ -19,11 +19,11 @@ https://api.brawltools.com/v2/player/search
 
 ### Query Parameters
 
-| Parameter  | Type    | Required | Description                                    |
-| ---------- | ------- | -------- | ---------------------------------------------- |
-| Query      | String  | ✔️        | The text to be searched.                       |
-| maxResults | Integer | ❌        | Limits the results to the specified number.    |
-| nextToken  | String  | ❌        | A string specifiying the next page of results. |
+| Parameter  | Type    | Required | Description                                                                                   |
+| ---------- | ------- | -------- | --------------------------------------------------------------------------------------------- |
+| Query      | String  | ✔️       | The text to be searched.                                                                      |
+| maxResults | Integer | ❌       | Limits the results to the specified number.                                                   |
+| nextToken  | String  | ❌       | Limits the results to the specified number, with a maximum of 25. If omitted, defaults to 10. |
 
 ## Response
 
@@ -75,7 +75,7 @@ https://api.brawltools.com/v2/player/search
 
 ### Response Elements
 
-| Element      | Type   | Description                                                  |
-| ------------ | ------ | ------------------------------------------------------------ |
-| searchPlayer | Object | The results of the search. This is a <a href="../../datatypes/searchplayer">SearchPlayer</a> object. |
-| nextToken    | String | A string to be used as a nextToken argument.                 |
+| Element      | Type   | Description                                                                             |
+| ------------ | ------ | --------------------------------------------------------------------------------------- |
+| searchPlayer | Object | The results of the search. This is a [SearchPlayer](/v2/datatypes/searchplayer) object. |
+| nextToken    | String | A string to be used as a nextToken argument.                                            |

@@ -19,14 +19,14 @@ https://api.brawltools.com/v2/matchup/placement
 
 ### Query Parameters
 
-| Parameter         | Type    | Required | Description                                                  |
-| ----------------- | ------- | -------- | ------------------------------------------------------------ |
-| entrant1PlayerIds | Integer | ✔️        | The ID(s) of the first team.                                 |
-| entrant2PlayerIds | Integer | ✔️        | The ID(s) of the second team.                                |
-| gameMode          | Integer | ✔️        | For 1v1 use 1, and for 2v2 use 2.                            |
-| isOfficial        | Boolean | ❌        | False includes community tournaments, true excludes them. If omitted, defaults to false. |
-| maxResults        | Integer | ❌        | Limits the results to the specified number.                  |
-| nextToken         | String  | ❌        | Optional. A string specifying the next page of results.      |
+| Parameter         | Type    | Required | Description                                                                                   |
+| ----------------- | ------- | -------- | --------------------------------------------------------------------------------------------- |
+| entrant1PlayerIds | Integer | ✔️       | The ID(s) of the first team.                                                                  |
+| entrant2PlayerIds | Integer | ✔️       | The ID(s) of the second team.                                                                 |
+| gameMode          | Integer | ✔️       | For 1v1 use 1, and for 2v2 use 2.                                                             |
+| isOfficial        | Boolean | ❌       | False includes community tournaments, true excludes them. If omitted, defaults to false.      |
+| maxResults        | Integer | ❌       | Limits the results to the specified number, with a maximum of 50. If omitted, defaults to 10. |
+| nextToken         | String  | ❌       | Optional. A string specifying the next page of results.                                       |
 
 ## Response
 
@@ -36,127 +36,147 @@ https://api.brawltools.com/v2/matchup/placement
 {
   "matchupPlacements": [
     {
-      "placements": [1, 9],
+      "placements": [17, 17],
       "tournament": {
-        "slug": "tournament/north-america-autumn-championship-2023/event/brawlhalla-championship-1v1",
-        "tournamentName": "North America - Autumn Championship 2023",
-        "eventName": "Brawlhalla Championship 1v1",
-        "year": 2023,
+        "id": "tournament/ceo-2025-6/event/brawlhalla-singles",
+        "tournamentName": "CEO 2025",
+        "eventName": "Brawlhalla Singles",
+        "year": 2025,
         "isOfficial": true,
         "isTwos": false,
-        "startTime": 1695572100
+        "isOnline": false,
+        "startTime": 1749913200,
+        "host": "SGG"
       }
     },
     {
-      "placements": [7, 129],
+      "placements": [1, 5],
       "tournament": {
-        "slug": "tournament/dreamhack-valencia-2023/event/brawlhalla-1v1",
-        "tournamentName": "DreamHack Valencia 2023",
-        "eventName": "Brawlhalla (1v1)",
-        "year": 2023,
+        "id": "bd580f1f-4006-463a-420d-08dd69fad61e",
+        "tournamentName": "Spring Championship - North America 2025 - 1v1",
+        "eventName": null,
+        "year": 2025,
         "isOfficial": true,
         "isTwos": false,
-        "startTime": 1688716800
-      }
-    },
-    {
-      "placements": [25, 5],
-      "tournament": {
-        "slug": "tournament/dreamhack-dallas-2023/event/brawlhalla-1v1",
-        "tournamentName": "DreamHack Dallas 2023",
-        "eventName": "Brawlhalla (1v1)",
-        "year": 2023,
-        "isOfficial": true,
-        "isTwos": false,
-        "startTime": 1685721600
-      }
-    },
-    {
-      "placements": [2, 7],
-      "tournament": {
-        "slug": "tournament/dreamhack-san-diego-2023/event/brawlhalla-1v1",
-        "tournamentName": "DreamHack San Diego 2023",
-        "eventName": "Brawlhalla (1v1)",
-        "year": 2023,
-        "isOfficial": true,
-        "isTwos": false,
-        "startTime": 1680883200
-      }
-    },
-    {
-      "placements": [4, 17],
-      "tournament": {
-        "slug": "tournament/north-america-spring-championship-2023/event/brawlhalla-championship-1v1",
-        "tournamentName": "North America - Spring Championship 2023",
-        "eventName": "Brawlhalla Championship 1v1",
-        "year": 2023,
-        "isOfficial": true,
-        "isTwos": false,
-        "startTime": 1679846400
-      }
-    },
-    {
-      "placements": [5, 9],
-      "tournament": {
-        "slug": "tournament/north-america-winter-championship-2023/event/brawlhalla-championship-1v1",
-        "tournamentName": "North America - Winter Championship 2023",
-        "eventName": "Brawlhalla Championship 1v1",
-        "year": 2023,
-        "isOfficial": true,
-        "isTwos": false,
-        "startTime": 1675617300
-      }
-    },
-    {
-      "placements": [9, 13],
-      "tournament": {
-        "slug": "tournament/brawlhalla-world-championship-expo-2022/event/1v1",
-        "tournamentName": "Brawlhalla World Championship Expo 2022",
-        "eventName": "1v1",
-        "year": 2022,
-        "isOfficial": true,
-        "isTwos": false,
-        "startTime": 1667577600
+        "isOnline": true,
+        "startTime": 1746980182,
+        "host": "CM"
       }
     },
     {
       "placements": [5, 7],
       "tournament": {
-        "slug": "tournament/brawlhalla-midseason-championship/event/brawlhalla-championship-1v1",
-        "tournamentName": "Brawlhalla Midseason Championship",
+        "id": "tournament/winter-championship-north-america-2025/event/brawlhalla-championship-1v1",
+        "tournamentName": "Winter Championship - North America 2025",
         "eventName": "Brawlhalla Championship 1v1",
-        "year": 2022,
+        "year": 2025,
         "isOfficial": true,
         "isTwos": false,
-        "startTime": 1655042400
+        "isOnline": true,
+        "startTime": 1740330900,
+        "host": "SGG"
+      }
+    },
+    {
+      "placements": [13, 5],
+      "tournament": {
+        "id": "tournament/brawlhalla-world-championship-expo-2024/event/1v1",
+        "tournamentName": "Brawlhalla World Championship Expo 2024",
+        "eventName": "1v1",
+        "year": 2024,
+        "isOfficial": true,
+        "isTwos": false,
+        "isOnline": false,
+        "startTime": 1731661200,
+        "host": "SGG"
+      }
+    },
+    {
+      "placements": [2, 3],
+      "tournament": {
+        "id": "tournament/trial-of-freya-north-america/event/brawlhalla-championship-1v1",
+        "tournamentName": "Trial of Freya - North America",
+        "eventName": "Brawlhalla Championship 1v1",
+        "year": 2024,
+        "isOfficial": true,
+        "isTwos": false,
+        "isOnline": true,
+        "startTime": 1726416900,
+        "host": "SGG"
+      }
+    },
+    {
+      "placements": [4, 1],
+      "tournament": {
+        "id": "tournament/trial-of-laufey-north-america-moose-wars/event/brawlhalla-1v1",
+        "tournamentName": "Trial of Laufey - North America (Moose Wars)",
+        "eventName": "Brawlhalla 1v1",
+        "year": 2024,
+        "isOfficial": true,
+        "isTwos": false,
+        "isOnline": true,
+        "startTime": 1724602500,
+        "host": "SGG"
+      }
+    },
+    {
+      "placements": [1, 5],
+      "tournament": {
+        "id": "tournament/trial-of-skuld-north-america/event/brawlhalla-championship-1v1",
+        "tournamentName": "Trial of Skuld - North America",
+        "eventName": "Brawlhalla Championship 1v1",
+        "year": 2024,
+        "isOfficial": true,
+        "isTwos": false,
+        "isOnline": true,
+        "startTime": 1722788100,
+        "host": "SGG"
+      }
+    },
+    {
+      "placements": [3, 4],
+      "tournament": {
+        "id": "tournament/moose-wars-the-battlegrounds/event/brawlhalla-1v1s",
+        "tournamentName": "Moose Wars: The Battlegrounds",
+        "eventName": "Brawlhalla 1v1s",
+        "year": 2024,
+        "isOfficial": false,
+        "isTwos": false,
+        "isOnline": false,
+        "startTime": 1722103200,
+        "host": "SGG"
+      }
+    },
+    {
+      "placements": [5, 1],
+      "tournament": {
+        "id": "tournament/trial-of-heimdall-north-america-nsig/event/brawlhalla-championship-1v1",
+        "tournamentName": "Trial of Heimdall - North America (NSIG)",
+        "eventName": "Brawlhalla Championship 1v1",
+        "year": 2024,
+        "isOfficial": true,
+        "isTwos": false,
+        "isOnline": true,
+        "startTime": 1720972800,
+        "host": "SGG"
       }
     },
     {
       "placements": [3, 9],
       "tournament": {
-        "slug": "tournament/north-america-winter-championship-2022/event/brawlhalla-championship-1v1",
-        "tournamentName": "North America - Winter Championship 2022",
-        "eventName": "Brawlhalla Championship 1v1",
-        "year": 2022,
+        "id": "tournament/ceo-2024-6/event/brawlhalla-1v1",
+        "tournamentName": "CEO 2024",
+        "eventName": "Brawlhalla 1v1",
+        "year": 2024,
         "isOfficial": true,
         "isTwos": false,
-        "startTime": 1644166800
-      }
-    },
-    {
-      "placements": [3, 17],
-      "tournament": {
-        "slug": "tournament/north-america-brawlhalla-world-championship-2021/event/brawlhalla-championship-1v1",
-        "tournamentName": "North America - Brawlhalla World Championship 2021",
-        "eventName": "Brawlhalla Championship 1v1",
-        "year": 2021,
-        "isOfficial": true,
-        "isTwos": false,
-        "startTime": 1637434800
+        "isOnline": false,
+        "startTime": 1719583200,
+        "host": "SGG"
       }
     }
   ],
-  "nextToken": "1637434800"
+  "nextToken": "1719583200"
 }
 ```
 
@@ -164,7 +184,7 @@ https://api.brawltools.com/v2/matchup/placement
 
 The following data is returned in JSON.
 
-| Parameter         | Type   | Description                                                                                                                                  |
-| ----------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| matchupPlacements | Object | An object containing placement comparisons in a matchup. This is a <a href="../../datatypes/matchupplacement">MatchupPlacement</a> datatype. |
-| nextToken         | String | A string to be used as a nextToken argument.                                                                                                 |
+| Parameter         | Type   | Description                                                                                                                     |
+| ----------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------- |
+| matchupPlacements | Object | An object containing placement comparisons in a matchup. This is a [MatchupPlacement](/v2/datatypes/matchupplacement) datatype. |
+| nextToken         | String | A string to be used as a nextToken argument.                                                                                    |

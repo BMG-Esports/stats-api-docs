@@ -1,11 +1,11 @@
 ---
-title: GetPlayerBySgg
+title: GetPlayerBySggId
 description: Documentation for api.brawltools.com.
 content: requests
 version: v2
 ---
 
-# GetPlayerBySgg
+# GetPlayerBySggId
 
 Returns information on a player based on their Start.gg ID.
 
@@ -46,6 +46,6 @@ https://api.brawltools.com/v2/player/sgg/:sggPlayerId
 
 The following data is returned in JSON.
 
-| Element | Type   | Description                                                  |
-| ------- | ------ | ------------------------------------------------------------ |
-| player  | Object | Detailed information of the player. This is a [Player](../../../datatypes/player) object. |
+| Element | Type   | Description                                                                          |
+| ------- | ------ | ------------------------------------------------------------------------------------ |
+| player  | Object | Detailed information of the player. This is a [Player](/v2/datatypes/player) object. |

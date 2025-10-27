@@ -21,9 +21,9 @@ https://api.brawltools.com/v2/matchup/match
 
 | Parameter         | Type   | Required | Description                               |
 | ----------------- | ------ | -------- | ----------------------------------------- |
-| tournamentId      | String | ✔️        | The unique slug of a tournament.          |
-| entrant1PlayerIds | String | ✔️        | The ID(s) of the first set of player(s).  |
-| entrant2PlayerIds | String | ✔️        | The ID(s) of the second set of player(s). |
+| tournamentId      | String | ✔️       | The unique slug of a tournament.          |
+| entrant1PlayerIds | String | ✔️       | The ID(s) of the first set of player(s).  |
+| entrant2PlayerIds | String | ✔️       | The ID(s) of the second set of player(s). |
 
 ## Response
 
@@ -34,25 +34,10 @@ https://api.brawltools.com/v2/matchup/match
   "matchupMatches": [
     {
       "matchId": "90273790",
-      "scores": [
-        2,
-        3
-      ],
+      "scores": [2, 3],
       "legends": [
-        [
-          "MORDEX",
-          "MORDEX",
-          "MORDEX",
-          "MORDEX",
-          "MORDEX"
-        ],
-        [
-          "DIANA",
-          "DIANA",
-          "DIANA",
-          "DIANA",
-          "DIANA"
-        ]
+        ["MORDEX", "MORDEX", "MORDEX", "MORDEX", "MORDEX"],
+        ["DIANA", "DIANA", "DIANA", "DIANA", "DIANA"]
       ],
       "maps": [
         "FortressoftheLions",
@@ -70,6 +55,6 @@ https://api.brawltools.com/v2/matchup/match
 
 The following data is returned in JSON.
 
-| Parameter      | Type   | Description                                                                                                                             |
-| -------------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------- |
-| matchupMatches | Object | An object containing information about a specific match. This is a <a href="../../../datatypes/matchupmatch">MatchupMatch</a> datatype. |
+| Parameter      | Type   | Description                                                                                                             |
+| -------------- | ------ | ----------------------------------------------------------------------------------------------------------------------- |
+| matchupMatches | Object | An object containing information about a specific match. This is a [MatchupMatch](/v2/datatypes/matchupmatch) datatype. |

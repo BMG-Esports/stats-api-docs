@@ -1,5 +1,5 @@
 ---
-title: Brawlhalla Stats API Starter Guide
+title: Starter Guide
 description: Documentation for api.brawltools.com.
 content: resources
 version: v1
@@ -21,19 +21,19 @@ This is a starter guide to using the API and SDK. This guide is tailored to user
      - Terminals on Windows include Command Prompt, PowerShell, Terminal, and Visual Studio Code's terminal.
    - If you do not receive a response in the terminal, or you receive an error, you must install Node.js from <a href="https://nodejs.org/en/">their website</a>.
 2. Install the SDK.
-   - The SDK can be found <a href="https://www.npmjs.com/package/@bmg-esports/sdk">here</a>. Follow the installation guide on the page in your terminal.
+   - The SDK can be found [here](https://www.npmjs.com/package/@bmg-esports/sdk). Follow the installation guide on the page in your terminal.
 3. Use the SDK.
-   - This is a sample JavaScript example using the <a href="../get/player/smashId">GetPlayer</a> method in a single file.
-   - This function uses `async` and `await`. To learn about these concepts, refer to the MDN pages: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function">async function</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await">await</a>.
+   - This is a sample JavaScript example using the [GetPlayer](/v1/requests/player/smashId) method in a single file.
+   - This function uses `async` and `await`. To learn about these concepts, refer to the MDN pages: [async function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function) and [await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await).
 
    ```js
    const sdk = require("@bmg-esports/sdk");
-
+   
    async function FindPlayer(id) {
      const result = await sdk.getPlayer({ smashId: id });
      return console.log(result);
    }
-
+   
    FindPlayer(57335);
    ```
 

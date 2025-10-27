@@ -1,5 +1,5 @@
 ---
-title: Brawlhalla Stats API Resources
+title: Resources
 description: Documentation for api.brawltools.com.
 content: resources
 version: v1
@@ -9,11 +9,11 @@ version: v1
 
 ## How can I use this API?
 
-The easiest way to interface with the API is by using the <a href="https://www.npmjs.com/package/@bmg-esports/sdk">eSports SDK</a>. It can be used with both JavaScript and Typescript, and is easy to initialize.
+The easiest way to interface with the API is by using the [esports SDK](https://www.npmjs.com/package/@bmg-esports/sdk). It can be used with both JavaScript and Typescript, and is easy to initialize.
 
 ## What is a SmashId?
 
-A SmashId is a player's unique start.gg ID. This ID is not the alphanumeric phrase found on your start.gg profile, and is only visible through start.gg's developer API. However, these IDs can be found through <a href="https://prostats.brawlhalla.com">prostats.brawlhalla.com</a>.
+A SmashId is a player's unique start.gg ID. This ID is not the alphanumeric phrase found on your start.gg profile, and is only visible through start.gg's developer API. However, these IDs can be found through [prostats.brawlhalla.com](https://prostats.brawlhalla.com).
 
 ## How do I find a player's SmashId?
 

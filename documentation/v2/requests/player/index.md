@@ -19,9 +19,9 @@ https://api.brawltools.com/v2/player/:playerID
 
 ### Path Parameters
 
-| Parameter | Description                      |
-| --------- | -------------------------------- |
-| playerId  | The internal ID for this player. |
+| Parameter | Description                   |
+| --------- | ----------------------------- |
+| playerId  | The esports ID of the player. |
 
 ## Response
 
@@ -46,6 +46,6 @@ https://api.brawltools.com/v2/player/:playerID
 
 The following data is returned in JSON.
 
-| Element | Type   | Description                                                  |
-| ------- | ------ | ------------------------------------------------------------ |
-| player  | Object | Detailed information of the player. This is a [Player](../../datatypes/player) object. |
+| Element | Type   | Description                                                                          |
+| ------- | ------ | ------------------------------------------------------------------------------------ |
+| player  | Object | Detailed information of the player. This is a [Player](/v2/datatypes/player) object. |

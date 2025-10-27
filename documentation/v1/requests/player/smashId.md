@@ -44,6 +44,6 @@ https://api.brawltools.com/v1/player/:PlayerID
 
 The following data is returned in JSON.
 
-| Parameter | Type   | Description                                                  |
-| --------- | ------ | ------------------------------------------------------------ |
-| player    | Object | The basic info recorded about on a player. This is a <a href="../../../datatypes/player">Player</a> datatype. |
+| Parameter | Type   | Description                                                                                   |
+| --------- | ------ | --------------------------------------------------------------------------------------------- |
+| player    | Object | The basic info recorded about on a player. This is a [Player](/v1/datatypes/player) datatype. |
