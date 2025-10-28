@@ -24,12 +24,14 @@ const version = Astro.url.pathname.split("/")[1];
 </label>
 
 <script>
-  const dropdown = document.getElementById(
-    "version-select"
-  ) as HTMLSelectElement;
-  dropdown?.addEventListener(
-    "change",
-    //@ts-ignore (for some reason it doesn't know that target.value exists??)
-    (event) => (window.location.href = `/${event.target?.value}/requests/pr`)
-  );
+  document.addEventListener("astro:page-load", () => {
+    const dropdown = document.getElementById(
+      "version-select"
+    ) as HTMLSelectElement;
+    dropdown?.addEventListener(
+      "change",
+      //@ts-ignore (for some reason it doesn't know that target.value exists??)
+      (event) => (window.location.href = `/${event.target?.value}`)
+    );
+  });
 </script>

@@ -6,4 +6,9 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  redirects: {
+    "/": "/v2/pages",
+    "/v2": "/v2/pages",
+    "/v1": "/v1/pages",
+  }
 });
