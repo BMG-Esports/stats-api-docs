@@ -184,7 +184,7 @@ This endpoint has multiple use cases:
 
 The following data is returned in JSON.
 
-| Parameter | Type   | Description                                                                                                         |
-| --------- | ------ | ------------------------------------------------------------------------------------------------------------------- |
-| matchups  | Object | An array of matchup objects involving the specified players. This is a [Matchups](/v2/datatypes/matchups) datatype. |
-| nextToken | String | A string to be used as a nextToken argument.                                                                        |
+| Parameter | Type   | Description                                                                                                       |
+| --------- | ------ | ----------------------------------------------------------------------------------------------------------------- |
+| matchups  | Object | An array of matchup objects involving the specified players. This is a [Matchup](/v2/datatypes/matchup) datatype. |
+| nextToken | String | A string to be used as a nextToken argument.                                                                      |
