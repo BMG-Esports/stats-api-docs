@@ -9,7 +9,7 @@ version: v2
 
 ## How can I use this API?
 
-The easiest way to interface with the API is by using the <a href="https://www.npmjs.com/package/@bmg-esports/sdk">eSports SDK</a>. It can be used with both JavaScript and Typescript, and is easy to initialize.
+The easiest way to interface with the API is by using the [esports SDK](https://www.npmjs.com/package/@bmg-esports/sdk). It can be used with both JavaScript and Typescript, and is easy to initialize.
 
 ## What is a playerId?
 
@@ -17,7 +17,7 @@ New to version 2.0 is the Player ID, which is Brawlhalla's internal esports ID f
 
 ## What is a SggId?
 
-A SggId (formerly known as a SmashId) is a player's unique Start.gg ID. This ID is not the alphanumeric phrase found on your Start.gg profile, and is typically only visible through Start.gg's developer API. If you are unable to use the Start.gg API, these IDs are also accessible through <a href="https://prostats.brawlhalla.com">prostats.brawlhalla.com</a>.
+A SggId (formerly known as a SmashId) is a player's unique Start.gg ID. This ID is not the alphanumeric phrase found on your Start.gg profile, and is typically only visible through Start.gg's developer API. For more information, visit Start.gg's [Developer Portal](https://developer.start.gg/).
 
 ## What is a CmId?
 

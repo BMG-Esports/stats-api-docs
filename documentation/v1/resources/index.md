@@ -13,7 +13,7 @@ The easiest way to interface with the API is by using the [esports SDK](https://
 
 ## What is a SmashId?
 
-A SmashId is a player's unique start.gg ID. This ID is not the alphanumeric phrase found on your start.gg profile, and is only visible through start.gg's developer API. However, these IDs can be found through [prostats.brawlhalla.com](https://prostats.brawlhalla.com).
+A SmashId is a player's unique start.gg ID. This ID is not the alphanumeric phrase found on your Start.gg profile, and is only visible through Start.gg's developer API. For more information, visit Start.gg's [Developer Portal](https://developer.start.gg/).
 
 ## How do I find a player's SmashId?
 
